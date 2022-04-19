@@ -1,11 +1,9 @@
-import Head from 'next/head'
+import Layout from '../components/layout'
+
 export default function Celebraciones() {
   return (
-    <div>
-      <Head>
-        <title>Mia Restaurant & BeachClub</title>
-      </Head>
+    <Layout>
       <h1>MIA CELEBRACIONES</h1>
-    </div>
+    </Layout>
   )
 }

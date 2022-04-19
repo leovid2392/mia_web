@@ -1,11 +1,8 @@
-import Head from 'next/head'
+import Layout from '../components/layout'
 export default function Bebidas() {
   return (
-    <div>
-      <Head>
-        <title>Mia Restaurant & BeachClub</title>
-      </Head>
+    <Layout>
       <h1>MIA BEBIDAS</h1>
-    </div>
+    </Layout>
   )
 }

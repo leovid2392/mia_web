@@ -1,11 +1,8 @@
-import Head from 'next/head'
+import Layout from '../components/layout'
 export default function BeachClub() {
   return (
-    <div>
-      <Head>
-        <title>Mia Restaurant & BeachClub</title>
-      </Head>
+    <Layout>
       <h1>MIA BEACHCLUB</h1>
-    </div>
+    </Layout>
   )
 }

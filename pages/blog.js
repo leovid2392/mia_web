@@ -1,11 +1,9 @@
-import Head from 'next/head'
+import Layout from '../components/layout'
+
 export default function Blog() {
   return (
-    <div>
-      <Head>
-        <title>Mia Restaurant & BeachClub</title>
-      </Head>
+    <Layout>
       <h1>MIA BLOG</h1>
-    </div>
+    </Layout>
   )
 }

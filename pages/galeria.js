@@ -1,11 +1,9 @@
-import Head from 'next/head'
+import Layout from '../components/layout'
+
 export default function Galeria() {
   return (
-    <div>
-      <Head>
-        <title>Mia Restaurant & BeachClub</title>
-      </Head>
+    <Layout>
       <h1>MIA GALERIA</h1>
-    </div>
+    </Layout>
   )
 }
