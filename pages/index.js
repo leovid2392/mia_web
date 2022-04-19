@@ -1,18 +1,14 @@
-import Head from 'next/head'
 import Layout from '../components/layout'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Home() {
+  let { t } = useTranslation()
   return (
     <Layout
-      title='MiaTulum | Home'
-      description='Aqui una descripción de unos 120 caracteres'
+      title={t('common:metaTitle')}
+      description={t('common:metaDescription')}
     >
-      <h1>MIA HOME</h1>
-      {/* <figure className={styles.imgContainer}> */}
-
-      {/* </figure> */}
+      <h1>{t('common:hello')}</h1>
     </Layout>
   )
 }

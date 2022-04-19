@@ -1,16 +1,58 @@
+/*Font Montserrat 300, 400, 600 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/*Font cormorant Garamont 300, 400, 600 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-lightGrey: #e7e5de;
+  --color-mediumGrey: #b2b2b2;
+  --color-darkGrey: #707070;
+  --color-primary: #7e8e65;
+  --color-secondary: #c46d4e;
+
+  --color-bgBody: #e7e5de;
+
+  --color-mainText: #707070;
+  --color-title: black;
+
+  --fontFamily-title: 'Cormorant Garamond', serif;
+  --fontFamily-mainText: 'Montserrat', sans-serif;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background-color: var(--color-bgBody);
+  font-family: var(--fontFamily-mainText);
+  font-size: 62.5%;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  font-size: 1.6rem;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  color: var(--color-title);
+  font-family: var(--fontFamily-title);
+  font-size: 3.2rem;
+}
+
+p {
+  font-family: var(--fontFamily-mainText);
+  font-size: 1.6rem;
+  color: var(--color-mainText);
+}
+
+li {
+  font-size: 1.6rem;
 }

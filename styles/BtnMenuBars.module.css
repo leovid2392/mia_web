@@ -1,0 +1,6 @@
+.container {
+  background-color: transparent;
+  border-style: none;
+  font-size: 3rem;
+  color: var(--color-black);
+}

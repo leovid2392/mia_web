@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  padding: 0;
+}
+
+.liItem {
+  color: var(--color-mediumGrey);
+  list-style: none;
+  margin: 0 5px;
+}

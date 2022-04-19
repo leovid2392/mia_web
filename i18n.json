@@ -1,0 +1,8 @@
+{
+  "locales": ["es", "en-US"],
+  "defaultLocale": "es",
+  "pages": {
+    "*": ["common"],
+    "/restaurante": ["restaurante"]
+  }
+}
