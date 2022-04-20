@@ -1,5 +1,7 @@
 .container {
+  width: 100%;
   display: grid;
+  justify-content: end;
   background-color: transparent;
   border-style: none;
   font-size: 3rem;

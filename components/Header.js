@@ -4,12 +4,12 @@ import LanguageSelector from './LanguageSelector'
 
 import styles from '../styles/Header.module.css'
 
-export default function Header() {
+export default function Header({ handleAsideMenu }) {
   return (
     <header className={styles.container}>
       <LogoBlack />
       <LanguageSelector />
-      <BtnMenuBars />
+      <BtnMenuBars handleAsideMenu={handleAsideMenu} />
     </header>
   )
 }

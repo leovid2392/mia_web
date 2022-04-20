@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Header from './Header'
 import AsideMenu from './AsideMenu'
+import Footer from './Footer'
 
 export default function Layout({ children, title, description }) {
   return (
@@ -21,7 +22,7 @@ export default function Layout({ children, title, description }) {
         </Link>
       </nav> */}
       <main>{children}</main>
-      <footer>footer</footer>
+      <Footer />
     </div>
   )
 }
