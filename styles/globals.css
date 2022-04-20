@@ -63,3 +63,7 @@ li {
 input {
   font-family: var(--fontFamily-mainText);
 }
+
+button {
+  cursor: pointer;
+}

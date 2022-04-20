@@ -16,14 +16,6 @@ export default function Layout({ children, title, description }) {
       <Header />
       <BtnBookNow />
       <AsideMenu />
-      {/* <nav>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>
-        <Link href='/restaurante'>
-          <a>Restaurante</a>
-        </Link>
-      </nav> */}
       <main>{children}</main>
       <FollowUsSection />
       <NewsLetter />
