@@ -1,11 +1,11 @@
-import styles from '../styles/ArticlePortrait.module.css'
 import Image from 'next/image'
 
-import articleImg from '../public/images/mia-6152_small500x750.jpg'
 import TitleSection from './TitleSection'
 import Paragraph from './Paragraph'
 import InternalLink from './InternalLink'
+import articleImg from '../public/images/mia-6152_small500x750.jpg'
 
+import styles from '../styles/ArticlePortrait.module.css'
 export default function ArticlePortrait() {
   return (
     <article className={styles.container}>

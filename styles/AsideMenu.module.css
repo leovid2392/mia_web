@@ -9,6 +9,7 @@
   width: 100vw;
   /* position: absolute; */
   background-color: var(--color-lightGrey);
+  display: none;
 }
 .hiddeSideBar {
   display: flex;

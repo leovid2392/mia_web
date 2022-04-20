@@ -1,3 +1,36 @@
 .container {
   text-align: center;
 }
+
+.sliderContainer {
+  /* margin: 0 auto; */
+  position: relative;
+  display: flex;
+  padding: 0px 0px 150% 0px;
+  width: 100%;
+  height: 480px;
+  margin-bottom: 20px;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.sliderContainer article {
+  position: absolute;
+  /* top: 70;
+  left: 0; */
+  width: 100%;
+  transition: all 3s ease;
+}
+.sliderContainer article.activeSlide {
+  opacity: 1;
+}
+.sliderContainer article.lastSlide {
+  opacity: 0;
+}
+.sliderContainer article.nextSlide {
+  opacity: 0;
+}
