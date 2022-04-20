@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import useTranslation from 'next-translate/useTranslation'
 import TitlePage from '../components/TitlePage'
 import Paragraph from '../components/Paragraph'
+import ArticlePortrait from '../components/ArticlePortrait'
 
 export default function Home() {
   let { t } = useTranslation()
@@ -14,7 +15,7 @@ export default function Home() {
       <Hero />
       <TitlePage text='Mia tulum' />
       <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
-      <h1>{t('common:hello')}</h1>
+      <ArticlePortrait />
     </Layout>
   )
 }
