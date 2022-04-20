@@ -3,6 +3,15 @@
   "defaultLocale": "es",
   "pages": {
     "*": ["common"],
-    "/restaurante": ["restaurante"]
+    "/restaurante": ["restaurante"],
+    "/bebidas": ["bebidas"],
+    "/vino": ["vino"],
+    "/beachClub": ["beachClub"],
+    "/bodas": ["bodas"],
+    "/djParty": ["djParty"],
+    "/celebraciones": ["celebraciones"],
+    "/galeria": ["galeria"],
+    "/blog": ["blog"],
+    "/contacto": ["contacto"]
   }
 }
