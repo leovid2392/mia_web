@@ -18,6 +18,7 @@
 
   --color-mainText: #707070;
   --color-title: black;
+  --color-openTable: #da3743;
 
   --fontFamily-title: 'Cormorant Garamond', serif;
   --fontFamily-mainText: 'Montserrat', sans-serif;
@@ -42,7 +43,8 @@ a {
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
   color: var(--color-title);
   font-family: var(--fontFamily-title);
   font-size: 3.2rem;
@@ -56,4 +58,8 @@ p {
 
 li {
   font-size: 1.6rem;
+}
+
+input {
+  font-family: var(--fontFamily-mainText);
 }
