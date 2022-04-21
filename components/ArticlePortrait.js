@@ -16,7 +16,7 @@ export default function ArticlePortrait({
   return (
     <article className={styles.container}>
       <figure className={styles.imgContainer}>
-        <Image src={image} alt={alt}></Image>
+        <Image src={image} alt={alt} layout='fill' objectFit='cover'></Image>
       </figure>
       <div className={styles.infoContainer}>
         <TitleSection text={title} />

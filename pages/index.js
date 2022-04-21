@@ -82,10 +82,12 @@ export default function Home() {
       <ArticleSquareWhite
         image={bebidasImg}
         title='bebidas'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt. Cras in sagittis enim. Quisque porta'
         linkText='saber más'
         linkHref='/bebidas'
         alt='image description'
+        objectFit='cover'
+        objectPosition='center'
       />
       <ArticlePortrait
         image={bodasImg}

@@ -7,6 +7,8 @@ import styles from '../styles/ArticleSquareWhite.module.css'
 
 export default function ArticleSquareWhite({
   image,
+  objectFit,
+  objectPosition,
   title,
   paragraph,
   linkText,
@@ -16,7 +18,13 @@ export default function ArticleSquareWhite({
   return (
     <article className={styles.container}>
       <figure className={styles.imgContainer}>
-        <Image src={image} alt={alt}></Image>
+        <Image
+          src={image}
+          alt={alt}
+          layout='fill'
+          objectFit={objectFit}
+          objectPosition={objectPosition}
+        ></Image>
       </figure>
       <div className={styles.textContainer}>
         <TitleSection text={title} />
