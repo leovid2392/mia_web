@@ -6,17 +6,17 @@ import Hero from '../components/Hero'
 import TitlePage from '../components/TitlePage'
 import Paragraph from '../components/Paragraph'
 import ArticlePortrait from '../components/ArticlePortrait'
-import LinkBorder from '../components/LinkBorder'
 import ArticleFourImg from '../components/ArticleFourImg'
 import ArticleSquare from '../components/ArticleSquare'
 import ArticleSquareWhite from '../components/ArticleSquareWhite'
+import Layout2x2 from '../components/Layout2x2'
+import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
 // components<<<<<<<<<<
 // images<<<<<<<<<<
 import slide1 from '../public/images/vino/cele1_small750x500.jpg'
 import slide2 from '../public/images/vino/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/vino/cele3_small750x500.jpg'
-import Layout2x2 from '../components/Layout2x2'
 
 // images<<<<<<<<<<
 
@@ -89,6 +89,8 @@ export default function Vino() {
         objectFit='cover'
         objectPosition='center'
       />
+      <TitleSection text='maridaje' />
+      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
       <Layout2x2
         img1={slide1}
         img2={slide2}
