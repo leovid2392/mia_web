@@ -1,25 +1,25 @@
 import Layout from '../components/layout'
 import useTranslation from 'next-translate/useTranslation'
 
-// components<<<<<<<<<<
+// <<<<<<<<<components<<<<<<<<<<<<<<<<<<<
 import Hero from '../components/Hero'
 import TitlePage from '../components/TitlePage'
 import Paragraph from '../components/Paragraph'
-import ArticlePortrait from '../components/ArticlePortrait'
+// import ArticlePortrait from '../components/ArticlePortrait'
 import ArticleFourImg from '../components/ArticleFourImg'
-import ArticleSquare from '../components/ArticleSquare'
-import ArticleSquareWhite from '../components/ArticleSquareWhite'
+// import ArticleSquare from '../components/ArticleSquare'
+// import ArticleSquareWhite from '../components/ArticleSquareWhite'
 import Layout2x2 from '../components/Layout2x2'
-import TitleSection from '../components/TitleSection'
+// import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
-// components<<<<<<<<<<
-// images<<<<<<<<<<
+import Layout1x1 from '../components/Layout1x1'
+//<<<<<<<<< components<<<<<<<<<<<<<<<<<<<
+//<<<<<<<<< images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import slide1 from '../public/images/beachClub/cele1_small750x500.jpg'
 import slide2 from '../public/images/beachClub/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/beachClub/cele3_small750x500.jpg'
-import Layout1x1 from '../components/Layout1x1'
 
-// images<<<<<<<<<<
+// <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 export default function BeachClub() {
   let { t } = useTranslation()
