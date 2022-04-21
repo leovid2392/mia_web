@@ -121,6 +121,14 @@ export default function Home() {
         linkText='saber más'
         linkHref='/celebraciones'
       />
+      <ArticlePortrait
+        image={bodasImg}
+        alt='image description'
+        title='blog'
+        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        linkText='saber más'
+        linkHref='/blog'
+      />
     </Layout>
   )
 }
