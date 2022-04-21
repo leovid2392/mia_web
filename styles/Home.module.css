@@ -1,4 +1,26 @@
-.container {
+.squareContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.squareImgContainer {
+  width: 100%;
+  height: 400px;
+  max-width: 500px;
+  position: relative;
+}
+
+.displayTwoImg {
+  width: 100%;
+  max-width: 500px;
+  padding: 0 2rem;
+  margin: 4rem auto;
+}
+
+/* .container {
   padding: 0 2rem;
 }
 
@@ -117,4 +139,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */

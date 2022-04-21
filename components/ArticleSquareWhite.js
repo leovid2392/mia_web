@@ -1,11 +1,11 @@
+import InternalLink from './InternalLink'
+import Paragraph from './Paragraph'
+import TitleSection from './TitleSection'
 import Image from 'next/image'
 
-import TitleSection from './TitleSection'
-import Paragraph from './Paragraph'
-import InternalLink from './InternalLink'
+import styles from '../styles/ArticleSquareWhite.module.css'
 
-import styles from '../styles/ArticlePortrait.module.css'
-export default function ArticlePortrait({
+export default function ArticleSquareWhite({
   image,
   title,
   paragraph,
@@ -18,7 +18,7 @@ export default function ArticlePortrait({
       <figure className={styles.imgContainer}>
         <Image src={image} alt={alt}></Image>
       </figure>
-      <div className={styles.infoContainer}>
+      <div className={styles.textContainer}>
         <TitleSection text={title} />
         <Paragraph text={paragraph} />
         <InternalLink link={linkHref} text={linkText} />

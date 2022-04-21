@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 200px;
+}
+
+.textContainer {
+  background-color: var(--color-white);
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  width: 90%;
+  max-width: 400px;
+  position: absolute;
+  bottom: 0;
+  /* margin-top: -50px; */
+}
