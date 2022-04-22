@@ -42,6 +42,7 @@ import Popup from '../components/Popup'
 import SliderReviews from '../components/SliderReviews'
 import sliderComentsImg1 from '../public/images/oliver.jpg'
 import sliderComentsImg2 from '../public/images/pabloFierro.jpg'
+import blog1 from '../public/images/home/pablofierro-51_small750x500.jpg'
 // import { TaskContext } from '../context/taskContext'
 // import { useContext } from 'react'
 
@@ -158,7 +159,7 @@ export default function Home() {
         linkHref='/celebraciones'
       />
       <ArticlePortrait
-        image={bodasImg}
+        image={blog1}
         alt='image description'
         title='blog'
         paragraph='Cantautor y productor de música electrónica. Para muchos, eso puede sonar como dos aspectos muy diferentes de la cultura sonora moderna, lo que a su vez hace de Monolink un personaje fascinante, porque.....'
