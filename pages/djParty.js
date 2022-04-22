@@ -24,6 +24,8 @@ import hero1 from '../public/images/djparty/dj2_small750x500.jpg'
 import hero2 from '../public/images/djparty/dj3_small750x500.jpg'
 import hero3 from '../public/images/djparty/dj1_small750x500.jpg'
 
+import pablo from '../public/images/djparty/pablofierro-51_small750x500.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 export default function DjParty() {
   let { t } = useTranslation()
@@ -53,7 +55,7 @@ export default function DjParty() {
       <Layout1x1 img={slide3} alt='image description' objectPosition='center' />
       <TitleSection text='eventos' />
       <ArticleSquareWhite
-        image={slide2}
+        image={pablo}
         title='pablo fierro'
         paragraph='Autor y compositor de guitarra, bajo, percusión y piano, ha desarrollado cientos de producciones de los más diversos estilos junto a diferentes artistas de talla mundial, como Gilles Peterson, Louie Vega, Atjazz y Black Coffee, entre otros.'
         linkText='ir al blog'

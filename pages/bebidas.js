@@ -20,6 +20,13 @@ import slide2 from '../public/images/bebidas/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/bebidas/cele3_small750x500.jpg'
 import sliderReviesImg1 from '../public/images/bebidas/botella_100x300.png'
 
+import beer1 from '../public/images/bebidas/cerveza2_small500x750.jpg'
+import beer2 from '../public/images/bebidas/cerceza1_small500x750.jpg'
+import beer3 from '../public/images/bebidas/cerveza3_small500x750.jpg'
+import beer4 from '../public/images/bebidas/restaurant_drink_2.jpg'
+
+import desti from '../public/images/bebidas/mia-5829_small500x750.jpg'
+import desti2 from '../public/images/bebidas/destilado1_small750x422.jpg'
 // import hero1 from '../public/images/bebidas/mia-5848_small500x750.jpg'
 // import hero2 from '../public/images/bebidas/mezcal_small750x500.jpg'
 // import hero3 from '../public/images/bebidas/MiaTulum-3314_small500x750.jpg'
@@ -52,7 +59,7 @@ export default function Bebidas() {
       <TitlePage text='bebidas' />
       <Paragraph text='El equipo de mixólogos está listo para satisfacerte con la creación de cocteles según tus gustos, con aromas cítricos, ahumados y frutales acompañados de los mejores destilados y licores premium.' />
       <ArticlePortrait
-        image={slide1}
+        image={desti}
         alt='image description'
         title='mixologia'
         paragraph='Con aromas cítricos, ahumados y frutales acompañados de los mejores destilados y licores premium.'
@@ -61,10 +68,10 @@ export default function Bebidas() {
       />
       <LinkBorder text='ver menu' link='#' />
       <ArticleFourImg
-        img1={slide1}
-        img2={slide2}
-        img3={slide3}
-        img4={slide2}
+        img1={beer1}
+        img2={beer2}
+        img3={beer3}
+        img4={beer4}
         alt1={'image description'}
         alt2={'image description'}
         alt3={'image description'}
@@ -80,7 +87,7 @@ export default function Bebidas() {
       />
       <LinkBorder text='ver menu' link='#' />
       <ArticleSquare
-        image={slide3}
+        image={desti2}
         alt='image description'
         layout='fill'
         objectFit='cover'
