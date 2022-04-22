@@ -27,6 +27,11 @@ import hero3 from '../public/images/beachClub/beachclub3_small750x500.jpg'
 import hero4 from '../public/images/beachClub/beachclub4_small750x464.jpg'
 import hero5 from '../public/images/beachClub/beachclub5_small750x500.jpg'
 
+import beach1 from '../public/images/beachClub/mia-6126_small500x750.jpg'
+import beach2 from '../public/images/beachClub/beachclub2_small750x500.jpg'
+import beach3 from '../public/images/beachClub/BEACH-CLUB-31_small750x500.jpg'
+import beach4 from '../public/images/beachClub/galeria-2_small750x500.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 export default function BeachClub() {
@@ -60,13 +65,13 @@ export default function BeachClub() {
           },
         ]}
       />
-      <TitlePage text='BeachClub' />
+      <TitlePage text='Beach Club' />
       <Paragraph text='En nuestro beach club el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
-      <Layout1x1 img={slide3} alt='image description' objectPosition='center' />
+      <Layout1x1 img={beach4} alt='image description' objectPosition='center' />
       <Layout2x2
-        img1={slide1}
-        img2={slide2}
-        img3={slide3}
+        img1={beach1}
+        img2={beach2}
+        img3={beach3}
         alt1='image description'
         alt2='image description'
         alt3='image description'

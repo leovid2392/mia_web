@@ -48,7 +48,7 @@ export default function DjParty() {
           },
         ]}
       />
-      <TitlePage text='djparty' />
+      <TitlePage text='dj party' />
       <Paragraph text='Con los pies en la arena, te invitamos a vivir una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable.' />
       <Layout1x1 img={slide3} alt='image description' objectPosition='center' />
       <TitleSection text='eventos' />
