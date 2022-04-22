@@ -33,6 +33,7 @@ import boda1 from '../public/images/bodas/boda-12_small500x88.jpg'
 import boda2 from '../public/images/bodas/boda-1_small750x500.jpg'
 import boda3 from '../public/images/bodas/boda13_small750x500.jpg'
 import cenaro from '../public/images/bodas/cenaro1_small750x500.jpg'
+import pedida1 from '../public/images/bodas/pedida1_small500x750.jpg'
 
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import styles from '../styles/Home.module.css'
@@ -60,12 +61,12 @@ export default function Bodas() {
         ]}
       />
       <TitlePage text='bodas' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda.' />
       <ArticlePortrait
-        image={slide1}
+        image={pedida1}
         alt='image description'
         title='propuestas de matrimonio'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Imagina tu ceremonia a la orilla del mar; nuestro equipo de bodas podrá apoyarte con los preparativos de ceremonias civil, étnica, simbólica y/o boda maya; mientras tus invitados disfrutarán de un coctel en la playa tu podrás tener tu sesión de fotos soñada al atardecer.'
         linkText=''
         linkHref='/'
       />
@@ -88,11 +89,11 @@ export default function Bodas() {
         objectPosition3='center'
       />
       <TitleSection text='renovación de votos' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='Con una extensión de 400 metros cuadrados, Mía Tulum es sin duda el lugar ideal para la celebración más especial. Con una capacidad de hasta 150 personas.' />
       <ArticleSquareWhite
         image={cenaro}
         title='cenas romanticas'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Celebraciones acogedoras como bodas, cenas románticas, cenas de ensayo, propuestas de matrimonio o aniversarios son algunos de los momentos en los que todo el equipo de Mía une esfuerzos para que tu celebración sea memorable.'
         linkText=''
         linkHref=''
         alt='image description'
