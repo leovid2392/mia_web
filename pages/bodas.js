@@ -12,15 +12,19 @@ import ArticleSquareWhite from '../components/ArticleSquareWhite'
 import Layout2x2 from '../components/Layout2x2'
 import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
+import SliderReviews from '../components/SliderReviews'
+import Image from 'next/image'
 // import Layout1x1 from '../components/Layout1x1'
 //<<<<<<<<< components<<<<<<<<<<<<<<<<<<<
 //<<<<<<<<< images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import slide1 from '../public/images/bodas/cele1_small750x500.jpg'
 import slide2 from '../public/images/bodas/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/bodas/cele3_small750x500.jpg'
-
+import sliderComentsImg1 from '../public/images/oliver.jpg'
+import sliderComentsImg2 from '../public/images/pabloFierro.jpg'
+import partnersLogo from '../public/images/bodas/logo-junebug_small300x120.png'
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
+import styles from '../styles/Home.module.css'
 export default function Bodas() {
   let { t } = useTranslation()
   return (
@@ -84,7 +88,41 @@ export default function Bodas() {
         objectFit='cover'
         objectPosition='center'
       />
+      <SliderReviews
+        sliderData={[
+          {
+            id: 1,
+            image: sliderComentsImg1,
+            name: 'Iris Ilike',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+          {
+            id: 2,
+            image: sliderComentsImg2,
+            name: 'Gregg Reeves',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+          {
+            id: 3,
+            image: sliderComentsImg1,
+            name: 'Claudia Clements',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+        ]}
+      />
       <TitleSection text='Nuestros socios' />
+      <figure className={styles.imgContainer}>
+        <Image
+          src={partnersLogo}
+          alt='image description'
+          width={300}
+          height={120}
+          layout='fixed'
+        ></Image>
+      </figure>
     </Layout>
   )
 }

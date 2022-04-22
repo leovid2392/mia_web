@@ -20,6 +20,11 @@
   margin: 4rem auto;
 }
 
+.imgContainer {
+  display: grid;
+  justify-content: center;
+}
+
 /* .container {
   padding: 0 2rem;
 }

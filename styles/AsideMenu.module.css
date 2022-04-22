@@ -3,13 +3,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  border: 1px solid red;
+  padding: 10px;
+  /* border: 1px solid red; */
   height: 400px;
   width: 100vw;
   /* position: absolute; */
   background-color: var(--color-lightGrey);
-  display: none;
+  position: sticky;
+  top: 90px;
+  z-index: 10;
+  margin-bottom: -400px;
+  /* transition: all 3s ease; */
+  /* transform: translateX(0); */
 }
 .hiddeSideBar {
   display: flex;
@@ -17,13 +22,16 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 400px;
   width: 100vw;
-  position: absolute;
+  position: relative;
   background-color: var(--color-lightGrey);
   display: none;
+  /* transition: all 3s ease; */
+  /* transform: translateX(100%); */
 }
+
 .navContainer {
   display: flex;
   flex-direction: column;

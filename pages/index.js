@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
 import useTranslation from 'next-translate/useTranslation'
@@ -28,7 +29,26 @@ import DisplayTwoImg from '../components/DisplayTwoImg'
 import ArticleSquareWhite from '../components/ArticleSquareWhite'
 import ArticleThreeImg from '../components/ArticleThreeImg'
 
+import popupImg from '../public/images/pop1_small500x889.jpg'
+
+import Script from 'next/script'
+import Popup from '../components/Popup'
+import SliderReviews from '../components/SliderReviews'
+import sliderComentsImg1 from '../public/images/oliver.jpg'
+import sliderComentsImg2 from '../public/images/pabloFierro.jpg'
+// import { TaskContext } from '../context/taskContext'
+// import { useContext } from 'react'
+
 export default function Home() {
+  const [buttonPopup, setButtonPopup] = useState(false)
+  const [timePopup, setTimePopup] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTimePopup(true)
+    }, 3000)
+  }, [])
+
   let { t } = useTranslation()
   return (
     <Layout
@@ -131,6 +151,42 @@ export default function Home() {
         linkText='saber más'
         linkHref='/blog'
       />
+      {/* <button onClick={() => setButtonPopup(true)}>openPopup</button> */}
+      {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <h3>my popup</h3>
+        <p>This is my button triggered popup</p>
+      </Popup> */}
+
+      <SliderReviews
+        sliderData={[
+          {
+            id: 1,
+            image: sliderComentsImg1,
+            name: 'Iris Ilike',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+          {
+            id: 2,
+            image: sliderComentsImg2,
+            name: 'Gregg Reeves',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+          {
+            id: 3,
+            image: sliderComentsImg1,
+            name: 'Claudia Clements',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+        ]}
+      />
+
+      <Popup trigger={timePopup} setTrigger={setTimePopup} img={popupImg}>
+        {/* <h3>my popup</h3>
+        <p>This is my time triggered popup</p> */}
+      </Popup>
     </Layout>
   )
 }

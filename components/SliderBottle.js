@@ -1,26 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
-import slide1 from '../public/images/bodas-1_small500x750.jpg'
-import slide2 from '../public/images/mia-4744_small500x750.jpg'
+import styles from '../styles/SliderBottle.module.css'
 
-import styles from '../styles/Hero.module.css'
-// const sliderData = [
-//   {
-//     id: 1,
-//     image: slide1,
-//   },
-//   {
-//     id: 2,
-//     image: slide2,
-//   },
-//   {
-//     id: 3,
-//     image: slide1,
-//   },
-// ]
-
-const Hero = ({ sliderData }) => {
+const SliderBottle = ({ sliderData }) => {
   const [events, setEvents] = useState(sliderData)
   const [index, setIndex] = useState(0)
 
@@ -43,17 +26,17 @@ const Hero = ({ sliderData }) => {
     }
   }, [index])
 
-  // const handlePrevBtn = () => {
-  //   setIndex(index - 1)
-  // }
+  const handlePrevBtn = () => {
+    setIndex(index - 1)
+  }
 
-  // const handleNextBtn = () => {
-  //   setIndex(index + 1)
-  // }
+  const handleNextBtn = () => {
+    setIndex(index + 1)
+  }
   return (
     <section className={styles.sliderContainer}>
       {events.map((item, itemIndex) => {
-        const { id, image } = item
+        const { id, image, name, review } = item
         let position = 'nextSlide'
 
         if (itemIndex === index) {
@@ -75,6 +58,8 @@ const Hero = ({ sliderData }) => {
                 objectPosition='center'
               />
             </figure>
+            <p className={styles.name}>{name}</p>
+            <p className={styles.review}>{review}</p>
           </article>
         )
       })}
@@ -82,15 +67,4 @@ const Hero = ({ sliderData }) => {
   )
 }
 
-export default Hero
-// import styles from '../styles/Hero.module.css'
-// import Image from 'next/image'
-// import hero1 from '../public/images/mia-5918_small500x750.jpg'
-
-// export default function Hero() {
-//   return (
-//     <section className={styles.container}>
-//       <Image src={hero1} width={320} height={480} layout='responsive'></Image>
-//     </section>
-//   )
-// }
+export default SliderBottle

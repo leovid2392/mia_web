@@ -10,11 +10,15 @@ import LinkBorder from '../components/LinkBorder'
 import ArticleFourImg from '../components/ArticleFourImg'
 import ArticleSquare from '../components/ArticleSquare'
 import ArticleSquareWhite from '../components/ArticleSquareWhite'
+import SliderReviews from '../components/SliderReviews'
+import TitleSection from '../components/TitleSection'
+import SliderBottle from '../components/SliderBottle'
 // components<<<<<<<<<<
 // images<<<<<<<<<<
 import slide1 from '../public/images/bebidas/cele1_small750x500.jpg'
 import slide2 from '../public/images/bebidas/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/bebidas/cele3_small750x500.jpg'
+import sliderReviesImg1 from '../public/images/bebidas/botella_100x300.png'
 
 // images<<<<<<<<<<
 
@@ -83,6 +87,33 @@ export default function Bebidas() {
         linkHref=''
       />
       <LinkBorder text='ver menu' link='#' />
+      <TitleSection text='nuestra selección' />
+      <SliderBottle
+        sliderData={[
+          {
+            id: 1,
+            image: sliderReviesImg1,
+            name: 'SEGUIN MANUEL POULLY-FUISE',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+          {
+            id: 2,
+            image: sliderReviesImg1,
+            name: 'SEGUIN MANUEL POULLY-FUISE',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+          {
+            id: 3,
+            image: sliderReviesImg1,
+            name: 'SEGUIN MANUEL POULLY-FUISE',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+        ]}
+      />
+
       <ArticleSquareWhite
         image={slide2}
         title='cóctel del mes'

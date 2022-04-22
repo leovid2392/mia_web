@@ -12,11 +12,13 @@ import ArticleSquareWhite from '../components/ArticleSquareWhite'
 import Layout2x2 from '../components/Layout2x2'
 import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
+import SliderBottle from '../components/SliderBottle'
 // components<<<<<<<<<<
 // images<<<<<<<<<<
 import slide1 from '../public/images/vino/cele1_small750x500.jpg'
 import slide2 from '../public/images/vino/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/vino/cele3_small750x500.jpg'
+import sliderReviesImg1 from '../public/images/bebidas/botella_100x300.png'
 
 // images<<<<<<<<<<
 
@@ -88,6 +90,33 @@ export default function Vino() {
         image={slide1}
         objectFit='cover'
         objectPosition='center'
+      />
+
+      <TitleSection text='nuestra selección' />
+      <SliderBottle
+        sliderData={[
+          {
+            id: 1,
+            image: sliderReviesImg1,
+            name: 'SEGUIN MANUEL POULLY-FUISE',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+          {
+            id: 2,
+            image: sliderReviesImg1,
+            name: 'SEGUIN MANUEL POULLY-FUISE',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+          {
+            id: 3,
+            image: sliderReviesImg1,
+            name: 'SEGUIN MANUEL POULLY-FUISE',
+            review:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+          },
+        ]}
       />
       <TitleSection text='maridaje' />
       <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
