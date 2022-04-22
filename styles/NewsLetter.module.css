@@ -7,6 +7,7 @@
 }
 .text {
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .emailInput {
@@ -17,15 +18,18 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 20px;
+  margin: 10px 0;
 }
 
 .btnSubmit {
   background: transparent;
   border-style: none;
   cursor: pointer;
+  font-size: 1.6rem;
 }
 .emailInput .input {
   border-style: none;
+  font-size: 1.6rem;
 }
 
 .politcaPrivacidad {
@@ -35,7 +39,7 @@
 }
 .label {
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .checkBox {

@@ -13,11 +13,19 @@ import Layout2x2 from '../components/Layout2x2'
 // import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
 import Layout1x1 from '../components/Layout1x1'
+import ArticlePortrait from '../components/ArticlePortrait'
 //<<<<<<<<< components<<<<<<<<<<<<<<<<<<<
 //<<<<<<<<< images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import slide1 from '../public/images/beachClub/cele1_small750x500.jpg'
 import slide2 from '../public/images/beachClub/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/beachClub/cele3_small750x500.jpg'
+import solteras from '../public/images/beachClub/solteras_small750x500.jpg'
+
+import hero1 from '../public/images/beachClub/beachclub1_small750x422.jpg'
+import hero2 from '../public/images/beachClub/beachclub2_small750x500.jpg'
+import hero3 from '../public/images/beachClub/beachclub3_small750x500.jpg'
+import hero4 from '../public/images/beachClub/beachclub4_small750x464.jpg'
+import hero5 from '../public/images/beachClub/beachclub5_small750x500.jpg'
 
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -32,20 +40,28 @@ export default function BeachClub() {
         sliderData={[
           {
             id: 1,
-            image: slide1,
+            image: hero1,
           },
           {
             id: 2,
-            image: slide2,
+            image: hero2,
           },
           {
             id: 3,
-            image: slide1,
+            image: hero3,
+          },
+          {
+            id: 4,
+            image: hero4,
+          },
+          {
+            id: 5,
+            image: hero5,
           },
         ]}
       />
       <TitlePage text='BeachClub' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='En nuestro beach club el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
       <Layout1x1 img={slide3} alt='image description' objectPosition='center' />
       <Layout2x2
         img1={slide1}
@@ -66,7 +82,7 @@ export default function BeachClub() {
         objectPosition='center'
       />
 
-      <ArticleFourImg
+      {/* <ArticleFourImg
         img1={slide1}
         img2={slide2}
         img3={slide3}
@@ -80,9 +96,17 @@ export default function BeachClub() {
         objectPosition3='center'
         objectPosition4='center'
         title='despedidas de solero(a)'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph=''
         linkText=''
         linkHref=''
+      /> */}
+      <ArticlePortrait
+        image={solteras}
+        alt='image description'
+        title='despedidas de solero(a)'
+        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        linkText=''
+        linkHref='/'
       />
     </Layout>
   )

@@ -20,6 +20,10 @@ import slide2 from '../public/images/bebidas/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/bebidas/cele3_small750x500.jpg'
 import sliderReviesImg1 from '../public/images/bebidas/botella_100x300.png'
 
+// import hero1 from '../public/images/bebidas/mia-5848_small500x750.jpg'
+// import hero2 from '../public/images/bebidas/mezcal_small750x500.jpg'
+// import hero3 from '../public/images/bebidas/MiaTulum-3314_small500x750.jpg'
+
 // images<<<<<<<<<<
 
 export default function Bebidas() {
@@ -41,17 +45,17 @@ export default function Bebidas() {
           },
           {
             id: 3,
-            image: slide1,
+            image: slide3,
           },
         ]}
       />
       <TitlePage text='bebidas' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='El equipo de mixólogos está listo para satisfacerte con la creación de cocteles según tus gustos, con aromas cítricos, ahumados y frutales acompañados de los mejores destilados y licores premium.' />
       <ArticlePortrait
         image={slide1}
         alt='image description'
         title='mixologia'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Con aromas cítricos, ahumados y frutales acompañados de los mejores destilados y licores premium.'
         linkText=''
         linkHref='/'
       />

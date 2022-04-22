@@ -7,7 +7,7 @@ import TitlePage from '../components/TitlePage'
 import Paragraph from '../components/Paragraph'
 import ArticlePortrait from '../components/ArticlePortrait'
 // import ArticleFourImg from '../components/ArticleFourImg'
-// import ArticleSquare from '../components/ArticleSquare'
+import ArticleSquare from '../components/ArticleSquare'
 import ArticleSquareWhite from '../components/ArticleSquareWhite'
 import Layout2x2 from '../components/Layout2x2'
 import TitleSection from '../components/TitleSection'
@@ -23,6 +23,12 @@ import slide3 from '../public/images/bodas/cele3_small750x500.jpg'
 import sliderComentsImg1 from '../public/images/oliver.jpg'
 import sliderComentsImg2 from '../public/images/pabloFierro.jpg'
 import partnersLogo from '../public/images/bodas/logo-junebug_small300x120.png'
+
+import hero1 from '../public/images/bodas/bride_small500x751.jpg'
+import hero2 from '../public/images/bodas/boda-10_small500x750.jpg'
+import hero3 from '../public/images/bodas/boda11_small500x750.jpg'
+import couples from '../public/images/bodas/couple_awards.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import styles from '../styles/Home.module.css'
 export default function Bodas() {
@@ -36,15 +42,15 @@ export default function Bodas() {
         sliderData={[
           {
             id: 1,
-            image: slide1,
+            image: hero1,
           },
           {
             id: 2,
-            image: slide2,
+            image: hero2,
           },
           {
             id: 3,
-            image: slide1,
+            image: hero3,
           },
         ]}
       />
@@ -65,8 +71,6 @@ export default function Bodas() {
         objectFit='cover'
         objectPosition='center'
       />
-      <TitleSection text='renovación de votos' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
       <Layout2x2
         img1={slide1}
         img2={slide2}
@@ -78,6 +82,8 @@ export default function Bodas() {
         objectPosition2='center'
         objectPosition3='center'
       />
+      <TitleSection text='renovación de votos' />
+      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
       <ArticleSquareWhite
         image={slide2}
         title='cenas romanticas'
@@ -87,6 +93,17 @@ export default function Bodas() {
         alt='image description'
         objectFit='cover'
         objectPosition='center'
+      />
+      <ArticleSquare
+        image={couples}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title=''
+        paragraph=''
+        linkText=''
+        linkHref=''
       />
       <SliderReviews
         sliderData={[

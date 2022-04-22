@@ -45,13 +45,13 @@ export default function DjParty() {
         ]}
       />
       <TitlePage text='djparty' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='Con los pies en la arena, te invitamos a vivir una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable.' />
       <Layout1x1 img={slide3} alt='image description' objectPosition='center' />
-      <TitleSection text='próximos eventos' />
+      <TitleSection text='eventos' />
       <ArticleSquareWhite
         image={slide2}
         title='pablo fierro'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Autor y compositor de guitarra, bajo, percusión y piano, ha desarrollado cientos de producciones de los más diversos estilos junto a diferentes artistas de talla mundial, como Gilles Peterson, Louie Vega, Atjazz y Black Coffee, entre otros.'
         linkText='ir al blog'
         linkHref='#'
         alt='image description'

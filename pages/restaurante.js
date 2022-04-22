@@ -13,15 +13,20 @@ import ArticleFourImg from '../components/ArticleFourImg'
 import ArticleSquareWhite from '../components/ArticleSquareWhite'
 // components>>>>>>>>>>
 // images>>>>>>>>>>
-import slide1 from '../public/images/bodas-1_small500x750.jpg'
-import slide2 from '../public/images/mia-4744_small500x750.jpg'
+// hero>>>>>>>>>>
+import hero1 from '../public/images/restaurante/hmia-5910_small500x750.jpg'
+import hero2 from '../public/images/restaurante/hmia-5939_small500x750.jpg'
+import hero3 from '../public/images/restaurante/hmia-6146_small750x500.jpg'
+// hero>>>>>>>>>>
+import morningImg from '../public/images/restaurante/MiaTulum-3735_small500x750.jpg'
 
-import lunchImg1 from '../public/images/restaurante/mia-6146_small750x500.jpg'
+import lunchImg1 from '../public/images/restaurante/hmia-6146_small750x500.jpg'
 import lunchImg2 from '../public/images/restaurante/mia-5879_small500x750.jpg'
 import lunchImg3 from '../public/images/restaurante/mia-5771_small750x500.jpg'
 import lunchImg4 from '../public/images/restaurante/mia-5739_small500x750.jpg'
-import dinnerImg from '../public/images/restaurante/mia-5910_small500x750.jpg'
+import dinnerImg from '../public/images/restaurante/hmia-5910_small500x750.jpg'
 import postreImg from '../public/images/restaurante/postre1_small750x500.jpg'
+import vipRoomImg from '../public/images/restaurante/IMG_4896_small750x500.jpg'
 import drinkImg from '../public/images/restaurante/mia-5829_small500x750.jpg'
 import wineImg from '../public/images/restaurante/vino11_small750x500.jpg'
 
@@ -42,28 +47,28 @@ export default function Restaurante() {
         sliderData={[
           {
             id: 1,
-            image: slide1,
+            image: hero1,
           },
           {
             id: 2,
-            image: slide2,
+            image: hero2,
           },
           {
             id: 3,
-            image: slide1,
+            image: hero3,
           },
         ]}
       />
       <TitlePage text='restaurante' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='Los sabores en la cocina de nuestro restaurante han sido creados para sorprender y satisfacer a tu paladar, con sabores de rincones del mundo queremos integrar a la perfección ingredientes de máxima calidad con las bebidas adecuadas.' />
       <ArticleSquare
-        image={breakfastImg}
+        image={morningImg}
         alt='image description'
         layout='fill'
         objectFit='cover'
         objectPosition='70%'
         title='por la mañana'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Despierta y dirígete al restaurante para ser recibido por la hermosa vista al mar, nuestra cocina por las mañanas se caracteriza por su sabor casero, pan recién horneado, fruta, café fresco y jugos recién preparados. Nuestra recomendación son los huevos Mía y el sope de cecina.'
         linkText=''
         linkHref=''
       />
@@ -83,34 +88,45 @@ export default function Restaurante() {
         objectPosition3='center'
         objectPosition4='center'
         title='para el almuerzo'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='No hay nada más satisfactorio que disfrutar de un pescado fresco a la talla bien preparado y acompañarlo con un vino blanco al pie de playa. Preparamos tus alimentos con dedicación, el menú del almuerzo fue diseñado para que disfrutes México desde el paladar, encontrarás tacos, aguachiles, ceviches, molcajetes y deliciosos platillos internacionales.'
         linkText=''
         linkHref=''
       />
-      <p className={styles.p}>Horario: 11:00 pm - 06:00 pm </p>
+      <p className={styles.p}>Horario: 12:00 pm - 06:00 pm </p>
       <LinkBorder text='ver menu' link='#' />
-      <ArticlePortrait
+      <ArticleSquare
+        image={dinnerImg}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='por la noche'
+        paragraph='Por las noches el ambiente del restaurante se transforma para ser iluminado por la luz de las velas, en un ambiente cálido y acogedor, libre y bohemio para que disfrutes sólo o en compañía de los platillos que han distinguido la personalidad de nuestra cocina, deléitate con nuestras creaciones como el callo de hacha con risotto al champagne, mejillones meuniere, mero miso morita y el predilecto de nuestros clientes, el  short rib.'
+        linkText=''
+        linkHref=''
+      />
+      {/* <ArticlePortrait
         image={dinnerImg}
         alt='image description'
         title='por la noche'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Por las noches el ambiente del restaurante se transforma para ser iluminado por la luz de las velas, en un ambiente cálido y acogedor, libre y bohemio para que disfrutes sólo o en compañía de los platillos que han distinguido la personalidad de nuestra cocina, deléitate con nuestras creaciones como el callo de hacha con risotto al champagne, mejillones meuniere, mero miso morita y el predilecto de nuestros clientes, el  short rib.'
         linkText=''
         linkHref=''
-      />
+      /> */}
       <p className={styles.p}>Horario: 6:00 pm - 10:00 pm </p>
       <LinkBorder text='ver menu' link='#' />
       <ArticlePortrait
         image={postreImg}
         alt='image description'
         title='postres'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='La comida ideal tiene el cierre perfecto, atrévete a probar los postres internacionales y con sabor a México que nuestro chef pastelero ha preparado para culminar tu lunch o cena inigualablemente.'
         linkText=''
         linkHref=''
       />
       <p className={styles.p}>Horario: 6:00 pm - 10:00 pm </p>
       <LinkBorder text='ver menu' link='#' />
       <Banner
-        image={postreImg}
+        image={lunchImg4}
         alt='image description'
         text='Reserva tu mesa aquí'
         objectFit='cover'
@@ -118,10 +134,10 @@ export default function Restaurante() {
         link='/contacto'
       />
       <ArticlePortrait
-        image={postreImg}
+        image={vipRoomImg}
         alt='image description'
         title='vip room'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='El salón privado es un nuevo espacio ubicado en el primer piso de Mía, con una decoración acogedora e inspirada en elementos marroquíes, con vistas fascinantes al mar caribe. Es el espacio ideal para cenas íntimas, celebraciones especiales y catas de vino. Este nuevo espacio tiene capacidad limitada para 20 personas.'
         linkText=''
         linkHref=''
       />
@@ -132,7 +148,7 @@ export default function Restaurante() {
         objectFit='cover'
         objectPosition='center'
         title='Brinda con nosotros'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Somos alquimistas, creamos cócteles enigmáticos que cuenten historias,  que tengan armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
         linkText='saber más'
         linkHref='/bebidas'
       />
@@ -140,7 +156,7 @@ export default function Restaurante() {
       <ArticleSquareWhite
         image={wineImg}
         title='vinos'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Si tienes duda sobre el mejor maridaje el sommelier de casa Rafael Pelissier te puede guiar por nuestra cava y recomendarte vinos con sabores únicos, complejos y de aromas seductivos, te invitamos a acompañarnos en nuestra pasión por el vino.'
         linkText='saber más'
         linkHref='/vino'
         alt='image description'

@@ -6,8 +6,6 @@ import TitlePage from '../components/TitlePage'
 import Paragraph from '../components/Paragraph'
 import ArticlePortrait from '../components/ArticlePortrait'
 
-import slide1 from '../public/images/bodas-1_small500x750.jpg'
-import slide2 from '../public/images/mia-4744_small500x750.jpg'
 import beachClub1 from '../public/images/home/mia-5750_small500x750.jpg'
 import wineImg from '../public/images/home/vino-1_small722x500.jpg'
 import restaurantImg from '../public/images/home/mia-6152_small500x750.jpg'
@@ -18,6 +16,14 @@ import musicImg from '../public/images/home/music-2_small750x500.jpg'
 import celeimg1 from '../public/images/home/cele3_small750x500.jpg'
 import celeimg2 from '../public/images/home/cele1_small750x500.jpg'
 import celeimg3 from '../public/images/home/cele2_small750x500.jpg'
+
+// hero<<<<<<
+import hero1 from '../public/images/home/hmia-5072_small500x750.jpg'
+import hero2 from '../public/images/home/hmia-5918_large1333x2000.jpg'
+import hero3 from '../public/images/home/hemia-5750_small500x750.jpg'
+import hero4 from '../public/images/home/hmia-5092_small500x750.jpg'
+import hero5 from '../public/images/home/hmar_small750x500.jpg'
+// hero<<<<<<
 
 import ArticleSquare from '../components/ArticleSquare'
 
@@ -59,25 +65,33 @@ export default function Home() {
         sliderData={[
           {
             id: 1,
-            image: slide1,
+            image: hero1,
           },
           {
             id: 2,
-            image: slide2,
+            image: hero2,
           },
           {
             id: 3,
-            image: slide1,
+            image: hero3,
+          },
+          {
+            id: 4,
+            image: hero4,
+          },
+          {
+            id: 5,
+            image: hero5,
           },
         ]}
       />
       <TitlePage text='Mia tulum' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='Un lugar que conjuga con armonía un club de playa, un restaurante de cocina internacional de autor, un salón privado y The Club, todo en un ambiente bohemio y relajado.' />
       <ArticlePortrait
         image={restaurantImg}
         alt='image description'
         title='restaurante'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Mía combina la atmósfera perfecta, ofreciendo una experiencia culinaria de cocina internacional con un concepto casual dining, en un ambiente minimalista casual.'
         linkText='saber más'
         linkHref='/restaurante'
       />
@@ -88,21 +102,21 @@ export default function Home() {
         objectFit='cover'
         objectPosition='70%'
         title='Vinos'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también!'
         linkText='saber más'
         linkHref='/vino'
       />
       <section className={styles.displayTwoImg}>
         <DisplayTwoImg img1={beachClub1} img2={beachClub2} alt1='' alt2='' />
         <TitleSection text='BeachClub' />
-        <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+        <Paragraph text='cal- MAR- se es nuestro lema, los pasos que damos en Mía son ligeros, los respiros son rítmicos al unísono del viento acariciando las palmeras; el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
         <InternalLink link='/beachClub' text='saber más' />
       </section>
 
       <ArticleSquareWhite
         image={bebidasImg}
         title='bebidas'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Somos alquimistas, creamos cócteles enigmáticos con armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
         linkText='saber más'
         linkHref='/bebidas'
         alt='image description'
@@ -113,7 +127,7 @@ export default function Home() {
         image={bodasImg}
         alt='image description'
         title='bodas'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda.'
         linkText='saber más'
         linkHref='/bodas'
       />
@@ -124,7 +138,7 @@ export default function Home() {
         objectFit='cover'
         objectPosition='center'
         title='djParty'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable en Tulum y vivir las mejores fiestas.'
         linkText='saber más'
         linkHref='/djParty'
       />
@@ -139,7 +153,7 @@ export default function Home() {
         objectPosition2='center'
         objectPosition3='center'
         title='celebraciones'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Mía Tulum se carateriza por ser un espacio de fiesta, alegria y celebración constante al ser y estar en el momento presente, es el espacio relajado, casual e ideal para celebrar cumpleaños, despedidas de soltera, cocteles y grupos de incentivos.'
         linkText='saber más'
         linkHref='/celebraciones'
       />
@@ -147,7 +161,7 @@ export default function Home() {
         image={bodasImg}
         alt='image description'
         title='blog'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Cantautor y productor de música electrónica. Para muchos, eso puede sonar como dos aspectos muy diferentes de la cultura sonora moderna, lo que a su vez hace de Monolink un personaje fascinante, porque.....'
         linkText='saber más'
         linkHref='/blog'
       />

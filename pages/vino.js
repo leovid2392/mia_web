@@ -13,11 +13,23 @@ import Layout2x2 from '../components/Layout2x2'
 import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
 import SliderBottle from '../components/SliderBottle'
+import LinkBorder from '../components/LinkBorder'
 // components<<<<<<<<<<
 // images<<<<<<<<<<
+import hero1 from '../public/images/vino/vino6Text_small750x500.jpg'
+import wine4Img from '../public/images/vino/vino4_small750x500.jpg'
+import wine7Img from '../public/images/vino/vino7_small750x422.jpg'
+import wine9Img from '../public/images/vino/vino9_small750x500.jpg'
+import wine10Img from '../public/images/vino/vino10_small750x500.jpg'
+import wine12Img from '../public/images/vino/vino12_small750x500.jpg'
+import wine18Img from '../public/images/vino/vino18_small500x667.jpg'
 import slide1 from '../public/images/vino/cele1_small750x500.jpg'
 import slide2 from '../public/images/vino/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/vino/cele3_small750x500.jpg'
+import fest1 from '../public/images/vino/VINOMEXICANO-21_small750x422.jpg'
+import fest2 from '../public/images/vino/VINOMEXICANO-28_small750x422.jpg'
+import fest3 from '../public/images/vino/WINEFEST-9_small750x422.jpg'
+import fest4 from '../public/images/vino/WINEFEST-26_small750x422.jpg'
 import sliderReviesImg1 from '../public/images/bebidas/botella_100x300.png'
 
 // images<<<<<<<<<<
@@ -30,24 +42,24 @@ export default function Vino() {
         sliderData={[
           {
             id: 1,
-            image: slide1,
+            image: hero1,
           },
           {
             id: 2,
-            image: slide2,
+            image: wine12Img,
           },
           {
             id: 3,
-            image: slide1,
+            image: wine18Img,
           },
         ]}
       />
       <TitlePage text='vinos' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='La vida, el sacrificio y la inmortalidad son algunos de los simbolismos del vino, en Mía la cultura vinícola esta establecida como un estilo de vida.' />
       <ArticleSquareWhite
-        image={slide2}
+        image={wine7Img}
         title='cava mas completa del destino'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 350 etiquetas de diferentes países.'
         linkText=''
         linkHref=''
         alt='image description'
@@ -55,15 +67,15 @@ export default function Vino() {
         objectPosition='center'
       />
       <ArticlePortrait
-        image={slide3}
+        image={wine18Img}
         alt='image description'
         title=''
-        paragraph='c'
+        paragraph='En nuestra Cava encontrarás desde vinos jóvenes y frescos para tomar durante el día en la playa hasta vinos complejos para satisfacer a los paladares más exigentes.'
         linkText=''
         linkHref='/'
       />
       <ArticleSquare
-        image={slide1}
+        image={wine9Img}
         alt='image description'
         layout='fill'
         objectFit='cover'
@@ -74,24 +86,19 @@ export default function Vino() {
         linkHref=''
       />
       <ArticleSquare
-        image={slide2}
+        image={wine12Img}
         alt='image description'
         layout='fill'
         objectFit='cover'
         objectPosition='center'
         title=''
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Son más de 300 etiquetas las que encontrarás en La Cava de Mía, una de las más completas de Tulum.'
         linkText=''
         linkHref=''
       />
-      <Banner
-        text='Nuestas 300 etiquetas'
-        link='#'
-        image={slide1}
-        objectFit='cover'
-        objectPosition='center'
-      />
 
+      <TitleSection text='carta de vinos' />
+      <LinkBorder text='ver menu' link='#' />
       <TitleSection text='nuestra selección' />
       <SliderBottle
         sliderData={[
@@ -119,11 +126,11 @@ export default function Vino() {
         ]}
       />
       <TitleSection text='maridaje' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      <Paragraph text='Alrededor del vino se desarrollan dos experiencias que son un must; la cena maridaje, en la que nuestro sommelier trabaja para acompañar los platillos insignia de Mía con el vino indicado y destacar cada bocado.' />
       <Layout2x2
-        img1={slide1}
-        img2={slide2}
-        img3={slide3}
+        img1={wine4Img}
+        img2={wine9Img}
+        img3={wine10Img}
         alt1='image description'
         alt2='image description'
         alt3='image description'
@@ -139,10 +146,10 @@ export default function Vino() {
         objectPosition='center'
       />
       <ArticleFourImg
-        img1={slide1}
-        img2={slide2}
-        img3={slide3}
-        img4={slide2}
+        img1={fest1}
+        img2={fest2}
+        img3={fest3}
+        img4={fest2}
         alt1={'image description'}
         alt2={'image description'}
         alt3={'image description'}
@@ -152,7 +159,7 @@ export default function Vino() {
         objectPosition3='center'
         objectPosition4='center'
         title='festivales de vino'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='Otra experiencia es el Festival de vinos, es una fiesta que se realiza en el segundo semestre del año en la que Mía invita a enólogos y sommeliers para conocer las nuevas propuestas que se desarrollan a nivel nacional e internacional. Nuestro ya reconocido Festival se encuentra acompañado de música, entretenimiento y canapés.'
         linkText=''
         linkHref=''
       />

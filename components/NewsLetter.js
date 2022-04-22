@@ -5,9 +5,9 @@ import styles from '../styles/NewsLetter.module.css'
 export default function NewsLetter() {
   return (
     <section className={styles.container}>
-      <TitleSection text='Próximas Promociones' />
+      <TitleSection text='Enterate' />
       <p className={styles.text}>
-        Suscríbete aquí y recibe todas las promociones
+        Recibe noticias y promociones especiales de nosotros.
       </p>
       <form action=''>
         <div className={styles.emailInput}>
