@@ -6,7 +6,7 @@ import SocialIcons from './SocialIcons'
 export default function FollowUsSection() {
   return (
     <section className={styles.container}>
-      <TitleSection text='Siguenos' />
+      <TitleSection text='Síguenos' />
       <SocialIcons />
     </section>
   )

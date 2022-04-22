@@ -22,6 +22,9 @@ import slide3 from '../public/images/contacto/cele3_small750x500.jpg'
 import ReservationsForm from '../components/ReservationsForm'
 import ContactInfo from '../components/ContactInfo'
 
+import hero1 from '../public/images/contacto/galeria-2_small750x500.jpg'
+import hero2 from '../public/images/contacto/galeria3_small750x500.jpg'
+import hero3 from '../public/images/contacto/galeria5_small750x446.jpg'
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 export default function Contacto() {
@@ -35,15 +38,15 @@ export default function Contacto() {
         sliderData={[
           {
             id: 1,
-            image: slide1,
+            image: hero1,
           },
           {
             id: 2,
-            image: slide2,
+            image: hero2,
           },
           {
             id: 3,
-            image: slide1,
+            image: hero3,
           },
         ]}
       />

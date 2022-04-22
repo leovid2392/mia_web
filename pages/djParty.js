@@ -20,6 +20,10 @@ import slide1 from '../public/images/djparty/cele1_small750x500.jpg'
 import slide2 from '../public/images/djparty/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/djparty/cele3_small750x500.jpg'
 
+import hero1 from '../public/images/djparty/dj2_small750x500.jpg'
+import hero2 from '../public/images/djparty/dj3_small750x500.jpg'
+import hero3 from '../public/images/djparty/dj1_small750x500.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 export default function DjParty() {
   let { t } = useTranslation()
@@ -32,15 +36,15 @@ export default function DjParty() {
         sliderData={[
           {
             id: 1,
-            image: slide1,
+            image: hero1,
           },
           {
             id: 2,
-            image: slide2,
+            image: hero2,
           },
           {
             id: 3,
-            image: slide1,
+            image: hero3,
           },
         ]}
       />

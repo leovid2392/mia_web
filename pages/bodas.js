@@ -29,6 +29,11 @@ import hero2 from '../public/images/bodas/boda-10_small500x750.jpg'
 import hero3 from '../public/images/bodas/boda11_small500x750.jpg'
 import couples from '../public/images/bodas/couple_awards.jpg'
 
+import boda1 from '../public/images/bodas/boda-12_small500x88.jpg'
+import boda2 from '../public/images/bodas/boda-1_small750x500.jpg'
+import boda3 from '../public/images/bodas/boda13_small750x500.jpg'
+import cenaro from '../public/images/bodas/cenaro1_small750x500.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import styles from '../styles/Home.module.css'
 export default function Bodas() {
@@ -72,9 +77,9 @@ export default function Bodas() {
         objectPosition='center'
       />
       <Layout2x2
-        img1={slide1}
-        img2={slide2}
-        img3={slide3}
+        img1={boda1}
+        img2={boda2}
+        img3={boda3}
         alt1='image description'
         alt2='image description'
         alt3='image description'
@@ -85,7 +90,7 @@ export default function Bodas() {
       <TitleSection text='renovación de votos' />
       <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
       <ArticleSquareWhite
-        image={slide2}
+        image={cenaro}
         title='cenas romanticas'
         paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
         linkText=''
@@ -110,23 +115,23 @@ export default function Bodas() {
           {
             id: 1,
             image: sliderComentsImg1,
-            name: 'Iris Ilike',
+            name: 'Taina & Roger - October 24th 2021',
             review:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+              'Dante our wedding coordinator was the absolute best. He was very professional, responsive and catered to our needs. If there was something we had doubts about Dante always had a plan B for it. The wedding turned out to be better than what I had dreamed of.',
           },
           {
             id: 2,
             image: sliderComentsImg2,
-            name: 'Gregg Reeves',
+            name: 'Stephanie Weng & Eric LI - December 4th 2021',
             review:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+              'DANTE IS MY #1, all that a bride could ever ask for!! Planning a destination wedding during Covid seemed like a daunting task but Dante made it all come together smoothly.',
           },
           {
             id: 3,
             image: sliderComentsImg1,
-            name: 'Claudia Clements',
+            name: 'Irina and Boris - September 18th  2021',
             review:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+              'Dante is nunber one !!!! THE BEST !!!! Exceed all expectations!!!! We are very grateful and blessed!!! Dante - the best what you can imagine!!!! Very very, highly recommended !!! ',
           },
         ]}
       />
