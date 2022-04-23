@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import { TaskContext } from '../context/taskContext'
+
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
 import useTranslation from 'next-translate/useTranslation'
@@ -17,9 +19,12 @@ import celeimg1 from '../public/images/home/cele3_small750x500.jpg'
 import celeimg2 from '../public/images/home/cele1_small750x500.jpg'
 import celeimg3 from '../public/images/home/cele2_small750x500.jpg'
 
+import celeimg4 from '../public/images/home/cele1_large2000x1333.jpg'
+
 // hero<<<<<<
 import hero1 from '../public/images/home/hmia-5072_small500x750.jpg'
-import hero2 from '../public/images/home/hmia-5918_large1333x2000.jpg'
+import hero2 from '../public/images/home/mia-5918_small500x750.jpg'
+import hero2_2 from '../public/images/home/mia-5918_large2000x1333.jpg'
 import hero3 from '../public/images/home/hemia-5750_small500x750.jpg'
 import hero4 from '../public/images/home/hmia-5092_small500x750.jpg'
 import hero5 from '../public/images/home/hmar_small750x500.jpg'
@@ -43,8 +48,6 @@ import SliderReviews from '../components/SliderReviews'
 import sliderComentsImg1 from '../public/images/oliver.jpg'
 import sliderComentsImg2 from '../public/images/pabloFierro.jpg'
 import blog1 from '../public/images/home/pablofierro-51_small750x500.jpg'
-// import { TaskContext } from '../context/taskContext'
-// import { useContext } from 'react'
 
 export default function Home() {
   const [buttonPopup, setButtonPopup] = useState(false)
@@ -57,16 +60,17 @@ export default function Home() {
   }, [])
 
   let { t } = useTranslation()
+
   return (
     <Layout
       title={t('common:metaTitle')}
       description={t('common:metaDescription')}
     >
-      <Hero
+      {/* <Hero
         sliderData={[
           {
             id: 1,
-            image: hero1,
+            image: celeimg2,
           },
           {
             id: 2,
@@ -83,6 +87,25 @@ export default function Home() {
           {
             id: 5,
             image: hero5,
+          },
+        ]}
+      /> */}
+      <Hero
+        sliderData={[
+          {
+            id: 1,
+            image: hero2,
+            image2: hero2_2,
+          },
+          {
+            id: 2,
+            image: hero2,
+            image2: celeimg1,
+          },
+          {
+            id: 3,
+            image: hero3,
+            image2: celeimg1,
           },
         ]}
       />

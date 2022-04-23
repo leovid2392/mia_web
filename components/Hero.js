@@ -1,24 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { TaskContext } from '../context/taskContext'
 import Image from 'next/image'
 
 import slide1 from '../public/images/bodas-1_small500x750.jpg'
 import slide2 from '../public/images/mia-4744_small500x750.jpg'
 
 import styles from '../styles/Hero.module.css'
-// const sliderData = [
-//   {
-//     id: 1,
-//     image: slide1,
-//   },
-//   {
-//     id: 2,
-//     image: slide2,
-//   },
-//   {
-//     id: 3,
-//     image: slide1,
-//   },
-// ]
 
 const Hero = ({ sliderData }) => {
   const [events, setEvents] = useState(sliderData)
@@ -34,14 +21,14 @@ const Hero = ({ sliderData }) => {
     }
   }, [index, events])
 
-  useEffect(() => {
-    let slider = setTimeout(() => {
-      setIndex(index + 1)
-    }, 6000)
-    return () => {
-      clearInterval(slider)
-    }
-  }, [index])
+  // useEffect(() => {
+  //   let slider = setTimeout(() => {
+  //     setIndex(index + 1)
+  //   }, 6000)
+  //   return () => {
+  //     clearInterval(slider)
+  //   }
+  // }, [index])
 
   // const handlePrevBtn = () => {
   //   setIndex(index - 1)
@@ -50,10 +37,13 @@ const Hero = ({ sliderData }) => {
   // const handleNextBtn = () => {
   //   setIndex(index + 1)
   // }
+
+  const { isScreenWide } = useContext(TaskContext)
+  console.log(isScreenWide)
   return (
     <section className={styles.sliderContainer}>
       {events.map((item, itemIndex) => {
-        const { id, image } = item
+        const { id, image, image2 } = item
         let position = 'nextSlide'
 
         if (itemIndex === index) {
@@ -69,7 +59,8 @@ const Hero = ({ sliderData }) => {
           <article key={id} className={styles[`${position}`]}>
             <figure className={styles.imgContainer}>
               <Image
-                src={image}
+                // src={image2}
+                src={isScreenWide ? image2 : image}
                 layout='fill'
                 objectFit='cover'
                 objectPosition='center'
