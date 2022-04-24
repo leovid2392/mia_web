@@ -17,12 +17,70 @@
   width: 100%;
   max-width: 500px;
   padding: 0 2rem;
-  margin: 4rem auto;
+  margin: 8% auto;
+}
+.beachClub_textContainer {
+  text-align: center;
+}
+.beachClub_textContainer a {
+  text-align: center;
 }
 
 .imgContainer {
   display: grid;
   justify-content: center;
+}
+
+@media only screen and (min-width: 700px) {
+  /* >>vino section>>>>> */
+  .vino section {
+    /* background-color: red; */
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .vino div {
+    justify-items: start;
+    margin: 0 5%;
+    width: 40%;
+    /* min-width: 200px; */
+    /* text-align: start; */
+  }
+  .vino figure {
+    max-width: 700px;
+    height: 500px;
+  }
+
+  .vino p {
+    text-align: start;
+    max-width: none;
+  }
+  .vino div div {
+    align-items: flex-start;
+    margin: 0;
+  }
+  /* >>vino seccion>>>>> */
+  /* >>display two images seccion>>>>> */
+  .displayTwoImg {
+    max-width: 800px;
+  }
+  /* .displayTwoImg div:first-child {
+    max-width: 800px;
+    height: 500px;
+  } */
+  /* >>display two images seccion>>>>> */
+}
+
+@media only screen and (min-width: 1200px) {
+  /* .vino figure {
+    max-width: 1000px;
+    height: 900px;
+  }
+
+  .displayTwoImg {
+    max-width: 1000px;
+  } */
 }
 
 /* .container {

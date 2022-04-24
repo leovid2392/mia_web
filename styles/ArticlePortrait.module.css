@@ -16,3 +16,37 @@
 .infoContainer {
   display: grid;
 }
+
+@media only screen and (min-width: 700px) {
+  .container {
+    flex-direction: initial;
+    align-items: flex-start;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .imgContainer {
+    max-width: 700px;
+    height: 550px;
+  }
+  .infoContainer {
+    justify-items: start;
+    margin: 0 5%;
+    text-align: start;
+    width: 40%;
+    min-width: 200px;
+  }
+  .infoContainer div {
+    align-items: start;
+  }
+  .infoContainer p {
+    text-align: start;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .imgContainer {
+    max-width: 800px;
+    height: 750px;
+  }
+}

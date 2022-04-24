@@ -4,9 +4,12 @@
   flex-direction: column;
   align-items: center;
   padding: 0 2rem;
-  margin: 20px 0;
+  margin: 8% 0;
 }
 
+.textContainer {
+  display: grid;
+}
 .imgContainer {
   width: 100%;
   height: 400px;

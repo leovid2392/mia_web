@@ -26,7 +26,7 @@ export default function ArticleSquare({
           objectPosition={objectPosition}
         />
       </figure>
-      <div>
+      <div className={styles.textContainer}>
         <TitleSection text={title} />
         <Paragraph text={paragraph} />
         <InternalLink text={linkText} link={linkHref} />

@@ -119,22 +119,26 @@ export default function Home() {
         linkText='saber más'
         linkHref='/restaurante'
       />
-      <ArticleSquare
-        image={wineImg}
-        alt='image description'
-        layout='fill'
-        objectFit='cover'
-        objectPosition='70%'
-        title='Vinos'
-        paragraph='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también!'
-        linkText='saber más'
-        linkHref='/vino'
-      />
+      <section className={styles.vino}>
+        <ArticleSquare
+          image={wineImg}
+          alt='image description'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='70%'
+          title='Vinos'
+          paragraph='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también!'
+          linkText='saber más'
+          linkHref='/vino'
+        />
+      </section>
       <section className={styles.displayTwoImg}>
         <DisplayTwoImg img1={beachClub1} img2={beachClub2} alt1='' alt2='' />
-        <TitleSection text='BeachClub' />
-        <Paragraph text='cal- MAR- se es nuestro lema, los pasos que damos en Mía son ligeros, los respiros son rítmicos al unísono del viento acariciando las palmeras; el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
-        <InternalLink link='/beachClub' text='saber más' />
+        <div className={styles.beachClub_textContainer}>
+          <TitleSection text='BeachClub' />
+          <Paragraph text='cal- MAR- se es nuestro lema, los pasos que damos en Mía son ligeros, los respiros son rítmicos al unísono del viento acariciando las palmeras; el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
+          <InternalLink link='/beachClub' text='saber más' />
+        </div>
       </section>
 
       <ArticleSquareWhite

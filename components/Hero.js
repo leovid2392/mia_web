@@ -60,7 +60,7 @@ const Hero = ({ sliderData }) => {
             <figure className={styles.imgContainer}>
               <Image
                 // src={image2}
-                src={isScreenWide ? image2 : image}
+                src={image}
                 layout='fill'
                 objectFit='cover'
                 objectPosition='center'
