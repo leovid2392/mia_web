@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/ArticleSquare.module.css'
 import InternalLink from './InternalLink'
+import LinkBorder from './LinkBorder'
 import Paragraph from './Paragraph'
 import TitleSection from './TitleSection'
 
@@ -14,6 +15,7 @@ export default function ArticleSquare({
   paragraph,
   linkText,
   linkHref,
+  children,
 }) {
   return (
     <section className={styles.container}>
@@ -30,6 +32,7 @@ export default function ArticleSquare({
         <TitleSection text={title} />
         <Paragraph text={paragraph} />
         <InternalLink text={linkText} link={linkHref} />
+        {children}
       </div>
     </section>
   )

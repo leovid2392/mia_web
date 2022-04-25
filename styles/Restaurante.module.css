@@ -1,3 +1,16 @@
 .p {
   text-align: center;
 }
+
+.lunch article {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (min-width: 700px) {
+  .dessert article {
+    flex-direction: row-reverse;
+  }
+  .drinkWithUs section {
+    flex-direction: row-reverse;
+  }
+}

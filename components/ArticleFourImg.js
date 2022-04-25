@@ -23,6 +23,7 @@ export default function ArticleFourImg({
   paragraph,
   linkText,
   linkHref,
+  children,
 }) {
   return (
     <article className={styles.container}>
@@ -64,10 +65,11 @@ export default function ArticleFourImg({
           ></Image>
         </figure>
       </div>
-      <div>
+      <div className={styles.textContainer}>
         <TitleSection text={title} />
         <Paragraph text={paragraph} />
         <InternalLink text={linkText} link={linkHref} />
+        {children}
       </div>
     </article>
   )

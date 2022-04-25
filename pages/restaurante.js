@@ -61,39 +61,45 @@ export default function Restaurante() {
       />
       <TitlePage text='restaurante' />
       <Paragraph text='Los sabores en la cocina de nuestro restaurante han sido creados para sorprender y satisfacer a tu paladar, con sabores de rincones del mundo queremos integrar a la perfección ingredientes de máxima calidad con las bebidas adecuadas.' />
-      <ArticleSquare
-        image={morningImg}
-        alt='image description'
-        layout='fill'
-        objectFit='cover'
-        objectPosition='70%'
-        title='por la mañana'
-        paragraph='Despierta y dirígete al restaurante para ser recibido por la hermosa vista al mar, nuestra cocina por las mañanas se caracteriza por su sabor casero, pan recién horneado, fruta, café fresco y jugos recién preparados. Nuestra recomendación son los huevos Mía y el sope de cecina.'
-        linkText=''
-        linkHref=''
-      />
-      <p className={styles.p}>Horario: 8:00 am - 11:00 pm </p>
-      <LinkBorder text='ver menu' link='#' />
-      <ArticleFourImg
-        img1={lunchImg1}
-        img2={lunchImg2}
-        img3={lunchImg3}
-        img4={lunchImg4}
-        alt1={'image description'}
-        alt2={'image description'}
-        alt3={'image description'}
-        alt4={'image description'}
-        objectPosition1='center'
-        objectPosition2='center'
-        objectPosition3='center'
-        objectPosition4='center'
-        title='para el almuerzo'
-        paragraph='No hay nada más satisfactorio que disfrutar de un pescado fresco a la talla bien preparado y acompañarlo con un vino blanco al pie de playa. Preparamos tus alimentos con dedicación, el menú del almuerzo fue diseñado para que disfrutes México desde el paladar, encontrarás tacos, aguachiles, ceviches, molcajetes y deliciosos platillos internacionales.'
-        linkText=''
-        linkHref=''
-      />
-      <p className={styles.p}>Horario: 12:00 pm - 06:00 pm </p>
-      <LinkBorder text='ver menu' link='#' />
+      <section className={styles.breakfast}>
+        <ArticleSquare
+          image={morningImg}
+          alt='image description'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='70%'
+          title='por la mañana'
+          paragraph='Despierta y dirígete al restaurante para ser recibido por la hermosa vista al mar, nuestra cocina por las mañanas se caracteriza por su sabor casero, pan recién horneado, fruta, café fresco y jugos recién preparados. Nuestra recomendación son los huevos Mía y el sope de cecina.'
+          linkText=''
+          linkHref=''
+        >
+          <p className={styles.p}>Horario: 8:00 am - 11:00 pm </p>
+          <LinkBorder text='ver menu' link='#' />
+        </ArticleSquare>
+      </section>
+      <section className={styles.lunch}>
+        <ArticleFourImg
+          img1={lunchImg1}
+          img2={lunchImg2}
+          img3={lunchImg3}
+          img4={lunchImg4}
+          alt1={'image description'}
+          alt2={'image description'}
+          alt3={'image description'}
+          alt4={'image description'}
+          objectPosition1='center'
+          objectPosition2='center'
+          objectPosition3='center'
+          objectPosition4='center'
+          title='para el almuerzo'
+          paragraph='No hay nada más satisfactorio que disfrutar de un pescado fresco a la talla bien preparado y acompañarlo con un vino blanco al pie de playa. Preparamos tus alimentos con dedicación, el menú del almuerzo fue diseñado para que disfrutes México desde el paladar, encontrarás tacos, aguachiles, ceviches, molcajetes y deliciosos platillos internacionales.'
+          linkText=''
+          linkHref=''
+        >
+          <p className={styles.p}>Horario: 12:00 pm - 06:00 pm </p>
+          <LinkBorder text='ver menu' link='#' />
+        </ArticleFourImg>
+      </section>
       <ArticleSquare
         image={dinnerImg}
         alt='image description'
@@ -104,27 +110,23 @@ export default function Restaurante() {
         paragraph='Por las noches el ambiente del restaurante se transforma para ser iluminado por la luz de las velas, en un ambiente cálido y acogedor, libre y bohemio para que disfrutes sólo o en compañía de los platillos que han distinguido la personalidad de nuestra cocina, deléitate con nuestras creaciones como el callo de hacha con risotto al champagne, mejillones meuniere, mero miso morita y el predilecto de nuestros clientes, el  short rib.'
         linkText=''
         linkHref=''
-      />
-      {/* <ArticlePortrait
-        image={dinnerImg}
-        alt='image description'
-        title='por la noche'
-        paragraph='Por las noches el ambiente del restaurante se transforma para ser iluminado por la luz de las velas, en un ambiente cálido y acogedor, libre y bohemio para que disfrutes sólo o en compañía de los platillos que han distinguido la personalidad de nuestra cocina, deléitate con nuestras creaciones como el callo de hacha con risotto al champagne, mejillones meuniere, mero miso morita y el predilecto de nuestros clientes, el  short rib.'
-        linkText=''
-        linkHref=''
-      /> */}
-      <p className={styles.p}>Horario: 6:00 pm - 10:00 pm </p>
-      <LinkBorder text='ver menu' link='#' />
-      <ArticlePortrait
-        image={postreImg}
-        alt='image description'
-        title='postres'
-        paragraph='La comida ideal tiene el cierre perfecto, atrévete a probar los postres internacionales y con sabor a México que nuestro chef pastelero ha preparado para culminar tu lunch o cena inigualablemente.'
-        linkText=''
-        linkHref=''
-      />
-      <p className={styles.p}>Horario: 6:00 pm - 10:00 pm </p>
-      <LinkBorder text='ver menu' link='#' />
+      >
+        <p className={styles.p}>Horario: 6:00 pm - 10:00 pm </p>
+        <LinkBorder text='ver menu' link='#' />
+      </ArticleSquare>
+      <section className={styles.dessert}>
+        <ArticlePortrait
+          image={postreImg}
+          alt='image description'
+          title='postres'
+          paragraph='La comida ideal tiene el cierre perfecto, atrévete a probar los postres internacionales y con sabor a México que nuestro chef pastelero ha preparado para culminar tu lunch o cena inigualablemente.'
+          linkText=''
+          linkHref=''
+        >
+          <p className={styles.p}>Horario: 6:00 pm - 10:00 pm </p>
+          <LinkBorder text='ver menu' link='#' />
+        </ArticlePortrait>
+      </section>
       <Banner
         image={lunchImg4}
         alt='image description'
@@ -141,17 +143,19 @@ export default function Restaurante() {
         linkText=''
         linkHref=''
       />
-      <ArticleSquare
-        image={drinkImg}
-        alt='image description'
-        layout='fill'
-        objectFit='cover'
-        objectPosition='center'
-        title='Brinda con nosotros'
-        paragraph='Somos alquimistas, creamos cócteles enigmáticos que cuenten historias,  que tengan armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
-        linkText='saber más'
-        linkHref='/bebidas'
-      />
+      <section className={styles.drinkWithUs}>
+        <ArticleSquare
+          image={drinkImg}
+          alt='image description'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          title='Brinda con nosotros'
+          paragraph='Somos alquimistas, creamos cócteles enigmáticos que cuenten historias,  que tengan armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
+          linkText='saber más'
+          linkHref='/bebidas'
+        />
+      </section>
 
       <ArticleSquareWhite
         image={wineImg}

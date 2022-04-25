@@ -12,6 +12,7 @@ export default function ArticlePortrait({
   linkText,
   linkHref,
   alt,
+  children,
 }) {
   return (
     <article className={styles.container}>
@@ -22,6 +23,7 @@ export default function ArticlePortrait({
         <TitleSection text={title} />
         <Paragraph text={paragraph} />
         <InternalLink link={linkHref} text={linkText} />
+        {children}
       </div>
     </article>
   )

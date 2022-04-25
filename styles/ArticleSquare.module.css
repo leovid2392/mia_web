@@ -30,11 +30,15 @@
     height: 550px;
   }
   .textContainer {
-    justify-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 0 5%;
-    text-align: start;
     width: 40%;
     min-width: 200px;
+  }
+  .textContainer h2 {
+    text-align: start;
   }
   .textContainer div {
     align-items: start;
