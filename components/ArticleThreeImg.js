@@ -21,6 +21,11 @@ export default function ArticleThreeImg({
 }) {
   return (
     <article className={styles.container}>
+      <div className={styles.textContainer}>
+        <TitleSection text={title} />
+        <Paragraph text={paragraph} />
+        <InternalLink text={linkText} link={linkHref} />
+      </div>
       <figure className={styles.imgContainer}>
         <Image
           src={img1}
@@ -48,11 +53,6 @@ export default function ArticleThreeImg({
           objectPosition={objectPosition3}
         ></Image>
       </figure>
-      <div>
-        <TitleSection text={title} />
-        <Paragraph text={paragraph} />
-        <InternalLink text={linkText} link={linkHref} />
-      </div>
     </article>
   )
 }

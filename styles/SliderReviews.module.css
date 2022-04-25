@@ -13,7 +13,7 @@
   width: 100%;
   height: 400px;
   margin-bottom: 40px;
-  margin: 40px 0;
+  /* margin: 40px 0; */
   padding: 0 20px;
 }
 
@@ -23,7 +23,7 @@
   height: 200px;
   /* max-height: 800px; */
   position: relative;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .sliderContainer article {
@@ -45,7 +45,15 @@
 }
 .review {
   text-align: center;
-  max-width: 300px;
+  max-width: 500px;
+}
+
+.commentLink {
+  margin: 20px;
+}
+
+.commentLink:hover {
+  text-decoration: underline;
 }
 
 .sliderContainer article.activeSlide {

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin: 8% 0;
 }
 
 .imgContainer {
@@ -18,3 +19,32 @@
   height: 200px;
   position: relative;
 }
+.textContainer {
+  margin-bottom: 40px;
+}
+.textContainer p {
+  max-width: 800px;
+}
+
+@media only screen and (min-width: 700px) {
+  .imgContainer {
+    width: 90%;
+    max-width: 1000px;
+    height: 300px;
+    margin-right: 50px;
+  }
+  .imgContainer2 {
+    width: 90%;
+    max-width: 1000px;
+    height: 300px;
+    margin-left: 50px;
+    /* padding-left: 100px; */
+  }
+  .container div a {
+    text-align: center;
+  }
+}
+
+/* @media only screen and (min-width: 1200px){
+
+} */

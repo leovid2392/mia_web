@@ -132,12 +132,29 @@ export default function Home() {
           linkHref='/vino'
         />
       </section>
-      <section className={styles.displayTwoImg}>
-        <DisplayTwoImg img1={beachClub1} img2={beachClub2} alt1='' alt2='' />
+      <section className={styles.beachClub}>
         <div className={styles.beachClub_textContainer}>
-          <TitleSection text='BeachClub' />
+          <TitleSection text='Beach Club' />
           <Paragraph text='cal- MAR- se es nuestro lema, los pasos que damos en Mía son ligeros, los respiros son rítmicos al unísono del viento acariciando las palmeras; el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
           <InternalLink link='/beachClub' text='saber más' />
+        </div>
+        <div className={styles.beachClub_imgContainer}>
+          <div className={styles.beachClub_imgContainer1}>
+            <DisplayTwoImg
+              img1={beachClub1}
+              img2={beachClub2}
+              alt1='some description'
+              alt2='some description'
+            />
+          </div>
+          <div className={styles.beachClub_imgContainer2}>
+            <DisplayTwoImg
+              img1={beachClub1}
+              img2={beachClub2}
+              alt1='some description'
+              alt2='some description'
+            />
+          </div>
         </div>
       </section>
 
@@ -159,17 +176,19 @@ export default function Home() {
         linkText='saber más'
         linkHref='/bodas'
       />
-      <ArticleSquare
-        image={musicImg}
-        alt='image description'
-        layout='fill'
-        objectFit='cover'
-        objectPosition='center'
-        title='djParty'
-        paragraph='Una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable en Tulum y vivir las mejores fiestas.'
-        linkText='saber más'
-        linkHref='/djParty'
-      />
+      <section className={styles.djParty}>
+        <ArticleSquare
+          image={musicImg}
+          alt='image description'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          title='dj Party'
+          paragraph='Una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable en Tulum y vivir las mejores fiestas.'
+          linkText='saber más'
+          linkHref='/djParty'
+        />
+      </section>
       <ArticleThreeImg
         img1={celeimg1}
         img2={celeimg2}
@@ -177,7 +196,7 @@ export default function Home() {
         alt1={'image description'}
         alt2={'image description'}
         alt3={'image description'}
-        objectPosition1='0 -100px'
+        objectPosition1='center'
         objectPosition2='center'
         objectPosition3='center'
         title='celebraciones'
@@ -199,31 +218,37 @@ export default function Home() {
         <p>This is my button triggered popup</p>
       </Popup> */}
 
-      <SliderReviews
-        sliderData={[
-          {
-            id: 1,
-            image: sliderComentsImg1,
-            name: 'Iris Ilike',
-            review:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
-          },
-          {
-            id: 2,
-            image: sliderComentsImg2,
-            name: 'Gregg Reeves',
-            review:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
-          },
-          {
-            id: 3,
-            image: sliderComentsImg1,
-            name: 'Claudia Clements',
-            review:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
-          },
-        ]}
-      />
+      <section>
+        <TitleSection text='opiniones' />
+        <SliderReviews
+          sliderData={[
+            {
+              id: 1,
+              image: sliderComentsImg1,
+              name: 'Iris Ilike',
+              review:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+              linkComment: '/',
+            },
+            {
+              id: 2,
+              image: sliderComentsImg2,
+              name: 'Gregg Reeves',
+              review:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+              linkComment: '/',
+            },
+            {
+              id: 3,
+              image: sliderComentsImg1,
+              name: 'Claudia Clements',
+              review:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
+              linkComment: '/',
+            },
+          ]}
+        />
+      </section>
 
       <Popup trigger={timePopup} setTrigger={setTimePopup} img={popupImg}>
         {/* <h3>my popup</h3>

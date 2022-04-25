@@ -4,6 +4,7 @@
   align-items: center;
   padding: 0 2rem;
   position: relative;
+  margin: 5% 0;
 }
 
 .imgContainer {
@@ -23,4 +24,47 @@
   position: absolute;
   bottom: 0;
   /* margin-top: -50px; */
+}
+@media only screen and (min-width: 700px) {
+  .container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .imgContainer {
+    max-width: 700px;
+    height: 550px;
+    margin-bottom: 0;
+  }
+
+  .textContainer {
+    position: initial;
+    justify-items: start;
+    /* margin: 0 5%; */
+    text-align: start;
+    width: 100%;
+    min-width: 200px;
+    max-width: 100%;
+    padding-left: 5%;
+  }
+  .textContainer p {
+    text-align: start;
+    /* max-width: 400px; */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container div {
+    align-items: start;
+  }
+  .container a {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .imgContainer {
+    max-width: 1400px;
+    height: 1000px;
+  }
 }

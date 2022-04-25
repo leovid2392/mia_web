@@ -13,12 +13,24 @@
   position: relative;
 }
 
-.displayTwoImg {
+.beachClub {
   width: 100%;
   max-width: 500px;
   padding: 0 2rem;
   margin: 8% auto;
 }
+.beachClub_imgContainer {
+  display: flex;
+}
+.beachClub_imgContainer1 {
+  width: 100%;
+}
+.beachClub_imgContainer2 {
+  width: 100%;
+  margin-left: 10px;
+  display: none;
+}
+
 .beachClub_textContainer {
   text-align: center;
 }
@@ -61,15 +73,29 @@
     margin: 0;
   }
   /* >>vino seccion>>>>> */
-  /* >>display two images seccion>>>>> */
-  .displayTwoImg {
+  /* >>beachClub seccion>>>>> */
+  .beachClub {
+    max-width: 1200px;
+    margin: 8% auto;
+  }
+  .beachClub_imgContainer2 {
+    display: initial;
+  }
+  .beachClub_textContainer {
+    margin: 40px 0;
+  }
+  .beachClub_textContainer p {
     max-width: 800px;
   }
-  /* .displayTwoImg div:first-child {
-    max-width: 800px;
-    height: 500px;
-  } */
-  /* >>display two images seccion>>>>> */
+  /* >>beachClub seccion>>>>> */
+  /* >>djParty seccion>>>>> */
+
+  /* dj party section*/
+  .djParty section {
+    padding: 0;
+    flex-direction: row-reverse;
+  }
+  /* >>djParty seccion>>>>> */
 }
 
 @media only screen and (min-width: 1200px) {

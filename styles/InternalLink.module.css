@@ -2,5 +2,9 @@
   display: block;
   text-transform: uppercase;
   text-align: end;
+  /* text-decoration: underline; */
+}
+
+.item:hover {
   text-decoration: underline;
 }

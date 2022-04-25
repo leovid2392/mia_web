@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 import styles from '../styles/SliderReviews.module.css'
+import LinkBorder from './LinkBorder'
 
 const SliderReviews = ({ sliderData }) => {
   const [events, setEvents] = useState(sliderData)
@@ -36,7 +37,7 @@ const SliderReviews = ({ sliderData }) => {
   return (
     <section className={styles.sliderContainer}>
       {events.map((item, itemIndex) => {
-        const { id, image, name, review } = item
+        const { id, image, name, review, linkComment } = item
         let position = 'nextSlide'
 
         if (itemIndex === index) {
@@ -60,6 +61,9 @@ const SliderReviews = ({ sliderData }) => {
             </figure>
             <p className={styles.name}>{name}</p>
             <p className={styles.review}>{review}</p>
+            <a href={linkComment} className={styles.commentLink}>
+              Ir a TripAdvisor
+            </a>
           </article>
         )
       })}
