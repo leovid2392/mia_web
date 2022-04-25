@@ -35,3 +35,11 @@
   grid-row-start: 2;
   grid-row-end: 3;
 }
+
+@media only screen and (min-width: 700px) {
+  .imgLayout {
+    max-width: 900px;
+    grid-template-rows: 250px 250px;
+    gap: 30px;
+  }
+}

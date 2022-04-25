@@ -34,6 +34,8 @@ import beach4 from '../public/images/beachClub/galeria-2_small750x500.jpg'
 
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+import styles from '../styles/beachClub.module.css'
+
 export default function BeachClub() {
   let { t } = useTranslation()
   return (
@@ -67,18 +69,24 @@ export default function BeachClub() {
       />
       <TitlePage text='Beach Club' />
       <Paragraph text='En nuestro beach club el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
-      <Layout1x1 img={beach4} alt='image description' objectPosition='center' />
-      <Layout2x2
-        img1={beach1}
-        img2={beach2}
-        img3={beach3}
-        alt1='image description'
-        alt2='image description'
-        alt3='image description'
-        objectPosition1='center'
-        objectPosition2='center'
-        objectPosition3='center'
-      />
+      <div className={styles.beachClub}>
+        <Layout1x1
+          img={beach4}
+          alt='image description'
+          objectPosition='center'
+        />
+        <Layout2x2
+          img1={beach1}
+          img2={beach2}
+          img3={beach3}
+          alt1='image description'
+          alt2='image description'
+          alt3='image description'
+          objectPosition1='center'
+          objectPosition2='center'
+          objectPosition3='center'
+        />
+      </div>
       <Banner
         text='Reserva tu cama aquí'
         link='#'
@@ -105,14 +113,16 @@ export default function BeachClub() {
         linkText=''
         linkHref=''
       /> */}
-      <ArticlePortrait
-        image={solteras}
-        alt='image description'
-        title='despedidas de solero(a)'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
-        linkText=''
-        linkHref='/'
-      />
+      <section className={styles.despedidas}>
+        <ArticlePortrait
+          image={solteras}
+          alt='image description'
+          title='despedidas de solero(a)'
+          paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+          linkText=''
+          linkHref='/'
+        />
+      </section>
     </Layout>
   )
 }

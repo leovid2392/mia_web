@@ -34,6 +34,8 @@ import sliderReviesImg1 from '../public/images/bebidas/botella_100x300.png'
 
 // images<<<<<<<<<<
 
+import styles from '../styles/vino.module.css'
+
 export default function Vino() {
   let { t } = useTranslation()
   return (
@@ -56,49 +58,68 @@ export default function Vino() {
       />
       <TitlePage text='vinos' />
       <Paragraph text='La vida, el sacrificio y la inmortalidad son algunos de los simbolismos del vino, en Mía la cultura vinícola esta establecida como un estilo de vida.' />
-      <ArticleSquareWhite
-        image={wine7Img}
-        title='cava mas completa del destino'
-        paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 350 etiquetas de diferentes países.'
-        linkText=''
-        linkHref=''
-        alt='image description'
-        objectFit='cover'
-        objectPosition='center'
-      />
+      <section className={styles.cava}>
+        <ArticleSquareWhite
+          image={wine7Img}
+          title='cava mas completa del destino'
+          paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 350 etiquetas de diferentes países.'
+          linkText=''
+          linkHref=''
+          alt='image description'
+          objectFit='cover'
+          objectPosition='center'
+        />
+      </section>
       <ArticlePortrait
         image={wine18Img}
         alt='image description'
-        title=''
+        title='Todo lo que buscas'
         paragraph='En nuestra Cava encontrarás desde vinos jóvenes y frescos para tomar durante el día en la playa hasta vinos complejos para satisfacer a los paladares más exigentes.'
         linkText=''
         linkHref='/'
       />
-      <ArticleSquare
-        image={wine9Img}
-        alt='image description'
-        layout='fill'
-        objectFit='cover'
-        objectPosition='center'
-        title='wine spectator'
-        paragraph=''
-        linkText=''
-        linkHref=''
-      />
+      <section className={styles.wineSpectator}>
+        <ArticleSquare
+          image={wine9Img}
+          alt='image description'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          title='wine spectator'
+          paragraph=''
+          linkText=''
+          linkHref=''
+        />
+      </section>
       <ArticleSquare
         image={wine12Img}
         alt='image description'
         layout='fill'
         objectFit='cover'
         objectPosition='center'
-        title=''
+        title='carta de vinos'
         paragraph='Son más de 300 etiquetas las que encontrarás en La Cava de Mía, una de las más completas de Tulum.'
         linkText=''
         linkHref=''
-      />
+      >
+        <LinkBorder text='ver menu' link='#' />
+      </ArticleSquare>
 
-      <TitleSection text='carta de vinos' />
-      <LinkBorder text='ver menu' link='#' />
+      <section className={styles.maridaje}>
+        <TitleSection text='maridaje' />
+        <Paragraph text='Alrededor del vino se desarrollan dos experiencias que son un must; la cena maridaje, en la que nuestro sommelier trabaja para acompañar los platillos insignia de Mía con el vino indicado y destacar cada bocado.' />
+        <Layout2x2
+          img1={wine4Img}
+          img2={wine9Img}
+          img3={wine10Img}
+          alt1='image description'
+          alt2='image description'
+          alt3='image description'
+          objectPosition1='center'
+          objectPosition2='center'
+          objectPosition3='center'
+        />
+      </section>
       <TitleSection text='nuestra selección' />
       <SliderBottle
         sliderData={[
@@ -124,19 +145,6 @@ export default function Vino() {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
           },
         ]}
-      />
-      <TitleSection text='maridaje' />
-      <Paragraph text='Alrededor del vino se desarrollan dos experiencias que son un must; la cena maridaje, en la que nuestro sommelier trabaja para acompañar los platillos insignia de Mía con el vino indicado y destacar cada bocado.' />
-      <Layout2x2
-        img1={wine4Img}
-        img2={wine9Img}
-        img3={wine10Img}
-        alt1='image description'
-        alt2='image description'
-        alt3='image description'
-        objectPosition1='center'
-        objectPosition2='center'
-        objectPosition3='center'
       />
       <Banner
         text='Espera nuestro próximo festival'

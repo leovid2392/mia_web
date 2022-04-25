@@ -33,6 +33,8 @@ import desti2 from '../public/images/bebidas/destilado1_small750x422.jpg'
 
 // images<<<<<<<<<<
 
+import styles from '../styles/bebidas.module.css'
+
 export default function Bebidas() {
   let { t } = useTranslation()
   return (
@@ -65,27 +67,31 @@ export default function Bebidas() {
         paragraph='Con aromas cítricos, ahumados y frutales acompañados de los mejores destilados y licores premium.'
         linkText=''
         linkHref='/'
-      />
-      <LinkBorder text='ver menu' link='#' />
-      <ArticleFourImg
-        img1={beer1}
-        img2={beer2}
-        img3={beer3}
-        img4={beer4}
-        alt1={'image description'}
-        alt2={'image description'}
-        alt3={'image description'}
-        alt4={'image description'}
-        objectPosition1='center'
-        objectPosition2='center'
-        objectPosition3='center'
-        objectPosition4='center'
-        title='cervezas'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
-        linkText=''
-        linkHref=''
-      />
-      <LinkBorder text='ver menu' link='#' />
+      >
+        <LinkBorder text='ver menu' link='#' />
+      </ArticlePortrait>
+      <section className={styles.beer}>
+        <ArticleFourImg
+          img1={beer1}
+          img2={beer2}
+          img3={beer3}
+          img4={beer4}
+          alt1={'image description'}
+          alt2={'image description'}
+          alt3={'image description'}
+          alt4={'image description'}
+          objectPosition1='center'
+          objectPosition2='center'
+          objectPosition3='center'
+          objectPosition4='center'
+          title='cervezas'
+          paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+          linkText=''
+          linkHref=''
+        >
+          <LinkBorder text='ver menu' link='#' />
+        </ArticleFourImg>
+      </section>
       <ArticleSquare
         image={desti2}
         alt='image description'
@@ -96,8 +102,9 @@ export default function Bebidas() {
         paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
         linkText=''
         linkHref=''
-      />
-      <LinkBorder text='ver menu' link='#' />
+      >
+        <LinkBorder text='ver menu' link='#' />
+      </ArticleSquare>
       <TitleSection text='nuestra selección' />
       <SliderBottle
         sliderData={[

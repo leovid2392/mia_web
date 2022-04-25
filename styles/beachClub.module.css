@@ -1,0 +1,22 @@
+@media only screen and (min-width: 700px) {
+  .beachClub {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 8% 0;
+  }
+  .beachClub figure {
+    margin: 0;
+    width: 300px;
+  }
+  .beachClub div {
+    margin: 0;
+  }
+  .beachClub div div {
+    grid-template-rows: 275px 275px;
+  }
+
+  .despedidas h2 {
+    text-align: start;
+  }
+}
