@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import Link from 'next/link'
 import BtnCloseIcon from './BtnCloseIcon'
 import styles from '../styles/AsideMenu.module.css'
+import BtnHomeIcon from './BtnHomeIcon'
 
 export default function AsideMenu() {
   const { isAsideMenuOpen, handleAsideMenu } = useContext(TaskContext)
@@ -11,7 +12,10 @@ export default function AsideMenu() {
     <div
       className={styles[`${isAsideMenuOpen ? 'container' : 'hiddeSideBar'}`]}
     >
-      <BtnCloseIcon action={handleAsideMenu} />
+      <div className={styles.iconContainer}>
+        <BtnHomeIcon action={handleAsideMenu} />
+        <BtnCloseIcon action={handleAsideMenu} />
+      </div>
       <nav className={styles.navContainer}>
         <Link href='/restaurante'>
           <a className={styles.a} onClick={handleAsideMenu}>

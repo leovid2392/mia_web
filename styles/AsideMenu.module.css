@@ -3,18 +3,22 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  /* border: 1px solid red; */
+  padding: 20px;
   height: 400px;
   width: 100vw;
-  /* position: absolute; */
   background-color: var(--color-lightGrey);
   position: sticky;
   top: 90px;
   z-index: 10;
   margin-bottom: -400px;
+  box-shadow: 5px 5px 10px var(--color-boxShadow);
   /* transition: all 3s ease; */
   /* transform: translateX(0); */
+}
+.iconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .hiddeSideBar {
   display: flex;

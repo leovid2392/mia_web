@@ -1,0 +1,8 @@
+.container {
+  display: grid;
+}
+
+.container a {
+  font-size: 2rem;
+  color: var(--color-darkGrey);
+}
