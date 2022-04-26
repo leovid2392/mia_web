@@ -67,8 +67,10 @@ export default function BeachClub() {
           },
         ]}
       />
-      <TitlePage text='Beach Club' />
-      <Paragraph text='En nuestro beach club el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
+      <div className={styles.description}>
+        <TitlePage text='Beach Club' />
+        <Paragraph text='En nuestro beach club el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
+      </div>
       <div className={styles.beachClub}>
         <Layout1x1
           img={beach4}

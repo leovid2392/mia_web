@@ -127,6 +127,27 @@ export default function Restaurante() {
           <LinkBorder text='ver menu' link='#' />
         </ArticlePortrait>
       </section>
+      <section className={styles.pizza}>
+        <ArticleFourImg
+          img1={lunchImg1}
+          img2={lunchImg2}
+          img3={lunchImg3}
+          img4={lunchImg4}
+          alt1={'image description'}
+          alt2={'image description'}
+          alt3={'image description'}
+          alt4={'image description'}
+          objectPosition1='center'
+          objectPosition2='center'
+          objectPosition3='center'
+          objectPosition4='center'
+          title='pizza garden'
+          paragraph='No hay nada más satisfactorio que disfrutar de un pescado fresco a la talla bien preparado y acompañarlo con un'
+          linkText=''
+          linkHref=''
+        ></ArticleFourImg>
+      </section>
+
       <Banner
         image={lunchImg4}
         alt='image description'

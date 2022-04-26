@@ -2,11 +2,10 @@
   text-align: center;
 }
 
-.lunch article {
-  flex-direction: row-reverse;
-}
-
 @media only screen and (min-width: 700px) {
+  .lunch article {
+    flex-direction: row-reverse;
+  }
   .dessert article {
     flex-direction: row-reverse;
   }

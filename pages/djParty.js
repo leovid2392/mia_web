@@ -5,6 +5,7 @@ import useTranslation from 'next-translate/useTranslation'
 import Hero from '../components/Hero'
 import TitlePage from '../components/TitlePage'
 import Paragraph from '../components/Paragraph'
+import SliderEvents from '../components/SliderEvents'
 // import ArticlePortrait from '../components/ArticlePortrait'
 // import ArticleFourImg from '../components/ArticleFourImg'
 // import ArticleSquare from '../components/ArticleSquare'
@@ -19,12 +20,15 @@ import Layout1x1 from '../components/Layout1x1'
 import slide1 from '../public/images/djparty/cele1_small750x500.jpg'
 import slide2 from '../public/images/djparty/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/djparty/cele3_small750x500.jpg'
+import event1 from '../public/images/djparty/pop1_small500x889.jpg'
 
 import hero1 from '../public/images/djparty/dj2_small750x500.jpg'
 import hero2 from '../public/images/djparty/dj3_small750x500.jpg'
 import hero3 from '../public/images/djparty/dj1_small750x500.jpg'
 
 import pablo from '../public/images/djparty/pablofierro-51_small750x500.jpg'
+
+import styles from '../styles/djParty.module.css'
 
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 export default function DjParty() {
@@ -50,10 +54,63 @@ export default function DjParty() {
           },
         ]}
       />
-      <TitlePage text='dj party' />
-      <Paragraph text='Con los pies en la arena, te invitamos a vivir una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable.' />
-      <Layout1x1 img={slide3} alt='image description' objectPosition='center' />
+      <div className={styles.description}>
+        <TitlePage text='dj party' />
+        <Paragraph text='Con los pies en la arena, te invitamos a vivir una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable.' />
+      </div>
+      <div className={styles.layout1x1}>
+        <Layout1x1
+          img={slide3}
+          alt='image description'
+          objectPosition='center'
+        />
+      </div>
+      <div className={styles.layout3x1}>
+        <Layout1x1
+          img={slide3}
+          alt='image description'
+          objectPosition='center'
+        />
+        <Layout1x1
+          img={slide3}
+          alt='image description'
+          objectPosition='center'
+        />
+        <Layout1x1
+          img={slide3}
+          alt='image description'
+          objectPosition='center'
+        />
+      </div>
+
       <TitleSection text='eventos' />
+      <div className={styles.events}>
+        <SliderEvents
+          sliderData={[
+            {
+              id: 1,
+              image: event1,
+              ticketFairy: '/',
+              eventName: 'monolik',
+              date: 'april 25th | 2 - 12 am',
+            },
+            {
+              id: 2,
+              image: hero2,
+              ticketFairy: '/',
+              eventName: 'monolik',
+              date: 'april 25th | 2 - 12 am',
+            },
+            {
+              id: 3,
+              image: hero3,
+              ticketFairy: '/',
+              eventName: 'monolik',
+              date: 'april 25th | 2 - 12 am',
+            },
+          ]}
+        />
+      </div>
       <ArticleSquareWhite
         image={pablo}
         title='pablo fierro'

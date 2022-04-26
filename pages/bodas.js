@@ -34,9 +34,11 @@ import boda2 from '../public/images/bodas/boda-1_small750x500.jpg'
 import boda3 from '../public/images/bodas/boda13_small750x500.jpg'
 import cenaro from '../public/images/bodas/cenaro1_small750x500.jpg'
 import pedida1 from '../public/images/bodas/pedida1_small500x750.jpg'
+import weddingWireLogo from '../public/images/bodas/logo-weddingwire_400x177.png'
 
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import styles from '../styles/Home.module.css'
+import bodaStyle from '../styles/bodas.module.css'
 export default function Bodas() {
   let { t } = useTranslation()
   return (
@@ -60,8 +62,10 @@ export default function Bodas() {
           },
         ]}
       />
-      <TitlePage text='bodas' />
-      <Paragraph text='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda.' />
+      <div className={bodaStyle.description}>
+        <TitlePage text='bodas' />
+        <Paragraph text='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda.' />
+      </div>
       <ArticlePortrait
         image={pedida1}
         alt='image description'
@@ -77,6 +81,8 @@ export default function Bodas() {
         objectFit='cover'
         objectPosition='center'
       />
+      <TitleSection text='renovación de votos' />
+      <Paragraph text='Con una extensión de 400 metros cuadrados, Mía Tulum es sin duda el lugar ideal para la celebración más especial. Con una capacidad de hasta 150 personas.' />
       <Layout2x2
         img1={boda1}
         img2={boda2}
@@ -88,8 +94,7 @@ export default function Bodas() {
         objectPosition2='center'
         objectPosition3='center'
       />
-      <TitleSection text='renovación de votos' />
-      <Paragraph text='Con una extensión de 400 metros cuadrados, Mía Tulum es sin duda el lugar ideal para la celebración más especial. Con una capacidad de hasta 150 personas.' />
+
       <ArticleSquareWhite
         image={cenaro}
         title='cenas romanticas'
@@ -100,52 +105,68 @@ export default function Bodas() {
         objectFit='cover'
         objectPosition='center'
       />
-      <ArticleSquare
-        image={couples}
-        alt='image description'
-        layout='fill'
-        objectFit='cover'
-        objectPosition='center'
-        title=''
-        paragraph=''
-        linkText=''
-        linkHref=''
-      />
-      <SliderReviews
-        sliderData={[
-          {
-            id: 1,
-            image: sliderComentsImg1,
-            name: 'Taina & Roger - October 24th 2021',
-            review:
-              'Dante our wedding coordinator was the absolute best. He was very professional, responsive and catered to our needs. If there was something we had doubts about Dante always had a plan B for it. The wedding turned out to be better than what I had dreamed of.',
-          },
-          {
-            id: 2,
-            image: sliderComentsImg2,
-            name: 'Stephanie Weng & Eric LI - December 4th 2021',
-            review:
-              'DANTE IS MY #1, all that a bride could ever ask for!! Planning a destination wedding during Covid seemed like a daunting task but Dante made it all come together smoothly.',
-          },
-          {
-            id: 3,
-            image: sliderComentsImg1,
-            name: 'Irina and Boris - September 18th  2021',
-            review:
-              'Dante is nunber one !!!! THE BEST !!!! Exceed all expectations!!!! We are very grateful and blessed!!! Dante - the best what you can imagine!!!! Very very, highly recommended !!! ',
-          },
-        ]}
-      />
-      <TitleSection text='Nuestros socios' />
-      <figure className={styles.imgContainer}>
-        <Image
-          src={partnersLogo}
+      <div className={bodaStyle.couples}>
+        <ArticleSquare
+          image={couples}
           alt='image description'
-          width={300}
-          height={120}
-          layout='fixed'
-        ></Image>
-      </figure>
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          title=''
+          paragraph=''
+          linkText=''
+          linkHref=''
+        />
+      </div>
+      <TitleSection text='Testimonios' />
+      <div className={bodaStyle.reviews}>
+        <SliderReviews
+          sliderData={[
+            {
+              id: 1,
+              image: sliderComentsImg1,
+              name: 'Taina & Roger - October 24th 2021',
+              review:
+                'Dante our wedding coordinator was the absolute best. He was very professional, responsive and catered to our needs. If there was something we had doubts about Dante always had a plan B for it. The wedding turned out to be better than what I had dreamed of.',
+            },
+            {
+              id: 2,
+              image: sliderComentsImg2,
+              name: 'Stephanie Weng & Eric LI - December 4th 2021',
+              review:
+                'DANTE IS MY #1, all that a bride could ever ask for!! Planning a destination wedding during Covid seemed like a daunting task but Dante made it all come together smoothly.',
+            },
+            {
+              id: 3,
+              image: sliderComentsImg1,
+              name: 'Irina and Boris - September 18th  2021',
+              review:
+                'Dante is nunber one !!!! THE BEST !!!! Exceed all expectations!!!! We are very grateful and blessed!!! Dante - the best what you can imagine!!!! Very very, highly recommended !!! ',
+            },
+          ]}
+        />
+      </div>
+      <TitleSection text='Nuestros socios' />
+      <section className={bodaStyle.socios}>
+        <figure className={styles.imgContainer}>
+          <Image
+            src={partnersLogo}
+            alt='image description'
+            width={300}
+            height={120}
+            layout='fixed'
+          ></Image>
+        </figure>
+        <figure className={styles.imgContainer}>
+          <Image
+            src={weddingWireLogo}
+            alt='image description'
+            width={280}
+            height={100}
+            layout='fixed'
+          ></Image>
+        </figure>
+      </section>
     </Layout>
   )
 }

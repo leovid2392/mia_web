@@ -1,0 +1,20 @@
+.layout3x1 {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .description p {
+    max-width: 800px;
+  }
+
+  .layout1x1 {
+    display: none;
+  }
+  .layout3x1 {
+    display: flex;
+  }
+  .layout3x1 figure {
+    width: 30%;
+    height: 500px;
+  }
+}

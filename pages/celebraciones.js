@@ -22,6 +22,8 @@ import slide3 from '../public/images/celebraciones/cele3_small750x500.jpg'
 
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+import styles from '../styles/Celebraciones.module.css'
+
 export default function Celebraciones() {
   let { t } = useTranslation()
   return (
@@ -45,9 +47,11 @@ export default function Celebraciones() {
           },
         ]}
       />
-      <TitlePage text='celebraciones' />
-      <Paragraph text='Mía Tulum se carateriza por ser un espacio de fiesta, alegria y celebración constante al ser y estar en el momento presente, es el espacio relajado, casual e ideal para celebrar cumpleaños, despedidas de soltera, cocteles y grupos de incentivos. ' />
-      <Paragraph text='Nuestro equipo de coordinadores en casa te ayudarán a explorar las diferentes opciones y  áreas con atmósferas diferentes para tu celebración especial.  ' />
+      <div className={styles.description}>
+        <TitlePage text='celebraciones' />
+        <Paragraph text='Mía Tulum se carateriza por ser un espacio de fiesta, alegria y celebración constante al ser y estar en el momento presente, es el espacio relajado, casual e ideal para celebrar cumpleaños, despedidas de soltera, cocteles y grupos de incentivos. ' />
+        <Paragraph text='Nuestro equipo de coordinadores en casa te ayudarán a explorar las diferentes opciones y  áreas con atmósferas diferentes para tu celebración especial.  ' />
+      </div>
       <ArticleFourImg
         img1={slide1}
         img2={slide2}
@@ -66,8 +70,31 @@ export default function Celebraciones() {
         linkText=''
         linkHref=''
       />
-      <Layout1x1 img={slide3} alt='image description' objectPosition='center' />
       <TitleSection text='cumpleaños' />
+      <div className={styles.layout1x1}>
+        <Layout1x1
+          img={slide3}
+          alt='image description'
+          objectPosition='center'
+        />
+      </div>
+      <div className={styles.layout3x1}>
+        <Layout1x1
+          img={slide3}
+          alt='image description'
+          objectPosition='center'
+        />
+        <Layout1x1
+          img={slide3}
+          alt='image description'
+          objectPosition='center'
+        />
+        <Layout1x1
+          img={slide3}
+          alt='image description'
+          objectPosition='center'
+        />
+      </div>
       <ArticleSquare
         image={slide2}
         alt='image description'
@@ -79,6 +106,7 @@ export default function Celebraciones() {
         linkText=''
         linkHref=''
       />
+      <TitleSection text='cócteles' />
       <Layout2x2
         img1={slide1}
         img2={slide2}
@@ -90,7 +118,6 @@ export default function Celebraciones() {
         objectPosition2='center'
         objectPosition3='center'
       />
-      <TitleSection text='cócteles' />
       <ArticlePortrait
         image={slide1}
         alt='image description'
@@ -100,17 +127,19 @@ export default function Celebraciones() {
         linkHref='/'
       />
 
-      <ArticleSquare
-        image={slide2}
-        alt='image description'
-        layout='fill'
-        objectFit='cover'
-        objectPosition='center'
-        title='cena de ensayo'
-        paragraph=''
-        linkText=''
-        linkHref=''
-      />
+      <div className={styles.cena}>
+        <ArticleSquare
+          image={slide2}
+          alt='image description'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          title='cena de ensayo'
+          paragraph=''
+          linkText=''
+          linkHref=''
+        />
+      </div>
     </Layout>
   )
 }

@@ -1,0 +1,34 @@
+.couples section figure {
+  min-width: 200px;
+  height: 600px;
+}
+.reviews {
+  margin: 8% 0;
+}
+.reviews section {
+  height: 450px;
+}
+.socios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+@media only screen and (min-width: 700px) {
+  .description p {
+    max-width: 800px;
+  }
+  .couples section figure {
+    height: 800px;
+    max-width: 600px;
+  }
+  .socios {
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+  }
+  .socios figure:first-child {
+    margin-top: 60px;
+  }
+}
