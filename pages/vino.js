@@ -91,6 +91,7 @@ export default function Vino() {
           linkHref=''
         />
       </section>
+
       <ArticleSquare
         image={wine12Img}
         alt='image description'
