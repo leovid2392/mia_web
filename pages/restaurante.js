@@ -74,7 +74,7 @@ export default function Restaurante() {
           linkHref=''
         >
           <p className={styles.p}>Horario: 8:00 am - 11:00 pm </p>
-          <LinkBorder text='ver menu' link='#' />
+          <LinkBorder text='ver menu' link='./menu/restaurante/desayuno' />
         </ArticleSquare>
       </section>
       <section className={styles.lunch}>
@@ -97,7 +97,7 @@ export default function Restaurante() {
           linkHref=''
         >
           <p className={styles.p}>Horario: 12:00 pm - 06:00 pm </p>
-          <LinkBorder text='ver menu' link='#' />
+          <LinkBorder text='ver menu' link='./menu/restaurante/lunch' />
         </ArticleFourImg>
       </section>
       <ArticleSquare

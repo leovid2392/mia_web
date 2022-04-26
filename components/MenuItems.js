@@ -1,19 +1,19 @@
-import styles from '../styles/MenuItems.module.css'
 import Image from 'next/image'
+import styles from '../styles/MenuItems.module.css'
 
 export default function MenuItems({ title, data }) {
   return (
-    <section>
-      <h2>{title}</h2>
+    <section className={styles.container}>
+      <h2 className={styles.titleSection}>{title}</h2>
       {data.map((item) => {
         const { id, itemName, description, price } = item
         return (
-          <article key={id}>
-            <div>
-              <h3>{itemName}</h3>
-              <p>{description}</p>
+          <article key={id} className={styles.itemsContainer}>
+            <div className={styles.text}>
+              <h3 className={styles.title}>{itemName}</h3>
+              <p className={styles.description}>{description}</p>
             </div>
-            <p>{price}</p>
+            <p className={styles.price}>{`$ ${price}`}</p>
           </article>
         )
       })}
