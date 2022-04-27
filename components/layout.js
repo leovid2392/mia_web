@@ -21,7 +21,7 @@ export default function Layout({ children, title, description }) {
       <Header />
       <BtnBookNow />
       <AsideMenu />
-      <BtnWhatsApp />
+      {/* <BtnWhatsApp /> */}
       <OpenTablePopUp />
       {/* </div> */}
       <main>{children}</main>

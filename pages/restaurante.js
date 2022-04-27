@@ -31,6 +31,10 @@ import drinkImg from '../public/images/restaurante/mia-5829_small500x750.jpg'
 import wineImg from '../public/images/restaurante/vino11_small750x500.jpg'
 
 import breakfastImg from '../public/images/restaurante/MiaTulum-3735_small500x750.jpg'
+
+import restaurante_hero01 from '../public/images/restaurante/restaurante_hero01.jpg'
+import restaurante_hero02 from '../public/images/restaurante/restaurante_hero02.jpg'
+import restaurante_hero03 from '../public/images/restaurante/restaurante_hero03.jpg'
 // images>>>>>>>>>>
 
 import styles from '../styles/Restaurante.module.css'
@@ -47,15 +51,15 @@ export default function Restaurante() {
         sliderData={[
           {
             id: 1,
-            image: hero1,
+            image: restaurante_hero01,
           },
           {
             id: 2,
-            image: hero2,
+            image: restaurante_hero02,
           },
           {
             id: 3,
-            image: hero3,
+            image: restaurante_hero03,
           },
         ]}
       />

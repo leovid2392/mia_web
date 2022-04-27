@@ -8,6 +8,7 @@ import TitlePage from '../components/TitlePage'
 import Paragraph from '../components/Paragraph'
 import ArticlePortrait from '../components/ArticlePortrait'
 
+import Layout1x1 from '../components/Layout1x1'
 import beachClub1 from '../public/images/home/mia-5750_small500x750.jpg'
 import wineImg from '../public/images/home/vino-1_small722x500.jpg'
 import restaurantImg from '../public/images/home/mia-6152_small500x750.jpg'
@@ -28,6 +29,27 @@ import hero2_2 from '../public/images/home/mia-5918_large2000x1333.jpg'
 import hero3 from '../public/images/home/hemia-5750_small500x750.jpg'
 import hero4 from '../public/images/home/hmia-5092_small500x750.jpg'
 import hero5 from '../public/images/home/hmar_small750x500.jpg'
+
+import home_hero01 from '../public/images/home/home_hero01.jpg'
+import home_hero02 from '../public/images/home/home_hero08.jpg'
+import home_hero03 from '../public/images/home/home_hero02.jpg'
+import home_hero04 from '../public/images/home/home_hero04.jpg'
+
+import restaurante01 from '../public/images/home/restaurante_01.jpg'
+import vino01 from '../public/images/home/vino_01.jpg'
+
+import beachClub01 from '../public/images/home/beachClub_01.jpg'
+import beachClub02 from '../public/images/home/beachClub_02.jpg'
+import beachClub03 from '../public/images/home/beachClub_03.jpg'
+import beachClub04 from '../public/images/home/beachClub_04.jpg'
+
+import bebidas01 from '../public/images/home/bebidas_01.jpg'
+
+import djParty01 from '../public/images/home/djParty_01.jpg'
+
+import celebraciones01 from '../public/images/home/celebraciones_01.jpg'
+
+import blog01 from '../public/images/home/blog_01.jpeg'
 // hero<<<<<<
 
 import ArticleSquare from '../components/ArticleSquare'
@@ -66,31 +88,27 @@ export default function Home() {
       title={t('common:metaTitle')}
       description={t('common:metaDescription')}
     >
-      {/* <Hero
+      <Hero
         sliderData={[
           {
             id: 1,
-            image: celeimg2,
+            image: home_hero01,
           },
           {
             id: 2,
-            image: hero2,
+            image: home_hero02,
           },
           {
             id: 3,
-            image: hero3,
+            image: home_hero03,
           },
           {
             id: 4,
-            image: hero4,
-          },
-          {
-            id: 5,
-            image: hero5,
+            image: home_hero04,
           },
         ]}
-      /> */}
-      <Hero
+      />
+      {/* <Hero
         sliderData={[
           {
             id: 1,
@@ -108,13 +126,13 @@ export default function Home() {
             image2: celeimg1,
           },
         ]}
-      />
+      /> */}
       <TitlePage text='Mia tulum' />
       <Paragraph text='En un ambiente bohemio y relajado, entre palmas cocoteras y dunas de arena blanca se encuentra Mía Tulum; un lugar que conjuga con armonía un club de playa, un restaurante de cocina internacional de autor, un salón privado y The Club. Un espacio paradisíaco enmarcado por vistas espectaculares al mar caribe, ubicado estratégicamente en la mejor área de la zona hotelera de Tulum.' />
       <Paragraph text='En Mía Tulum siempre está sucediendo algo, desde eventos de música con DJ`s reconocidos, noches especiales con música bohemia, catas de vino, tequila, mezcal y cerveza artesanal, cenas con chefs invitados y por supuesto eventos privados como bodas y celebraciones especiales.' />
       <Paragraph text='Mía Tulum abrió sus puertas en 2017, desde entonces continúa en constante cambio y evolución para lograr que todos los viajeros se enamoren de sus elementos, el nido y el túnel de madera que marca la entrada al lugar y se han convertido ya en emblemas de Tulum.' />
       <ArticlePortrait
-        image={restaurantImg}
+        image={restaurante01}
         alt='image description'
         title='restaurante'
         paragraph='Mía combina la atmósfera perfecta, ofreciendo una gran experiencia culinaria de cocina internacional con un concepto casual dining, en un ambiente minimalista casual.'
@@ -123,7 +141,7 @@ export default function Home() {
       />
       <section className={styles.vino}>
         <ArticleSquare
-          image={wineImg}
+          image={vino01}
           alt='image description'
           layout='fill'
           objectFit='cover'
@@ -143,25 +161,45 @@ export default function Home() {
         <div className={styles.beachClub_imgContainer}>
           <div className={styles.beachClub_imgContainer1}>
             <DisplayTwoImg
-              img1={beachClub1}
-              img2={beachClub2}
+              img1={beachClub03}
+              img2={beachClub04}
               alt1='some description'
               alt2='some description'
             />
+            {/* <Layout1x1
+              img={beachClub03}
+              alt='descripcion de imagen'
+              objectPosition='center'
+            /> */}
           </div>
           <div className={styles.beachClub_imgContainer2}>
             <DisplayTwoImg
-              img1={beachClub1}
-              img2={beachClub2}
+              img1={beachClub01}
+              img2={beachClub02}
               alt1='some description'
               alt2='some description'
             />
+            {/* <Layout1x1
+              img={beachClub01}
+              alt='descripcion de imagen'
+              objectPosition='center'
+            /> */}
+            {/* <Layout1x1
+              img={beachClub02}
+              alt='descripcion de imagen'
+              objectPosition='center'
+            /> */}
+            {/* <Layout1x1
+              img={beachClub04}
+              alt='descripcion de imagen'
+              objectPosition='center'
+            /> */}
           </div>
         </div>
       </section>
 
       <ArticleSquareWhite
-        image={bebidasImg}
+        image={bebidas01}
         title='bebidas'
         paragraph='Somos alquimistas, creamos cócteles enigmáticos con armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
         linkText='saber más'
@@ -180,7 +218,7 @@ export default function Home() {
       />
       <section className={styles.djParty}>
         <ArticleSquare
-          image={musicImg}
+          image={djParty01}
           alt='image description'
           layout='fill'
           objectFit='cover'
@@ -192,9 +230,9 @@ export default function Home() {
         />
       </section>
       <ArticleThreeImg
-        img1={celeimg1}
-        img2={celeimg2}
-        img3={celeimg3}
+        img1={celebraciones01}
+        img2={celebraciones01}
+        img3={celebraciones01}
         alt1={'image description'}
         alt2={'image description'}
         alt3={'image description'}
@@ -207,7 +245,7 @@ export default function Home() {
         linkHref='/celebraciones'
       />
       <ArticlePortrait
-        image={blog1}
+        image={blog01}
         alt='image description'
         title='blog'
         paragraph='Cantautor y productor de música electrónica. Para muchos, eso puede sonar como dos aspectos muy diferentes de la cultura sonora moderna, lo que a su vez hace de Monolink un personaje fascinante, porque.....'

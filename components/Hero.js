@@ -21,14 +21,14 @@ const Hero = ({ sliderData }) => {
     }
   }, [index, events])
 
-  // useEffect(() => {
-  //   let slider = setTimeout(() => {
-  //     setIndex(index + 1)
-  //   }, 6000)
-  //   return () => {
-  //     clearInterval(slider)
-  //   }
-  // }, [index])
+  useEffect(() => {
+    let slider = setTimeout(() => {
+      setIndex(index + 1)
+    }, 6000)
+    return () => {
+      clearInterval(slider)
+    }
+  }, [index])
 
   // const handlePrevBtn = () => {
   //   setIndex(index - 1)
