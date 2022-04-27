@@ -27,17 +27,18 @@ const SliderReviews = ({ sliderData }) => {
     }
   }, [index])
 
-  const handlePrevBtn = () => {
-    setIndex(index - 1)
-  }
+  // const handlePrevBtn = () => {
+  //   setIndex(index - 1)
+  // }
 
-  const handleNextBtn = () => {
-    setIndex(index + 1)
-  }
+  // const handleNextBtn = () => {
+  //   setIndex(index + 1)
+  // }
   return (
     <section className={styles.sliderContainer}>
       {events.map((item, itemIndex) => {
-        const { id, image, name, review, linkComment } = item
+        const { id, image, name, review1, review2, review3, review4, date } =
+          item
         let position = 'nextSlide'
 
         if (itemIndex === index) {
@@ -51,19 +52,23 @@ const SliderReviews = ({ sliderData }) => {
         }
         return (
           <article key={id} className={styles[`${position}`]}>
-            <figure className={styles.imgContainer}>
+            {/* <figure className={styles.imgContainer}>
               <Image
                 src={image}
                 layout='fill'
                 objectFit='cover'
                 objectPosition='center'
               />
-            </figure>
+            </figure> */}
             <p className={styles.name}>{name}</p>
-            <p className={styles.review}>{review}</p>
-            <a href={linkComment} className={styles.commentLink}>
+            <p className={styles.review}>{date}</p>
+            <p className={styles.review}>{review1}</p>
+            <p className={styles.review}>{review2}</p>
+            <p className={styles.review}>{review3}</p>
+            <p className={styles.review}>{review4}</p>
+            {/* <a href={linkComment} className={styles.commentLink}>
               Ir a TripAdvisor
-            </a>
+            </a> */}
           </article>
         )
       })}

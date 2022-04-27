@@ -36,6 +36,7 @@ E INCLUYEN 16% DE IVA'
       />
       <MenuItems title='entradas' data={entradasData} />
       <MenuItems title='principales' data={principalesData} />
+      <MenuItems title='tacos' data={tacosData} />
     </Layout>
   )
 }
@@ -138,31 +139,101 @@ const principalesData = [
     id: 1,
     itemName: 'Salmón y Quinoa',
     description:
-      'Tortilla de Jícama, atún aliñado con aceite de ajonjolí, pepino, guacamole y mayonesa de habanero',
-    price: '360',
+      'Acompañado de ensalada de aguacate, tomate cherry,mango y Quinoa peruana',
+    price: '680',
   },
   {
     id: 2,
-    itemName: '',
-    description: '',
-    price: '',
+    itemName: 'Hamburguesa Angus',
+    description: '220 g de carne black angus con papas y pepinillo',
+    price: '430',
   },
   {
     id: 3,
-    itemName: '',
-    description: '',
-    price: '',
+    itemName: 'Atún Sellado en Costra de Ajonjolí ',
+    description:
+      'Bañado con salsa de cítricos al jengibre, acompañado de verduras paja salteadas con un toque de salsa de soya y aceite de ajonjolí',
+    price: '550',
   },
   {
     id: 4,
-    itemName: '',
-    description: '',
-    price: '',
+    itemName: 'Pepito de Arrachera Angus',
+    description:
+      'Jugosa arrachera marinada sobre guacamole y frijoles refritos, servida en pan de la casa, acompañado de chiles toreados',
+    price: '400',
   },
   {
     id: 5,
-    itemName: '',
-    description: '',
-    price: '',
+    itemName: 'Costillar Baby Back BBQ',
+    description:
+      '400 g, de costilla de cerdo bañadas en salsa BBQ tamarindo-chipotle',
+    price: '450',
+  },
+  {
+    id: 6,
+    itemName: 'Rib Eye Black Angus 500 g',
+    description:
+      'Corte jugoso asado al término de su preferencia, acompañado de puré de papa o papas a la francesa',
+    price: '900',
+  },
+  {
+    id: 7,
+    itemName: 'Pescado Fresco a la Talla (2 personas)',
+    description:
+      'Pesca del día marinado en mayonesa y adobo de tres chiles. Acompañado de tortillas recién hechas y salsa tatemada',
+    price: '1350',
+  },
+  {
+    id: 8,
+    itemName: 'Tomahawk Black Angus (2 personas)',
+    description:
+      'Asado al término de tu preferencia, acompañado de puré de papa o papas a la francesa',
+    price: '2600',
+  },
+  {
+    id: 9,
+    itemName: `Botana 'MIA' (2 personas)`,
+    description:
+      'Chorizo Cantimpalo español, arrachera Angus, tacos dorados,pechuga de pollo a la parrilla, quesadillas, nopal asado, cebollitas cambray, tortillas recien hechas, txistorra, queso panela, salsa y guacamole.',
+    price: '1395',
+  },
+]
+
+const tacosData = [
+  {
+    id: 1,
+    itemName: 'Tacos de Rabo de Res',
+    description: 'Servidos con cebolla, cilantro y salsa taquera',
+    price: '330',
+  },
+  {
+    id: 2,
+    itemName: 'Tacos de Lechón',
+    description: 'Con cebolla morada encurtida y cremoso de aguacate',
+    price: '330',
+  },
+  {
+    id: 3,
+    itemName: 'Tacos de Pato',
+    description: 'Salsa tatemada y cebolla encurtida',
+    price: '370',
+  },
+  {
+    id: 4,
+    itemName: 'Tacos Baja de Camarón',
+    description: 'Camarón jumbo rebosado, cremoso de aguacate y salsa mexicana',
+    price: '370',
+  },
+  {
+    id: 5,
+    itemName: 'Tacos de Cochinita',
+    description: 'Con guacamole y salsa Xni pec',
+    price: '290',
+  },
+  {
+    id: 6,
+    itemName: 'Surtido de Pesca',
+    description: 'Ensalada de col morada, salsa mexicana y cremoso de aguacate',
+    price: '370',
   },
 ]

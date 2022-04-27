@@ -27,13 +27,13 @@ export default function Header() {
           <a className={styles.a}>Vino</a>
         </Link>
         <Link href='/beachClub'>
-          <a className={styles.a}>BeachClub</a>
+          <a className={styles.a}>Beach Club</a>
         </Link>
         <Link href='/bodas'>
           <a className={styles.a}>Bodas</a>
         </Link>
         <Link href='/djParty'>
-          <a className={styles.a}>DjParty</a>
+          <a className={styles.a}>Dj Party</a>
         </Link>
         <Link href='/celebraciones'>
           <a className={styles.a}>Celebraciones</a>

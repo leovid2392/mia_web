@@ -48,7 +48,7 @@ export default function Galeria() {
         ]}
       />
       <TitlePage text='galeria' />
-      <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' />
+      {/* <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' /> */}
       <ArticleFourImg
         img1={slide1}
         img2={slide2}

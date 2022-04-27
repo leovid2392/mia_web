@@ -69,7 +69,8 @@ export default function BeachClub() {
       />
       <div className={styles.description}>
         <TitlePage text='Beach Club' />
-        <Paragraph text='En nuestro beach club el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
+        <Paragraph text='cal- MAR- se es nuestro lema, los pasos que damos en Mía son ligeros, los respiros son rítmicos al unísono del viento acariciando las palmeras; el vaivén de las olas azul turquesa y los elementos naturales se conjugan para conectar con un espacio de tranquilidad, plenitud y de apreciación del arte que irradia la vegetación en abundancia.' />
+        <Paragraph text='Horario: 10:00am a 7:00pm' />
       </div>
       <div className={styles.beachClub}>
         <Layout1x1
@@ -90,8 +91,8 @@ export default function BeachClub() {
         />
       </div>
       <Banner
-        text='Reserva tu cama aquí'
-        link='#'
+        text='Reserva tu lugar'
+        link='/contacto'
         image={slide2}
         objectFit='cover'
         objectPosition='center'
@@ -119,11 +120,13 @@ export default function BeachClub() {
         <ArticlePortrait
           image={solteras}
           alt='image description'
-          title='despedidas de solero(a)'
-          paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
-          linkText=''
+          title='despedidas de soleros'
+          paragraph='Si lo que buscas es celebrar la despedida de soltera más divertida de Tulum, en Mía encontrarás la mejor opción. Ponte en manos de nuestra coordinadora quien logrará que tu celebración sea la más especial para ti y todas tus amigas. Comienza por un día en la playa en el mejor ambiente, música de DJ, body painting, hookas y más. Culmínalo bailando en la arena en la mejor experiencia de fiesta en todo Tulum. Contáctanos para más información.'
+          linkText='Agenda tu fecha'
           linkHref='/'
-        />
+        >
+          {/* <a href=''>Contacto</a> */}
+        </ArticlePortrait>
       </section>
     </Layout>
   )

@@ -34,7 +34,7 @@ export default function AsideMenu() {
         </Link>
         <Link href='/beachClub'>
           <a className={styles.a} onClick={handleAsideMenu}>
-            BeachClub
+            Beach Club
           </a>
         </Link>
         <Link href='/bodas'>
@@ -44,7 +44,7 @@ export default function AsideMenu() {
         </Link>
         <Link href='/djParty'>
           <a className={styles.a} onClick={handleAsideMenu}>
-            DjParty
+            Dj Party
           </a>
         </Link>
         <Link href='/celebraciones'>

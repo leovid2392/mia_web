@@ -14,6 +14,7 @@ export default function ArticleSquareWhite({
   linkText,
   linkHref,
   alt,
+  children,
 }) {
   return (
     <article className={styles.container}>
@@ -30,6 +31,7 @@ export default function ArticleSquareWhite({
         <TitleSection text={title} />
         <Paragraph text={paragraph} />
         <InternalLink link={linkHref} text={linkText} />
+        {children}
       </div>
     </article>
   )

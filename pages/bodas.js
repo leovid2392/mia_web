@@ -13,6 +13,7 @@ import Layout2x2 from '../components/Layout2x2'
 import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
 import SliderReviews from '../components/SliderReviews'
+import Layout1x1 from '../components/Layout1x1'
 import Image from 'next/image'
 // import Layout1x1 from '../components/Layout1x1'
 //<<<<<<<<< components<<<<<<<<<<<<<<<<<<<
@@ -28,6 +29,8 @@ import hero1 from '../public/images/bodas/bride_small500x751.jpg'
 import hero2 from '../public/images/bodas/boda-10_small500x750.jpg'
 import hero3 from '../public/images/bodas/boda11_small500x750.jpg'
 import couples from '../public/images/bodas/couple_awards.jpg'
+import bodas_com from '../public/images/bodas/bodas_com.jpg'
+import logo_bodas_com from '../public/images/bodas/logo_bodas_com.png'
 
 import boda1 from '../public/images/bodas/boda-12_small500x88.jpg'
 import boda2 from '../public/images/bodas/boda-1_small750x500.jpg'
@@ -64,24 +67,26 @@ export default function Bodas() {
       />
       <div className={bodaStyle.description}>
         <TitlePage text='bodas' />
-        <Paragraph text='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda.' />
+        <Paragraph text='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda. Con una extensión de 400 metros cuadrados, Mía Tulum es sin duda el lugar ideal para la celebración más especial con una capacidad de hasta 200 personas. Imagina tu ceremonia a la orilla del mar; nuestros wedding planners van contigo de la mano, apoyandote paso a paso en la creación de un estilo único y apoyarte con los preparativos de ceremonias civil, étnica, simbólica y/o boda maya; mientras tus invitados disfrutarán de un coctel en la playa tu podrás tener tu sesión de fotos soñada al atardecer. Tu fiesta iniciará con un delicioso banquete a la luz de la luna y celebrarás tu union en un escenario que todos recordarán.' />
+
+        <Paragraph text='Somos el único lugar que no cobra renta de locación y nuestro equipo de coordinación está incluido en la contratación de tu boda.' />
       </div>
       <ArticlePortrait
         image={pedida1}
         alt='image description'
-        title='propuestas de matrimonio'
-        paragraph='Imagina tu ceremonia a la orilla del mar; nuestro equipo de bodas podrá apoyarte con los preparativos de ceremonias civil, étnica, simbólica y/o boda maya; mientras tus invitados disfrutarán de un coctel en la playa tu podrás tener tu sesión de fotos soñada al atardecer.'
-        linkText=''
+        title=''
+        paragraph='Celebraciones acogedoras como bodas, cenas románticas, cenas de ensayo, propuestas de matrimonio, renovación de votos o aniversarios son algunos de los momentos en los que todo el equipo de Mía une esfuerzos para que tu celebración sea memorable.'
+        linkText='Aparta tu fecha'
         linkHref='/'
       />
-      <Banner
+      {/* <Banner
         text='Contáctanos'
         link='/contacto'
         image={slide1}
         objectFit='cover'
         objectPosition='center'
-      />
-      <TitleSection text='renovación de votos' />
+      /> */}
+      {/* <TitleSection text='renovación de votos' />
       <Paragraph text='Con una extensión de 400 metros cuadrados, Mía Tulum es sin duda el lugar ideal para la celebración más especial. Con una capacidad de hasta 150 personas.' />
       <Layout2x2
         img1={boda1}
@@ -93,9 +98,9 @@ export default function Bodas() {
         objectPosition1='center'
         objectPosition2='center'
         objectPosition3='center'
-      />
+      /> */}
 
-      <ArticleSquareWhite
+      {/* <ArticleSquareWhite
         image={cenaro}
         title='cenas romanticas'
         paragraph='Celebraciones acogedoras como bodas, cenas románticas, cenas de ensayo, propuestas de matrimonio o aniversarios son algunos de los momentos en los que todo el equipo de Mía une esfuerzos para que tu celebración sea memorable.'
@@ -104,9 +109,9 @@ export default function Bodas() {
         alt='image description'
         objectFit='cover'
         objectPosition='center'
-      />
+      /> */}
       <div className={bodaStyle.couples}>
-        <ArticleSquare
+        {/* <ArticleSquare
           image={couples}
           alt='image description'
           layout='fill'
@@ -116,6 +121,16 @@ export default function Bodas() {
           paragraph=''
           linkText=''
           linkHref=''
+        /> */}
+        <Layout1x1
+          img={couples}
+          alt='image description'
+          objectPosition='center'
+        />
+        <Layout1x1
+          img={bodas_com}
+          alt='image description'
+          objectPosition='center'
         />
       </div>
       <TitleSection text='Testimonios' />
@@ -146,7 +161,7 @@ export default function Bodas() {
           ]}
         />
       </div>
-      <TitleSection text='Nuestros socios' />
+      <TitleSection text='Nuestros aliados' />
       <section className={bodaStyle.socios}>
         <figure className={styles.imgContainer}>
           <Image
@@ -160,6 +175,15 @@ export default function Bodas() {
         <figure className={styles.imgContainer}>
           <Image
             src={weddingWireLogo}
+            alt='image description'
+            width={280}
+            height={100}
+            layout='fixed'
+          ></Image>
+        </figure>
+        <figure className={styles.imgContainer}>
+          <Image
+            src={logo_bodas_com}
             alt='image description'
             width={280}
             height={100}

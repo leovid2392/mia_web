@@ -59,12 +59,12 @@ export default function Bebidas() {
         ]}
       />
       <TitlePage text='bebidas' />
-      <Paragraph text='El equipo de mixólogos está listo para satisfacerte con la creación de cocteles según tus gustos, con aromas cítricos, ahumados y frutales acompañados de los mejores destilados y licores premium.' />
+      <Paragraph text='Nuestro equipo de bartenders logrará que cada visita que tengas en Mïa Tulum sea con la mejor experiencia en bebidas, consulta nuestro cóctel especial de temporada creado por las mejores manos y utilizando los productos de la más alta calidad.' />
       <ArticlePortrait
         image={desti}
         alt='image description'
-        title='mixologia'
-        paragraph='Con aromas cítricos, ahumados y frutales acompañados de los mejores destilados y licores premium.'
+        title='mixología'
+        paragraph='El equipo de mixólogos está listo para satisfacerte con la creación de cocteles según tus gustos, con aromas cítricos, ahumados y frutales acompañados de los mejores destilados y licores premium.'
         linkText=''
         linkHref='/'
       >
@@ -85,7 +85,7 @@ export default function Bebidas() {
           objectPosition3='center'
           objectPosition4='center'
           title='cervezas'
-          paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+          paragraph='Mia se distingue  por ser el lugar con mayor número de cervezas artesanales en Tulum. Adéntrate en esta aventura y prueba nuestra selección de cervezas Pilsner, Ipa, Pale Ale, Stout y más.'
           linkText=''
           linkHref=''
         >
@@ -99,14 +99,14 @@ export default function Bebidas() {
         objectFit='cover'
         objectPosition='center'
         title='Destilados'
-        paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
+        paragraph='En Mia encontrarás una amplia selección de destilados incluyendo las más reconocidas marcas premium como Bushmills.'
         linkText=''
         linkHref=''
       >
         <LinkBorder text='ver menu' link='#' />
       </ArticleSquare>
-      <TitleSection text='nuestra selección' />
-      <SliderBottle
+      {/* <TitleSection text='nuestra selección' /> */}
+      {/* <SliderBottle
         sliderData={[
           {
             id: 1,
@@ -130,9 +130,9 @@ export default function Bebidas() {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
           },
         ]}
-      />
+      /> */}
 
-      <ArticleSquareWhite
+      {/* <ArticleSquareWhite
         image={slide2}
         title='cóctel del mes'
         paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta'
@@ -141,7 +141,7 @@ export default function Bebidas() {
         alt='image description'
         objectFit='cover'
         objectPosition='center'
-      />
+      /> */}
     </Layout>
   )
 }

@@ -57,28 +57,32 @@ export default function Vino() {
         ]}
       />
       <TitlePage text='vinos' />
-      <Paragraph text='La vida, el sacrificio y la inmortalidad son algunos de los simbolismos del vino, en Mía la cultura vinícola esta establecida como un estilo de vida.' />
+      <Paragraph text='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también! ' />
+      <Paragraph text='La vida, el sacrificio y la inmortalidad son algunos de los simbolismos del vino, en Mía la cultura vinícola está establecida como un estilo de vida, desde vinos jóvenes y frescos para tomar durante el dia en la playa hasta vinos complejos para satisfacer a los paladares más exigentes. ' />
       <section className={styles.cava}>
         <ArticleSquareWhite
           image={wine7Img}
-          title='cava mas completa del destino'
-          paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 350 etiquetas de diferentes países.'
+          title='la mejor cava de vinos en tulum'
+          paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 350 etiquetas de 12 diferentes países como Argentina, Chile, Estados Unidos, Australia, Italia, España, Francia, Alemanía, Nueva Zelanda, Portugal y por supuesto México.'
           linkText=''
           linkHref=''
           alt='image description'
           objectFit='cover'
           objectPosition='center'
-        />
+        >
+          <LinkBorder text='ver menu' link='#' />
+          {/* <Paragraph text='En nuestra Cava encontrarás desde vinos jóvenes y frescos para tomar durante el día en la playa hasta vinos complejos para satisfacer a los paladares más exigentes.' /> */}
+        </ArticleSquareWhite>
       </section>
-      <ArticlePortrait
+      {/* <ArticlePortrait
         image={wine18Img}
         alt='image description'
         title='Todo lo que buscas'
         paragraph='En nuestra Cava encontrarás desde vinos jóvenes y frescos para tomar durante el día en la playa hasta vinos complejos para satisfacer a los paladares más exigentes.'
         linkText=''
         linkHref='/'
-      />
-      <section className={styles.wineSpectator}>
+      /> */}
+      {/* <section className={styles.wineSpectator}>
         <ArticleSquare
           image={wine9Img}
           alt='image description'
@@ -90,25 +94,25 @@ export default function Vino() {
           linkText=''
           linkHref=''
         />
-      </section>
+      </section> */}
 
-      <ArticleSquare
+      {/* <ArticleSquare
         image={wine12Img}
         alt='image description'
         layout='fill'
         objectFit='cover'
         objectPosition='center'
         title='carta de vinos'
-        paragraph='Son más de 300 etiquetas las que encontrarás en La Cava de Mía, una de las más completas de Tulum.'
+        paragraph=''
         linkText=''
         linkHref=''
       >
         <LinkBorder text='ver menu' link='#' />
-      </ArticleSquare>
+      </ArticleSquare> */}
 
       <section className={styles.maridaje}>
         <TitleSection text='maridaje' />
-        <Paragraph text='Alrededor del vino se desarrollan dos experiencias que son un must; la cena maridaje, en la que nuestro sommelier trabaja para acompañar los platillos insignia de Mía con el vino indicado y destacar cada bocado.' />
+        <Paragraph text='Alrededor del vino se desarrollan dos experiencias que son un must; la cena maridaje, en la que nuestro sommelier trabaja para acompañar los platillos insignia de Mía con el vino indicado y destacar cada bocado. Nuestro head Sommelier Rafael Pelissier te puede guiar por nuestra cava y recomendarte vinos con sabores únicos, complejos y de aromas seductores, te invitamos a acompañarnos en nuestra pasión por el vino.' />
         <Layout2x2
           img1={wine4Img}
           img2={wine9Img}
@@ -121,8 +125,8 @@ export default function Vino() {
           objectPosition3='center'
         />
       </section>
-      <TitleSection text='nuestra selección' />
-      <SliderBottle
+      {/* <TitleSection text='nuestra selección' /> */}
+      {/* <SliderBottle
         sliderData={[
           {
             id: 1,
@@ -146,14 +150,14 @@ export default function Vino() {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
           },
         ]}
-      />
-      <Banner
+      /> */}
+      {/* <Banner
         text='Espera nuestro próximo festival'
         link='#'
         image={slide1}
         objectFit='cover'
         objectPosition='center'
-      />
+      /> */}
       <ArticleFourImg
         img1={fest1}
         img2={fest2}
@@ -167,7 +171,7 @@ export default function Vino() {
         objectPosition2='center'
         objectPosition3='center'
         objectPosition4='center'
-        title='festivales de vino'
+        title='festival de vinos'
         paragraph='Otra experiencia es el Festival de vinos, es una fiesta que se realiza en el segundo semestre del año en la que Mía invita a enólogos y sommeliers para conocer las nuevas propuestas que se desarrollan a nivel nacional e internacional. Nuestro ya reconocido Festival se encuentra acompañado de música, entretenimiento y canapés.'
         linkText=''
         linkHref=''

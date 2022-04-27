@@ -48,7 +48,7 @@ export default function SocialIcons({ text }) {
       >
         <FaTripadvisor />
       </a>
-      <a
+      {/* <a
         href='https://www.tripadvisor.com.mx/Restaurant_Review-g150813-d13722373-Reviews-Mia_Restaurant_Beach_Club-Tulum_Yucatan_Peninsula.html'
         target='_blank'
         rel='noreferrer'
@@ -59,7 +59,7 @@ export default function SocialIcons({ text }) {
           width={30}
           height={24}
         />
-      </a>
+      </a> */}
     </div>
   )
 }

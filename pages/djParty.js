@@ -56,7 +56,8 @@ export default function DjParty() {
       />
       <div className={styles.description}>
         <TitlePage text='dj party' />
-        <Paragraph text='Con los pies en la arena, te invitamos a vivir una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable.' />
+        <Paragraph text='Con los pies en la arena, te invitamos a vivir una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable. Elementos especiales de mapping, performance y body painting te harán vivir las mejores fiestas al estilo Tulum. The club, es el espacio que reúne a los fanáticos de la música electrónica, cada fiesta tiene un ambiente único, desde talentos emergentes y experimentales hasta reconocidos dj`s internacionales vienen a The Club para vibrar y vivir la mejor experiencia de fiesta en la playa de Mía Tulum.' />
+        <Paragraph text='Horario: 2:00 pm a 12:00 am' />
       </div>
       <div className={styles.layout1x1}>
         <Layout1x1

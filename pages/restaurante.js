@@ -60,7 +60,7 @@ export default function Restaurante() {
         ]}
       />
       <TitlePage text='restaurante' />
-      <Paragraph text='Los sabores en la cocina de nuestro restaurante han sido creados para sorprender y satisfacer a tu paladar, con sabores de rincones del mundo queremos integrar a la perfección ingredientes de máxima calidad con las bebidas adecuadas.' />
+      <Paragraph text='Los sabores en la cocina de nuestro restaurante han sido creados para sorprender y satisfacer a tu paladar, con sabores de rincones del mundo queremos integrar a la perfección ingredientes de máxima calidad con las bebidas adecuadas,  la Cava es uno de los lugares más fascinantes dentro de Mía, con vinos llenos de historias para acompañar tu día.' />
       <section className={styles.breakfast}>
         <ArticleSquare
           image={morningImg}
@@ -73,7 +73,7 @@ export default function Restaurante() {
           linkText=''
           linkHref=''
         >
-          <p className={styles.p}>Horario: 8:00 am - 11:00 pm </p>
+          <p className={styles.p}>Horario: 8:00 am - 11:00 am </p>
           <LinkBorder text='ver menu' link='./menu/restaurante/desayuno' />
         </ArticleSquare>
       </section>
@@ -107,12 +107,16 @@ export default function Restaurante() {
         objectFit='cover'
         objectPosition='center'
         title='por la noche'
-        paragraph='Por las noches el ambiente del restaurante se transforma para ser iluminado por la luz de las velas, en un ambiente cálido y acogedor, libre y bohemio para que disfrutes sólo o en compañía de los platillos que han distinguido la personalidad de nuestra cocina, deléitate con nuestras creaciones como el callo de hacha con risotto al champagne, mejillones meuniere, mero miso morita y el predilecto de nuestros clientes, el  short rib.'
+        paragraph='Por las noches el ambiente del restaurante se transforma para ser iluminado por la luz de las velas, en un ambiente cálido y acogedor, libre y bohemio para que disfrutes sólo o en compañía de los platillos que han distinguido la personalidad de nuestra alta cocina internacional, deléitate con nuestras creaciones como el callo de hacha con risotto al champagne, mejillones meuniere, mero miso morita y el predilecto de nuestros clientes, el  short rib. Cenar en el restaurante es definitivamente una experiencias gastronómica de gran nivel.'
         linkText=''
         linkHref=''
       >
-        <p className={styles.p}>Horario: 6:00 pm - 10:00 pm </p>
-        <LinkBorder text='ver menu' link='#' />
+        <p className={styles.p}>
+          Pregunta a tu mesero por el cóctel del día o la recomendación de
+          maridaje sugerida por nuestro Sommelier.
+        </p>
+        <p className={styles.p}>Horario: 6:00 pm - 11:30 pm </p>
+        <LinkBorder text='ver menu' link='./menu/restaurante/cenas' />
       </ArticleSquare>
       <section className={styles.dessert}>
         <ArticlePortrait
@@ -123,8 +127,7 @@ export default function Restaurante() {
           linkText=''
           linkHref=''
         >
-          <p className={styles.p}>Horario: 6:00 pm - 10:00 pm </p>
-          <LinkBorder text='ver menu' link='#' />
+          <LinkBorder text='ver menu' link='./menu/restaurante/postres' />
         </ArticlePortrait>
       </section>
       <section className={styles.pizza}>
@@ -142,10 +145,13 @@ export default function Restaurante() {
           objectPosition3='center'
           objectPosition4='center'
           title='pizza garden'
-          paragraph='No hay nada más satisfactorio que disfrutar de un pescado fresco a la talla bien preparado y acompañarlo con un'
+          paragraph='Rodeado de un ambiente divertido y casual, transpórtate a Nápoles a través del sabor de nuestra auténtica pizza italiana, delgada, con  borde crujiente y con una base suave prensada a mano, salsa de tomate fresca, aceite de oliva extra virgen y queso mozarella. El chef Stefano sabe perfectamente hacerte sentir como en casa. ¡Andiamo al giardino della pizza!'
           linkText=''
           linkHref=''
-        ></ArticleFourImg>
+        >
+          <p className={styles.p}>Horario: 1 pm - 11:30 pm </p>
+          <LinkBorder text='ver menu' link='./menu/restaurante/pizzaGarden' />
+        </ArticleFourImg>
       </section>
 
       <Banner
@@ -160,7 +166,7 @@ export default function Restaurante() {
         image={vipRoomImg}
         alt='image description'
         title='vip room'
-        paragraph='El salón privado es un nuevo espacio ubicado en el primer piso de Mía, con una decoración acogedora e inspirada en elementos marroquíes, con vistas fascinantes al mar caribe. Es el espacio ideal para cenas íntimas, celebraciones especiales y catas de vino. Este nuevo espacio tiene capacidad limitada para 20 personas.'
+        paragraph='El salón privado es un nuevo espacio ubicado en el primer piso de Mía, equipado con aire acondicionado y una decoración acogedora inspirada al estilo marroquíe. Es el espacio ideal para cenas íntimas, celebraciones especiales y catas de vino. Este nuevo espacio tiene capacidad limitada para 20 personas.'
         linkText=''
         linkHref=''
       />

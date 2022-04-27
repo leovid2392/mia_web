@@ -110,12 +110,14 @@ export default function Home() {
         ]}
       />
       <TitlePage text='Mia tulum' />
-      <Paragraph text='Un lugar que conjuga con armonía un club de playa, un restaurante de cocina internacional de autor, un salón privado y The Club, todo en un ambiente bohemio y relajado.' />
+      <Paragraph text='En un ambiente bohemio y relajado, entre palmas cocoteras y dunas de arena blanca se encuentra Mía Tulum; un lugar que conjuga con armonía un club de playa, un restaurante de cocina internacional de autor, un salón privado y The Club. Un espacio paradisíaco enmarcado por vistas espectaculares al mar caribe, ubicado estratégicamente en la mejor área de la zona hotelera de Tulum.' />
+      <Paragraph text='En Mía Tulum siempre está sucediendo algo, desde eventos de música con DJ`s reconocidos, noches especiales con música bohemia, catas de vino, tequila, mezcal y cerveza artesanal, cenas con chefs invitados y por supuesto eventos privados como bodas y celebraciones especiales.' />
+      <Paragraph text='Mía Tulum abrió sus puertas en 2017, desde entonces continúa en constante cambio y evolución para lograr que todos los viajeros se enamoren de sus elementos, el nido y el túnel de madera que marca la entrada al lugar y se han convertido ya en emblemas de Tulum.' />
       <ArticlePortrait
         image={restaurantImg}
         alt='image description'
         title='restaurante'
-        paragraph='Mía combina la atmósfera perfecta, ofreciendo una experiencia culinaria de cocina internacional con un concepto casual dining, en un ambiente minimalista casual.'
+        paragraph='Mía combina la atmósfera perfecta, ofreciendo una gran experiencia culinaria de cocina internacional con un concepto casual dining, en un ambiente minimalista casual.'
         linkText='saber más'
         linkHref='/restaurante'
       />
@@ -127,7 +129,7 @@ export default function Home() {
           objectFit='cover'
           objectPosition='70%'
           title='Vinos'
-          paragraph='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también!'
+          paragraph='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también! Te invitamos a descubrir la cava mas completa del destino con más de 350 etiquetas de vino de 12 paises.'
           linkText='saber más'
           linkHref='/vino'
         />
@@ -172,7 +174,7 @@ export default function Home() {
         image={bodasImg}
         alt='image description'
         title='bodas'
-        paragraph='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda.'
+        paragraph='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Mia Tulum en el mejor lugar para celebrar tu Boda.'
         linkText='saber más'
         linkHref='/bodas'
       />
@@ -184,7 +186,7 @@ export default function Home() {
           objectFit='cover'
           objectPosition='center'
           title='dj Party'
-          paragraph='Una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable en Tulum y vivir las mejores fiestas.'
+          paragraph='Con los pies en la arena, te invitamos a vivir una experiencia sonora multisensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable.'
           linkText='saber más'
           linkHref='/djParty'
         />
@@ -224,27 +226,38 @@ export default function Home() {
           sliderData={[
             {
               id: 1,
-              image: sliderComentsImg1,
-              name: 'Iris Ilike',
-              review:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
-              linkComment: '/',
+              name: 'LuisiGonzalez',
+              review1:
+                'Estuvimos a principio de abril por la invitación de Paula, nos dio una atención excelente, nos mostró del lugar y nos explicó todo! UNA GENIA. Súper atentos en todo momento y nos hicieron pasar un día increíble ! La atención de todos fue espectacular.',
+              review2:
+                'La comida riquísima , las papas enorme la porción, guacamole exquisito ¡Las bebidas bien frescas para pasar el calor! La vista excepcional, lugares geniales para poder sacar unas fotos divinas esperamos volver pronto.',
+              review3:
+                'Recomendamos este lugar al 1000% ya que te vas a encontrar con todo lo que está bien, buena vista, buena comida y lo más importante buena atención, los chicos son geniales!',
+              review4: 'Gracias Paula por tu atención',
+              date: 'abril de 2022',
             },
             {
               id: 2,
-              image: sliderComentsImg2,
-              name: 'Gregg Reeves',
-              review:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
-              linkComment: '/',
+              name: 'Cladigo89',
+              review1: '100% Recomendado',
+              review2:
+                'Sitio estupendo! Paula la chica que nos recibió encantadora! Pasamos una gran noche, margaritas de 10! Si quieres buena cena y fiesta este es el sitio!',
+              date: 'abril de 2022',
             },
             {
               id: 3,
-              image: sliderComentsImg1,
-              name: 'Claudia Clements',
-              review:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ',
-              linkComment: '/',
+              name: 'Karenr7733',
+              review1: 'Excelente lugar!!!',
+              review2: `Quedé encantada con la diversidad de vinos, es excelente. Por la tarde pude broncearme a pie de playa y tomar unos drinks, después pedí un platillo y un postre, realmente el sabor muy bueno. Por la noche la fiesta es increíble, los DJ'S son los mejores, puedo decir que pase una de las mejores fiestas en Mía. OBVIO VENDRÍA MIL VECES MÁS!!!`,
+              date: 'abril de 2022',
+            },
+            {
+              id: 4,
+              name: 'rub_na818',
+              review1: 'Experiencia inolvidable en Tulum',
+              review2: `Pasamos el mejor rato en este restaurante, los platillos estaban todos deliciosos en especial el risotto de mariscos y el chamorro de cordero, nuestro mesero Juan Carlos nos atendió de maravilla y nos hizo sentir como en casa, cuentan con la mejor selección de vinos y mezcales de Tulum.`,
+              review3: `Sin duda volveremos muchas veces!`,
+              date: 'abril de 2022',
             },
           ]}
         />
