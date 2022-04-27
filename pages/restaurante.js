@@ -35,6 +35,24 @@ import breakfastImg from '../public/images/restaurante/MiaTulum-3735_small500x75
 import restaurante_hero01 from '../public/images/restaurante/restaurante_hero01.jpg'
 import restaurante_hero02 from '../public/images/restaurante/restaurante_hero02.jpg'
 import restaurante_hero03 from '../public/images/restaurante/restaurante_hero03.jpg'
+
+import mañana01 from '../public/images/restaurante/mañana_01.jpg'
+
+import almuerzo01 from '../public/images/restaurante/almuerzo_01.jpg'
+import almuerzo02 from '../public/images/restaurante/almuerzo_02.jpg'
+import almuerzo03 from '../public/images/restaurante/almuerzo_03.jpg'
+import almuerzo04 from '../public/images/restaurante/almuerzo_04.jpg'
+import cena01 from '../public/images/restaurante/cena_01.jpg'
+import banner01 from '../public/images/restaurante/banner_01.jpg'
+import postre01 from '../public/images/restaurante/postre_01.jpg'
+import pizzaGarden01 from '../public/images/restaurante/pizzaGarden_01.jpg'
+import pizzaGarden02 from '../public/images/restaurante/pizzaGarden_02.jpg'
+import pizzaGarden03 from '../public/images/restaurante/pizzaGarden_03.jpg'
+import pizzaGarden04 from '../public/images/restaurante/pizzaGarden_04.jpg'
+import vipRoom01 from '../public/images/restaurante/vipRoom_01.jpg'
+import brinda01 from '../public/images/restaurante/brinda_01.jpg'
+import vino01 from '../public/images/restaurante/vino_01.jpg'
+import vino02 from '../public/images/restaurante/vino_02.jpg'
 // images>>>>>>>>>>
 
 import styles from '../styles/Restaurante.module.css'
@@ -67,7 +85,7 @@ export default function Restaurante() {
       <Paragraph text='Los sabores en la cocina de nuestro restaurante han sido creados para sorprender y satisfacer a tu paladar, con sabores de rincones del mundo queremos integrar a la perfección ingredientes de máxima calidad con las bebidas adecuadas,  la Cava es uno de los lugares más fascinantes dentro de Mía, con vinos llenos de historias para acompañar tu día.' />
       <section className={styles.breakfast}>
         <ArticleSquare
-          image={morningImg}
+          image={mañana01}
           alt='image description'
           layout='fill'
           objectFit='cover'
@@ -83,10 +101,10 @@ export default function Restaurante() {
       </section>
       <section className={styles.lunch}>
         <ArticleFourImg
-          img1={lunchImg1}
-          img2={lunchImg2}
-          img3={lunchImg3}
-          img4={lunchImg4}
+          img1={almuerzo01}
+          img2={almuerzo02}
+          img3={almuerzo03}
+          img4={almuerzo04}
           alt1={'image description'}
           alt2={'image description'}
           alt3={'image description'}
@@ -105,7 +123,7 @@ export default function Restaurante() {
         </ArticleFourImg>
       </section>
       <ArticleSquare
-        image={dinnerImg}
+        image={cena01}
         alt='image description'
         layout='fill'
         objectFit='cover'
@@ -124,7 +142,7 @@ export default function Restaurante() {
       </ArticleSquare>
       <section className={styles.dessert}>
         <ArticlePortrait
-          image={postreImg}
+          image={postre01}
           alt='image description'
           title='postres'
           paragraph='La comida ideal tiene el cierre perfecto, atrévete a probar los postres internacionales y con sabor a México que nuestro chef pastelero ha preparado para culminar tu lunch o cena inigualablemente.'
@@ -136,15 +154,15 @@ export default function Restaurante() {
       </section>
       <section className={styles.pizza}>
         <ArticleFourImg
-          img1={lunchImg1}
-          img2={lunchImg2}
-          img3={lunchImg3}
-          img4={lunchImg4}
+          img1={pizzaGarden01}
+          img2={pizzaGarden02}
+          img3={pizzaGarden03}
+          img4={pizzaGarden04}
           alt1={'image description'}
           alt2={'image description'}
           alt3={'image description'}
           alt4={'image description'}
-          objectPosition1='center'
+          objectPosition1='0 -20px'
           objectPosition2='center'
           objectPosition3='center'
           objectPosition4='center'
@@ -159,7 +177,7 @@ export default function Restaurante() {
       </section>
 
       <Banner
-        image={lunchImg4}
+        image={banner01}
         alt='image description'
         text='Reserva tu mesa aquí'
         objectFit='cover'
@@ -167,7 +185,7 @@ export default function Restaurante() {
         link='/contacto'
       />
       <ArticlePortrait
-        image={vipRoomImg}
+        image={vipRoom01}
         alt='image description'
         title='vip room'
         paragraph='El salón privado es un nuevo espacio ubicado en el primer piso de Mía, equipado con aire acondicionado y una decoración acogedora inspirada al estilo marroquíe. Es el espacio ideal para cenas íntimas, celebraciones especiales y catas de vino. Este nuevo espacio tiene capacidad limitada para 20 personas.'
@@ -176,7 +194,7 @@ export default function Restaurante() {
       />
       <section className={styles.drinkWithUs}>
         <ArticleSquare
-          image={drinkImg}
+          image={brinda01}
           alt='image description'
           layout='fill'
           objectFit='cover'
@@ -189,14 +207,14 @@ export default function Restaurante() {
       </section>
 
       <ArticleSquareWhite
-        image={wineImg}
+        image={vino02}
         title='vinos'
         paragraph='Si tienes duda sobre el mejor maridaje el sommelier de casa Rafael Pelissier te puede guiar por nuestra cava y recomendarte vinos con sabores únicos, complejos y de aromas seductivos, te invitamos a acompañarnos en nuestra pasión por el vino.'
         linkText='saber más'
         linkHref='/vino'
         alt='image description'
         objectFit='cover'
-        objectPosition='-100px'
+        objectPosition='center'
       />
     </Layout>
   )

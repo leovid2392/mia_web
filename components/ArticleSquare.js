@@ -19,6 +19,12 @@ export default function ArticleSquare({
 }) {
   return (
     <section className={styles.container}>
+      <div className={styles.textContainer}>
+        <TitleSection text={title} />
+        <Paragraph text={paragraph} />
+        <InternalLink text={linkText} link={linkHref} />
+        {children}
+      </div>
       <figure className={styles.imgContainer}>
         <Image
           src={image}
@@ -28,12 +34,6 @@ export default function ArticleSquare({
           objectPosition={objectPosition}
         />
       </figure>
-      <div className={styles.textContainer}>
-        <TitleSection text={title} />
-        <Paragraph text={paragraph} />
-        <InternalLink text={linkText} link={linkHref} />
-        {children}
-      </div>
     </section>
   )
 }

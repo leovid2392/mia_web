@@ -27,6 +27,12 @@ export default function ArticleFourImg({
 }) {
   return (
     <article className={styles.container}>
+      <div className={styles.textContainer}>
+        <TitleSection text={title} />
+        <Paragraph text={paragraph} />
+        <InternalLink text={linkText} link={linkHref} />
+        {children}
+      </div>
       <div className={styles.imgLayout}>
         <figure className={styles.imgContainer}>
           <Image
@@ -64,12 +70,6 @@ export default function ArticleFourImg({
             objectPosition={objectPosition4}
           ></Image>
         </figure>
-      </div>
-      <div className={styles.textContainer}>
-        <TitleSection text={title} />
-        <Paragraph text={paragraph} />
-        <InternalLink text={linkText} link={linkHref} />
-        {children}
       </div>
     </article>
   )
