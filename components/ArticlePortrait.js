@@ -11,6 +11,7 @@ export default function ArticlePortrait({
   paragraph,
   linkText,
   linkHref,
+  objectPosition,
   alt,
   children,
 }) {
@@ -23,7 +24,13 @@ export default function ArticlePortrait({
         {children}
       </div>
       <figure className={styles.imgContainer}>
-        <Image src={image} alt={alt} layout='fill' objectFit='cover'></Image>
+        <Image
+          src={image}
+          alt={alt}
+          layout='fill'
+          objectFit='cover'
+          objectPosition={objectPosition}
+        ></Image>
       </figure>
     </article>
   )

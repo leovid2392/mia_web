@@ -16,7 +16,7 @@
 }
 
 .textContainer {
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   padding: 0 2rem;
   padding-bottom: 2rem;
   width: 90%;
