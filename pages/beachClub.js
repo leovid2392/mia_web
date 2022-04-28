@@ -128,6 +128,17 @@ export default function BeachClub() {
           {/* <a href=''>Contacto</a> */}
         </ArticlePortrait>
       </section>
+      <section className={styles.pool}>
+        <ArticlePortrait
+          image={solteras}
+          alt='image description'
+          title='pool'
+          paragraph='lorem ipsum'
+          linkHref='/'
+        >
+          {/* <a href=''>Contacto</a> */}
+        </ArticlePortrait>
+      </section>
     </Layout>
   )
 }

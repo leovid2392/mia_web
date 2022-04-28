@@ -21,7 +21,7 @@
 @media only screen and (min-width: 700px) {
   .container {
     flex-direction: initial;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding: 0;
     justify-content: space-between;
   }

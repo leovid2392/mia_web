@@ -1,7 +1,7 @@
 @media only screen and (min-width: 700px) {
-  .description p {
+  /* .description p {
     max-width: 800px;
-  }
+  } */
   .beachClub {
     display: flex;
     justify-content: center;
@@ -21,5 +21,9 @@
 
   .despedidas h2 {
     text-align: start;
+  }
+
+  .pool article {
+    flex-direction: row-reverse;
   }
 }
