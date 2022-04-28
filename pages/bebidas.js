@@ -79,7 +79,7 @@ export default function Bebidas() {
         linkHref='/'
         objectPosition='center'
       >
-        <LinkBorder text='ver menu' link='#' />
+        <LinkBorder text='ver menu' link='./menu/restaurante/mixologia' />
       </ArticlePortrait>
       <section className={styles.beer}>
         <ArticleFourImg
@@ -100,7 +100,7 @@ export default function Bebidas() {
           linkText=''
           linkHref=''
         >
-          <LinkBorder text='ver menu' link='#' />
+          <LinkBorder text='ver menu' link='./menu/restaurante/cervezas' />
         </ArticleFourImg>
       </section>
       <ArticleSquare
