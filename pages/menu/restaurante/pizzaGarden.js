@@ -10,10 +10,13 @@ import hero1 from '../../../public/images/menuDesayuno/hmia-6146_small750x500.jp
 import hero2 from '../../../public/images/menuDesayuno/hmia-6146_small750x500.jpg'
 import hero3 from '../../../public/images/menuDesayuno/hmia-6146_small750x500.jpg'
 
+import menuStyles from '../../../styles/MenuPage.module.css'
+import TitlePage from '../../../components/TitlePage'
+
 export default function Desayuno() {
   return (
     <Layout>
-      <Hero
+      {/* <Hero
         sliderData={[
           {
             id: 1,
@@ -28,8 +31,10 @@ export default function Desayuno() {
             image: hero3,
           },
         ]}
-      />
-      <itemNamePage text='pizza garden' />
+      /> */}
+      <div className={menuStyles.titlePage}>
+        <TitlePage text='pizza garden' />
+      </div>
       <Paragraph
         text='LOS PRECIOS SON EN PESOS
 E INCLUYEN 16% DE IVA'
