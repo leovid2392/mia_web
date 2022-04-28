@@ -47,6 +47,7 @@ import boda_hero_03 from '../public/images/bodas/boda_hero_03.jpg'
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import styles from '../styles/Home.module.css'
 import bodaStyle from '../styles/bodas.module.css'
+
 export default function Bodas() {
   let { t } = useTranslation()
   return (
@@ -153,24 +154,24 @@ export default function Bodas() {
           sliderData={[
             {
               id: 1,
-              image: sliderComentsImg1,
-              name: 'Taina & Roger - October 24th 2021',
-              review:
+              name: 'Taina & Roger',
+              review1:
                 'Dante our wedding coordinator was the absolute best. He was very professional, responsive and catered to our needs. If there was something we had doubts about Dante always had a plan B for it. The wedding turned out to be better than what I had dreamed of.',
+              date: 'October 24th 2021',
             },
             {
               id: 2,
-              image: sliderComentsImg2,
-              name: 'Stephanie Weng & Eric LI - December 4th 2021',
-              review:
+              name: 'Stephanie Weng & Eric LI',
+              review1:
                 'DANTE IS MY #1, all that a bride could ever ask for!! Planning a destination wedding during Covid seemed like a daunting task but Dante made it all come together smoothly.',
+              date: 'December 4th 2021',
             },
             {
               id: 3,
-              image: sliderComentsImg1,
               name: 'Irina and Boris - September 18th  2021',
-              review:
+              review1:
                 'Dante is nunber one !!!! THE BEST !!!! Exceed all expectations!!!! We are very grateful and blessed!!! Dante - the best what you can imagine!!!! Very very, highly recommended !!! ',
+              date: 'September 18th  2021',
             },
           ]}
         />

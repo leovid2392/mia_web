@@ -37,6 +37,17 @@ import hero_beachClub_01 from '../public/images/beachClub/beachclub_hero_01.jpg'
 import hero_beachClub_02 from '../public/images/beachClub/beachclub_hero_02.jpg'
 import hero_beachClub_03 from '../public/images/beachClub/beachclub_hero_03.jpg'
 
+import lifeStyle_01 from '../public/images/beachClub/lifeStyle_01.jpg'
+import lifeStyle_02 from '../public/images/beachClub/lifeStyle_02.jpg'
+import lifeStyle_03 from '../public/images/beachClub/lifeStyle_03.jpg'
+import lifeStyle_04 from '../public/images/beachClub/lifeStyle_04.jpg'
+
+import banner_01 from '../public/images/beachClub/banner_01.jpg'
+
+import despedidasSolteros_01 from '../public/images/beachClub/despedidasSolteros_01.jpg'
+
+import alberca_01 from '../public/images/beachClub/alberca_01.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 import styles from '../styles/beachClub.module.css'
@@ -71,14 +82,14 @@ export default function BeachClub() {
       </div>
       <div className={styles.beachClub}>
         <Layout1x1
-          img={beach4}
+          img={lifeStyle_01}
           alt='image description'
           objectPosition='center'
         />
         <Layout2x2
-          img1={beach1}
-          img2={beach2}
-          img3={beach3}
+          img1={lifeStyle_04}
+          img2={lifeStyle_03}
+          img3={lifeStyle_02}
           alt1='image description'
           alt2='image description'
           alt3='image description'
@@ -90,7 +101,7 @@ export default function BeachClub() {
       <Banner
         text='Reserva tu lugar'
         link='/contacto'
-        image={slide2}
+        image={banner_01}
         objectFit='cover'
         objectPosition='center'
       />
@@ -115,9 +126,9 @@ export default function BeachClub() {
       /> */}
       <section className={styles.despedidas}>
         <ArticlePortrait
-          image={solteras}
+          image={despedidasSolteros_01}
           alt='image description'
-          title='despedidas de soleros'
+          title='despedidas de solteros'
           paragraph='Si lo que buscas es celebrar la despedida de soltera más divertida de Tulum, en Mía encontrarás la mejor opción. Ponte en manos de nuestra coordinadora quien logrará que tu celebración sea la más especial para ti y todas tus amigas. Comienza por un día en la playa en el mejor ambiente, música de DJ, body painting, hookas y más. Culmínalo bailando en la arena en la mejor experiencia de fiesta en todo Tulum. Contáctanos para más información.'
           linkText=''
           linkHref='/'
@@ -131,7 +142,7 @@ export default function BeachClub() {
       </section>
       <section className={styles.pool}>
         <ArticlePortrait
-          image={solteras}
+          image={alberca_01}
           alt='image description'
           title='pool'
           paragraph='lorem ipsum'
