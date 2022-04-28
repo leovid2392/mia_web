@@ -144,11 +144,11 @@ export default function BeachClub() {
         <ArticlePortrait
           image={alberca_01}
           alt='image description'
-          title='pool'
-          paragraph='lorem ipsum'
+          title='pool | alberca'
+          paragraph='Es el espacio ideal para disfrutar de la calma y la brisa del mar.  Rodeado de la mejor compañía descubre nuestra mixología o aventúrate a probar nuestras cervezas artesanales.'
           linkHref='/'
         >
-          {/* <a href=''>Contacto</a> */}
+          <Paragraph text='10 am - 11 pm' />
         </ArticlePortrait>
       </section>
     </Layout>
