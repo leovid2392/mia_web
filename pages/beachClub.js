@@ -33,6 +33,10 @@ import beach2 from '../public/images/beachClub/beachclub2_small750x500.jpg'
 import beach3 from '../public/images/beachClub/BEACH-CLUB-31_small750x500.jpg'
 import beach4 from '../public/images/beachClub/galeria-2_small750x500.jpg'
 
+import hero_beachClub_01 from '../public/images/beachClub/beachclub_hero_01.jpg'
+import hero_beachClub_02 from '../public/images/beachClub/beachclub_hero_02.jpg'
+import hero_beachClub_03 from '../public/images/beachClub/beachclub_hero_03.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 import styles from '../styles/beachClub.module.css'
@@ -48,23 +52,15 @@ export default function BeachClub() {
         sliderData={[
           {
             id: 1,
-            image: hero1,
+            image: hero_beachClub_01,
           },
           {
             id: 2,
-            image: hero2,
+            image: hero_beachClub_02,
           },
           {
             id: 3,
-            image: hero3,
-          },
-          {
-            id: 4,
-            image: hero4,
-          },
-          {
-            id: 5,
-            image: hero5,
+            image: hero_beachClub_03,
           },
         ]}
       />
