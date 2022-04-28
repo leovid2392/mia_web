@@ -16,7 +16,7 @@
 }
 
 .textContainer {
-  /* background-color: var(--color-white); */
+  background-color: var(--color-white);
   padding: 0 2rem;
   padding-bottom: 2rem;
   width: 90%;
@@ -46,6 +46,7 @@
     min-width: 200px;
     max-width: 100%;
     padding-left: 5%;
+    background-color: transparent;
   }
   .textContainer p {
     text-align: start;

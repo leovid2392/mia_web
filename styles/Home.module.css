@@ -44,6 +44,10 @@
 }
 
 @media only screen and (min-width: 700px) {
+  .bebidas article {
+    flex-direction: row;
+    justify-content: center;
+  }
   /* >>vino section>>>>> */
   .vino section {
     /* background-color: red; */

@@ -44,6 +44,7 @@ import beachClub03 from '../public/images/home/beachClub_03.jpg'
 import beachClub04 from '../public/images/home/beachClub_04.jpg'
 
 import bebidas01 from '../public/images/home/bebidas_01.jpg'
+import bodas_01 from '../public/images/home/bodas_01.jpg'
 
 import djParty01 from '../public/images/home/djParty_01.jpg'
 
@@ -197,19 +198,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <ArticleSquareWhite
-        image={bebidas01}
-        title='bebidas'
-        paragraph='Somos alquimistas, creamos cócteles enigmáticos con armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
-        linkText='saber más'
-        linkHref='/bebidas'
-        alt='image description'
-        objectFit='cover'
-        objectPosition='center'
-      />
+      <section className={styles.bebidas}>
+        <ArticleSquareWhite
+          image={bebidas01}
+          title='bebidas'
+          paragraph='Somos alquimistas, creamos cócteles enigmáticos con armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
+          linkText='saber más'
+          linkHref='/bebidas'
+          alt='image description'
+          objectFit='cover'
+          objectPosition='center'
+        />
+      </section>
       <ArticlePortrait
-        image={bodasImg}
+        image={bodas_01}
         alt='image description'
         title='bodas'
         paragraph='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Mia Tulum en el mejor lugar para celebrar tu Boda.'

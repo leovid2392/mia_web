@@ -32,6 +32,11 @@ import fest3 from '../public/images/vino/WINEFEST-9_small750x422.jpg'
 import fest4 from '../public/images/vino/WINEFEST-26_small750x422.jpg'
 import sliderReviesImg1 from '../public/images/bebidas/botella_100x300.png'
 
+import vino_hero_01 from '../public/images/vino/vino_hero_01_02.jpg'
+import vino_hero_02 from '../public/images/vino/vino_hero_02.jpg'
+import vino_hero_03 from '../public/images/vino/vino_hero_03.jpg'
+import cavaMasCompleta_01 from '../public/images/vino/cavaMasCompleta_01.jpg'
+
 // images<<<<<<<<<<
 
 import styles from '../styles/vino.module.css'
@@ -44,15 +49,15 @@ export default function Vino() {
         sliderData={[
           {
             id: 1,
-            image: hero1,
+            image: vino_hero_01,
           },
           {
             id: 2,
-            image: wine12Img,
+            image: vino_hero_02,
           },
           {
             id: 3,
-            image: wine18Img,
+            image: vino_hero_03,
           },
         ]}
       />
@@ -61,7 +66,7 @@ export default function Vino() {
       <Paragraph text='La vida, el sacrificio y la inmortalidad son algunos de los simbolismos del vino, en Mía la cultura vinícola está establecida como un estilo de vida, desde vinos jóvenes y frescos para tomar durante el dia en la playa hasta vinos complejos para satisfacer a los paladares más exigentes. ' />
       <section className={styles.cava}>
         <ArticleSquareWhite
-          image={wine7Img}
+          image={cavaMasCompleta_01}
           title='la mejor cava de vinos en tulum'
           paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 350 etiquetas de 12 diferentes países como Argentina, Chile, Estados Unidos, Australia, Italia, España, Francia, Alemanía, Nueva Zelanda, Portugal y por supuesto México.'
           linkText=''

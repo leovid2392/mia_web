@@ -38,6 +38,9 @@ import boda3 from '../public/images/bodas/boda13_small750x500.jpg'
 import cenaro from '../public/images/bodas/cenaro1_small750x500.jpg'
 import pedida1 from '../public/images/bodas/pedida1_small500x750.jpg'
 import weddingWireLogo from '../public/images/bodas/logo-weddingwire_400x177.png'
+import boda_hero_01 from '../public/images/bodas/boda_hero_01.jpg'
+import boda_hero_02 from '../public/images/bodas/boda_hero_02.jpg'
+import boda_hero_03 from '../public/images/bodas/boda_hero_03.jpg'
 
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import styles from '../styles/Home.module.css'
@@ -53,15 +56,15 @@ export default function Bodas() {
         sliderData={[
           {
             id: 1,
-            image: hero1,
+            image: boda_hero_01,
           },
           {
             id: 2,
-            image: hero2,
+            image: boda_hero_02,
           },
           {
             id: 3,
-            image: hero3,
+            image: boda_hero_03,
           },
         ]}
       />
