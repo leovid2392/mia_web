@@ -14,6 +14,7 @@ import Layout2x2 from '../components/Layout2x2'
 import Banner from '../components/Banner'
 import Layout1x1 from '../components/Layout1x1'
 import ArticlePortrait from '../components/ArticlePortrait'
+import BtnLinkExterno from '../components/BtnLinkExterno'
 //<<<<<<<<< components<<<<<<<<<<<<<<<<<<<
 //<<<<<<<<< images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import slide1 from '../public/images/beachClub/cele1_small750x500.jpg'
@@ -122,10 +123,14 @@ export default function BeachClub() {
           alt='image description'
           title='despedidas de soleros'
           paragraph='Si lo que buscas es celebrar la despedida de soltera más divertida de Tulum, en Mía encontrarás la mejor opción. Ponte en manos de nuestra coordinadora quien logrará que tu celebración sea la más especial para ti y todas tus amigas. Comienza por un día en la playa en el mejor ambiente, música de DJ, body painting, hookas y más. Culmínalo bailando en la arena en la mejor experiencia de fiesta en todo Tulum. Contáctanos para más información.'
-          linkText='Agenda tu fecha'
+          linkText=''
           linkHref='/'
         >
           {/* <a href=''>Contacto</a> */}
+          <BtnLinkExterno
+            text='Agenda tu fecha'
+            link='https://wa.me/5219841339662'
+          />
         </ArticlePortrait>
       </section>
       <section className={styles.pool}>

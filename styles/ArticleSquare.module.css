@@ -10,6 +10,8 @@
 
 .textContainer {
   display: grid;
+  justify-items: center;
+  margin: 10px 0;
 }
 .imgContainer {
   width: 100%;

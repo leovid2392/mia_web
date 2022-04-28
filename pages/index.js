@@ -231,7 +231,21 @@ export default function Home() {
           linkHref='/djParty'
         />
       </section>
-      <ArticleThreeImg
+      <section className={styles.celebraciones}>
+        <div className={styles.celebraciones_textContainer}>
+          <TitleSection text='celebraciones' />
+          <Paragraph text='Mía Tulum se carateriza por ser un espacio de fiesta, alegria y celebración constante al ser y estar en el momento presente, es el espacio relajado, casual e ideal para celebrar cumpleaños, despedidas de soltera, cocteles y grupos de incentivos.' />
+          <InternalLink text='saber mas' link='./celebraciones' />
+        </div>
+        <div className={styles.celebraciones_imgContainer}>
+          <Layout1x1
+            img={celebraciones01}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+      </section>
+      {/* <ArticleThreeImg
         img1={celebraciones01}
         img2={celebraciones01}
         img3={celebraciones01}
@@ -245,7 +259,7 @@ export default function Home() {
         paragraph='Mía Tulum se carateriza por ser un espacio de fiesta, alegria y celebración constante al ser y estar en el momento presente, es el espacio relajado, casual e ideal para celebrar cumpleaños, despedidas de soltera, cocteles y grupos de incentivos.'
         linkText='saber más'
         linkHref='/celebraciones'
-      />
+      /> */}
       <ArticlePortrait
         image={blog01}
         alt='image description'

@@ -14,6 +14,8 @@ import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
 import SliderReviews from '../components/SliderReviews'
 import Layout1x1 from '../components/Layout1x1'
+import BtnLinkExterno from '../components/BtnLinkExterno'
+
 import Image from 'next/image'
 // import Layout1x1 from '../components/Layout1x1'
 //<<<<<<<<< components<<<<<<<<<<<<<<<<<<<
@@ -79,9 +81,14 @@ export default function Bodas() {
         alt='image description'
         title=''
         paragraph='Celebraciones acogedoras como bodas, cenas románticas, cenas de ensayo, propuestas de matrimonio, renovación de votos o aniversarios son algunos de los momentos en los que todo el equipo de Mía une esfuerzos para que tu celebración sea memorable.'
-        linkText='Aparta tu fecha'
+        linkText=''
         linkHref='/'
-      />
+      >
+        <BtnLinkExterno
+          text='Aparta tu fecha'
+          link='https://wa.me/5219841339662'
+        />
+      </ArticlePortrait>
       {/* <Banner
         text='Contáctanos'
         link='/contacto'
@@ -125,16 +132,20 @@ export default function Bodas() {
           linkText=''
           linkHref=''
         /> */}
-        <Layout1x1
-          img={couples}
-          alt='image description'
-          objectPosition='center'
-        />
-        <Layout1x1
-          img={bodas_com}
-          alt='image description'
-          objectPosition='center'
-        />
+        <div className={bodaStyle.couplesImg1}>
+          <Layout1x1
+            img={couples}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div className={bodaStyle.couplesImg2}>
+          <Layout1x1
+            img={bodas_com}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
       </div>
       <TitleSection text='Testimonios' />
       <div className={bodaStyle.reviews}>
