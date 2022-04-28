@@ -22,6 +22,8 @@ import slide1 from '../public/images/galeria/cele1_small750x500.jpg'
 import slide2 from '../public/images/galeria/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/galeria/cele3_small750x500.jpg'
 
+import menuStyles from '../styles/MenuPage.module.css'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 export default function Galeria() {
@@ -31,7 +33,7 @@ export default function Galeria() {
       title={t('galeria:metaTitle')}
       description={t('galeria:metaDescription')}
     >
-      <Hero
+      {/* <Hero
         sliderData={[
           {
             id: 1,
@@ -46,10 +48,120 @@ export default function Galeria() {
             image: slide1,
           },
         ]}
-      />
-      <TitlePage text='galeria' />
+      /> */}
+      <div className={menuStyles.titlePage}>
+        <TitlePage text='galeria' />
+      </div>
+      <section>
+        <Layout1x1
+          img={slide1}
+          alt='image description'
+          objectPosition='center'
+        />
+        <Layout1x1
+          img={slide1}
+          alt='image description'
+          objectPosition='center'
+        />
+        <Layout1x1
+          img={slide1}
+          alt='image description'
+          objectPosition='center'
+        />
+      </section>
       {/* <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' /> */}
-      <ArticleFourImg
+      {/* <ArticleSquare
+        image={slide1}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='restaurante'
+        paragraph=''
+        linkText=''
+        linkHref=''
+      >
+        <LinkBorder text='ver galeria' link='#' />
+      </ArticleSquare> */}
+      {/* <ArticleSquare
+        image={slide1}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='bebidas'
+        paragraph=''
+        linkText=''
+        linkHref=''
+      >
+        <LinkBorder text='ver galeria' link='#' />
+      </ArticleSquare> */}
+      {/* <ArticleSquare
+        image={slide1}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='vino'
+        paragraph=''
+        linkText=''
+        linkHref=''
+      >
+        <LinkBorder text='ver galeria' link='#' />
+      </ArticleSquare> */}
+      {/* <ArticleSquare
+        image={slide1}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='beach club'
+        paragraph=''
+        linkText=''
+        linkHref=''
+      >
+        <LinkBorder text='ver galeria' link='#' />
+      </ArticleSquare> */}
+      {/* <ArticleSquare
+        image={slide1}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='bodas'
+        paragraph=''
+        linkText=''
+        linkHref=''
+      >
+        <LinkBorder text='ver galeria' link='#' />
+      </ArticleSquare> */}
+      {/* <ArticleSquare
+        image={slide1}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='dj party'
+        paragraph=''
+        linkText=''
+        linkHref=''
+      >
+        <LinkBorder text='ver galeria' link='#' />
+      </ArticleSquare> */}
+      {/* <ArticleSquare
+        image={slide1}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='celebraciones'
+        paragraph=''
+        linkText=''
+        linkHref=''
+      >
+        <LinkBorder text='ver galeria' link='#' />
+      </ArticleSquare> */}
+      {/* <ArticleFourImg
         img1={slide1}
         img2={slide2}
         img3={slide3}
@@ -67,8 +179,8 @@ export default function Galeria() {
         linkText=''
         linkHref=''
       />
-      <LinkBorder text='ver galeria' link='#' />
-      <Layout2x2
+      <LinkBorder text='ver galeria' link='#' /> */}
+      {/* <Layout2x2
         img1={slide1}
         img2={slide2}
         img3={slide3}
@@ -78,10 +190,10 @@ export default function Galeria() {
         objectPosition1='center'
         objectPosition2='center'
         objectPosition3='center'
-      />
-      <TitleSection text='bebidas' />
-      <LinkBorder text='ver galeria' link='#' />
-      <Layout2x2
+      /> */}
+      {/* <TitleSection text='bebidas' /> */}
+      {/* <LinkBorder text='ver galeria' link='#' /> */}
+      {/* <Layout2x2
         img1={slide1}
         img2={slide2}
         img3={slide3}
@@ -91,11 +203,11 @@ export default function Galeria() {
         objectPosition1='center'
         objectPosition2='center'
         objectPosition3='center'
-      />
-      <Layout1x1 img={slide3} alt='image description' objectPosition='center' />
-      <TitleSection text='vinos' />
-      <LinkBorder text='ver galeria' link='#' />
-      <ArticleSquare
+      /> */}
+      {/* <Layout1x1 img={slide3} alt='image description' objectPosition='center' /> */}
+      {/* <TitleSection text='vinos' /> */}
+      {/* <LinkBorder text='ver galeria' link='#' /> */}
+      {/* <ArticleSquare
         image={slide3}
         alt='image description'
         layout='fill'
@@ -105,9 +217,9 @@ export default function Galeria() {
         paragraph=''
         linkText=''
         linkHref=''
-      />
-      <LinkBorder text='ver galeria' link='#' />
-      <Layout2x2
+      /> */}
+      {/* <LinkBorder text='ver galeria' link='#' /> */}
+      {/* <Layout2x2
         img1={slide1}
         img2={slide2}
         img3={slide3}
@@ -117,10 +229,10 @@ export default function Galeria() {
         objectPosition1='center'
         objectPosition2='center'
         objectPosition3='center'
-      />
-      <TitleSection text='bodas' />
-      <LinkBorder text='ver galeria' link='#' />
-      <ArticleFourImg
+      /> */}
+      {/* <TitleSection text='bodas' /> */}
+      {/* <LinkBorder text='ver galeria' link='#' /> */}
+      {/* <ArticleFourImg
         img1={slide1}
         img2={slide2}
         img3={slide3}
@@ -137,9 +249,9 @@ export default function Galeria() {
         paragraph=''
         linkText=''
         linkHref=''
-      />
-      <LinkBorder text='ver galeria' link='#' />
-      <ArticleThreeImg
+      /> */}
+      {/* <LinkBorder text='ver galeria' link='#' /> */}
+      {/* <ArticleThreeImg
         img1={slide1}
         img2={slide2}
         img3={slide3}
@@ -153,8 +265,8 @@ export default function Galeria() {
         paragraph=''
         linkText=''
         linkHref=''
-      />
-      <LinkBorder text='ver galeria' link='#' />
+      /> */}
+      {/* <LinkBorder text='ver galeria' link='#' /> */}
     </Layout>
   )
 }
