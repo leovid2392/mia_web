@@ -14,6 +14,7 @@ import TitleSection from '../components/TitleSection'
 import Banner from '../components/Banner'
 import Layout1x1 from '../components/Layout1x1'
 import LinkBorder from '../components/LinkBorder'
+import BtnLinkExterno from '../components/BtnLinkExterno'
 //<<<<<<<<< components<<<<<<<<<<<<<<<<<<<
 //<<<<<<<<< images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -52,8 +53,11 @@ export default function Celebraciones() {
         <TitlePage text='celebraciones' />
         <Paragraph text='Mía Tulum se carateriza por ser un espacio de fiesta, alegria y celebración constante al ser y estar en el momento presente, es el espacio relajado, casual e ideal para celebrar cumpleaños, despedidas de soltera, cocteles y grupos de incentivos y cenas de ensayo. ' />
         <Paragraph text='Nuestro equipo de coordinadores en casa te ayudarán a explorar las diferentes opciones y  áreas con atmósferas diferentes para tu celebración especial.  ' />
+        <BtnLinkExterno
+          text='Aparta tu fecha'
+          link='https://wa.me/5219841339662'
+        />
       </div>
-      <LinkBorder text='contacto' link='#' />
       {/* <ArticleFourImg
         img1={slide1}
         img2={slide2}

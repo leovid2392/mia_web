@@ -26,6 +26,10 @@ import hero1 from '../public/images/djparty/dj2_small750x500.jpg'
 import hero2 from '../public/images/djparty/dj3_small750x500.jpg'
 import hero3 from '../public/images/djparty/dj1_small750x500.jpg'
 
+import collage_01 from '../public/images/djparty/collage_01.jpg'
+import collage_02 from '../public/images/djparty/collage_02.jpg'
+import collage_03 from '../public/images/djparty/collage_03.jpg'
+
 import pablo from '../public/images/djparty/pablofierro-51_small750x500.jpg'
 
 import styles from '../styles/djParty.module.css'
@@ -68,17 +72,17 @@ export default function DjParty() {
       </div>
       <div className={styles.layout3x1}>
         <Layout1x1
-          img={slide3}
+          img={collage_01}
           alt='image description'
           objectPosition='center'
         />
         <Layout1x1
-          img={slide3}
+          img={collage_02}
           alt='image description'
           objectPosition='center'
         />
         <Layout1x1
-          img={slide3}
+          img={collage_03}
           alt='image description'
           objectPosition='center'
         />

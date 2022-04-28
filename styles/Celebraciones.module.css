@@ -2,6 +2,11 @@
   display: none;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media only screen and (min-width: 700px) {
   /* .description p {
     max-width: 800px;

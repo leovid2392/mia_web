@@ -44,6 +44,8 @@ import boda_hero_01 from '../public/images/bodas/boda_hero_01.jpg'
 import boda_hero_02 from '../public/images/bodas/boda_hero_02.jpg'
 import boda_hero_03 from '../public/images/bodas/boda_hero_03.jpg'
 
+import anillo_01 from '../public/images/bodas/anillo_01.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 import styles from '../styles/Home.module.css'
 import bodaStyle from '../styles/bodas.module.css'
@@ -78,7 +80,7 @@ export default function Bodas() {
         <Paragraph text='Somos el único lugar que no cobra renta de locación y nuestro equipo de coordinación está incluido en la contratación de tu boda.' />
       </div>
       <ArticlePortrait
-        image={pedida1}
+        image={anillo_01}
         alt='image description'
         title=''
         paragraph='Celebraciones acogedoras como bodas, cenas románticas, cenas de ensayo, propuestas de matrimonio, renovación de votos o aniversarios son algunos de los momentos en los que todo el equipo de Mía une esfuerzos para que tu celebración sea memorable.'
