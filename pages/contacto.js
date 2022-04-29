@@ -25,6 +25,10 @@ import ContactInfo from '../components/ContactInfo'
 import hero1 from '../public/images/contacto/galeria-2_small750x500.jpg'
 import hero2 from '../public/images/contacto/galeria3_small750x500.jpg'
 import hero3 from '../public/images/contacto/galeria5_small750x446.jpg'
+
+import contacto_hero_01 from '../public/images/contacto/contacto_hero_01.jpg'
+import contacto_hero_02 from '../public/images/contacto/contacto_hero_02.jpg'
+import contacto_hero_03 from '../public/images/contacto/contacto_hero_03.jpg'
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 export default function Contacto() {
@@ -38,15 +42,15 @@ export default function Contacto() {
         sliderData={[
           {
             id: 1,
-            image: hero1,
+            image: contacto_hero_01,
           },
           {
             id: 2,
-            image: hero2,
+            image: contacto_hero_02,
           },
           {
             id: 3,
-            image: hero3,
+            image: contacto_hero_03,
           },
         ]}
       />
@@ -55,7 +59,10 @@ export default function Contacto() {
       <ContactInfo
         direction='Carretera. Tulum-Boca Paila Km 7.5, Tulum Beach, Zona Hotelera, 77780
           Tulum, Q.R. Interior hotel Selina'
-        phone='01 998 123 24 25'
+        phone1='01 984 249 33 80'
+        phone1Text='Información'
+        phone2='01 984 133 96 62'
+        phone2Text='Reservaciones'
         email='info@miatulum.com'
       />
     </Layout>

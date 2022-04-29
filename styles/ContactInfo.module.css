@@ -25,6 +25,9 @@
   font-size: 3rem;
   margin: 10px 0;
 }
+.item div {
+  width: 200px;
+}
 .p {
   margin-left: 10px;
   width: 80%;
