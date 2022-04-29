@@ -6,7 +6,7 @@ export default function BtnBookNow() {
       <a
         href='http://www.opentable.com.mx/restaurant/profile/1001083/reserve?rid=1001083&restref=1001083'
         target='_blank'
-        rel='noopener'
+        rel='noreferrer'
       >
         Reserva Ahora
       </a>
