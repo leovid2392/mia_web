@@ -22,6 +22,10 @@ import slide1 from '../public/images/celebraciones/cele1_small750x500.jpg'
 import slide2 from '../public/images/celebraciones/mia-5750_small500x750.jpg'
 import slide3 from '../public/images/celebraciones/cele3_small750x500.jpg'
 
+import celebraciones_hero_01 from '../public/images/celebraciones/celebraciones_hero_01.jpg'
+import celebraciones_hero_02 from '../public/images/celebraciones/celebraciones_hero_02.jpg'
+import celebraciones_hero_03 from '../public/images/celebraciones/celebraciones_hero_03.jpg'
+
 // <<<<<<<<<images<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 import styles from '../styles/Celebraciones.module.css'
@@ -37,15 +41,15 @@ export default function Celebraciones() {
         sliderData={[
           {
             id: 1,
-            image: slide1,
+            image: celebraciones_hero_01,
           },
           {
             id: 2,
-            image: slide2,
+            image: celebraciones_hero_02,
           },
           {
             id: 3,
-            image: slide1,
+            image: celebraciones_hero_03,
           },
         ]}
       />
