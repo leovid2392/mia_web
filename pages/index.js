@@ -129,7 +129,7 @@ export default function Home() {
         ]}
       /> */}
       <TitlePage text='Mia tulum' />
-      <Paragraph text='En un ambiente bohemio y relajado, entre palmas cocoteras y dunas de arena blanca se encuentra Mía Tulum; un lugar que conjuga con armonía un club de playa, un restaurante de cocina internacional de autor, un salón privado y The Club. Un espacio paradisíaco enmarcado por vistas espectaculares al mar caribe, ubicado estratégicamente en la mejor área de la zona hotelera de Tulum.' />
+      <Paragraph text='En un ambiente bohemio y relajado, entre palmas cocoteras y dunas de arena blanca se encuentra Mía Tulum; un lugar que conjuga con armonía un club de playa, un restaurante de cocina internacional de autor, un salón privado un restaurante de pizzas y The Club. Un espacio paradisíaco enmarcado por vistas espectaculares al mar caribe, ubicado estratégicamente en la mejor área de la zona hotelera de Tulum.' />
       <Paragraph text='En Mía Tulum siempre está sucediendo algo, desde eventos de música con DJ`s reconocidos, noches especiales con música bohemia, catas de vino, tequila, mezcal y cerveza artesanal, cenas con chefs invitados y por supuesto eventos privados como bodas y celebraciones especiales.' />
       <Paragraph text='Mía Tulum abrió sus puertas en 2017, desde entonces continúa en constante cambio y evolución para lograr que todos los viajeros se enamoren de sus elementos, el nido y el túnel de madera que marca la entrada al lugar y se han convertido ya en emblemas de Tulum.' />
       <ArticlePortrait
@@ -148,7 +148,7 @@ export default function Home() {
           objectFit='cover'
           objectPosition='70%'
           title='Vinos'
-          paragraph='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también! Te invitamos a descubrir la cava mas completa del destino con más de 350 etiquetas de vino de 12 paises.'
+          paragraph='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también! Te invitamos a descubrir la cava mas completa del destino con más de 300 etiquetas de vino de 12 paises.'
           linkText='saber más'
           linkHref='/vino'
         />

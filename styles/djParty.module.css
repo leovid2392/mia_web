@@ -2,6 +2,10 @@
   display: none;
 }
 
+.events {
+  display: flex;
+}
+
 @media only screen and (min-width: 700px) {
   /* .description p {
     max-width: 800px;

@@ -8,7 +8,7 @@ import Paragraph from './Paragraph'
 
 const SliderEvents = ({ sliderData }) => {
   const [events, setEvents] = useState(sliderData)
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(2)
 
   useEffect(() => {
     const lastIndex = events.length - 1

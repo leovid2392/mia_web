@@ -54,7 +54,7 @@ export default function Contacto() {
       <ReservationsForm />
       <ContactInfo
         direction='Carretera. Tulum-Boca Paila Km 7.5, Tulum Beach, Zona Hotelera, 77780
-          Tulum, Q.R.'
+          Tulum, Q.R. Interior hotel Selina'
         phone='01 998 123 24 25'
         email='info@miatulum.com'
       />
