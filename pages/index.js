@@ -73,6 +73,7 @@ import SliderReviews from '../components/SliderReviews'
 import sliderComentsImg1 from '../public/images/oliver.jpg'
 import sliderComentsImg2 from '../public/images/pabloFierro.jpg'
 import blog1 from '../public/images/home/pablofierro-51_small750x500.jpg'
+import OpenTableLink from '../components/OpenTableLink'
 
 export default function Home() {
   const [buttonPopup, setButtonPopup] = useState(false)
@@ -280,7 +281,6 @@ export default function Home() {
         <h3>my popup</h3>
         <p>This is my button triggered popup</p>
       </Popup> */}
-
       <section>
         <TitleSection text='opiniones' />
         <SliderReviews
@@ -333,6 +333,8 @@ export default function Home() {
         {/* <h3>my popup</h3>
         <p>This is my time triggered popup</p> */}
       </Popup>
+
+      {/* <OpenTableLink /> */}
     </Layout>
   )
 }

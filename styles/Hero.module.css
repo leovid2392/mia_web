@@ -37,3 +37,7 @@
 .sliderContainer article.nextSlide {
   opacity: 0;
 }
+
+#ot-widget-container10 {
+  display: none;
+}
