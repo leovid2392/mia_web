@@ -114,7 +114,7 @@ export default function Bebidas() {
         linkText=''
         linkHref=''
       >
-        <LinkBorder text='ver menu' link='#' />
+        <LinkBorder text='ver menu' link='./menu/restaurante/destilados' />
       </ArticleSquare>
       {/* <TitleSection text='nuestra selección' /> */}
       {/* <SliderBottle
