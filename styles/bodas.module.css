@@ -1,6 +1,9 @@
 .bodasArticle article div div {
   display: none;
 }
+/* .bodasArticle article {
+  margin-top: 0;
+} */
 .couples section figure {
   min-width: 200px;
   height: 600px;

@@ -79,7 +79,7 @@ export default function Bodas() {
 
         <Paragraph text='Somos el único lugar que no cobra renta de locación y nuestro equipo de coordinación está incluido en la contratación de tu boda.' />
       </div>
-      <div className={styles.bodasArticle}>
+      <div className={bodaStyle.bodasArticle}>
         <ArticlePortrait
           image={anillo_01}
           alt='image description'

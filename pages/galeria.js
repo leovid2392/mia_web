@@ -48,6 +48,20 @@ import galeria_23 from '../public/images/galeria/galeria_23.jpg'
 import galeria_24 from '../public/images/galeria/galeria_24.jpeg'
 import galeria_25 from '../public/images/galeria/galeria_25.jpg'
 
+import galeria_28 from '../public/images/galeria/galeria_28.jpg'
+import galeria_29 from '../public/images/galeria/galeria_29.jpg'
+import galeria_30 from '../public/images/galeria/galeria_30.jpg'
+import galeria_31 from '../public/images/galeria/galeria_31.jpg'
+import galeria_32 from '../public/images/galeria/galeria_32.jpg'
+
+import galeria_33 from '../public/images/galeria/galeria_33.jpg'
+import galeria_34 from '../public/images/galeria/galeria_34.jpg'
+import galeria_35 from '../public/images/galeria/galeria_35.jpg'
+import galeria_36 from '../public/images/galeria/galeria_36.jpg'
+import galeria_37 from '../public/images/galeria/galeria_37.jpg'
+
+// import galeria_38 from '../public/images/galeria/galeria_38.jpg'
+
 import menuStyles from '../styles/MenuPage.module.css'
 import styles from '../styles/Galeria.module.css'
 
@@ -255,6 +269,83 @@ export default function Galeria() {
             objectPosition='center'
           />
         </div>
+        <div className={styles.hStretch}>
+          <Layout1x1
+            img={galeria_28}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div>
+          <Layout1x1
+            img={galeria_29}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div className={styles.bigStretch}>
+          <Layout1x1
+            img={galeria_30}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div className={styles.vStretch}>
+          <Layout1x1
+            img={galeria_31}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div>
+          <Layout1x1
+            img={galeria_32}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div className={styles.bigStretch}>
+          <Layout1x1
+            img={galeria_33}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div className={styles.hStretch}>
+          <Layout1x1
+            img={galeria_34}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div className={styles.vStretch}>
+          <Layout1x1
+            img={galeria_35}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div>
+          <Layout1x1
+            img={galeria_36}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        <div className={styles.bigStretch}>
+          <Layout1x1
+            img={galeria_37}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div>
+        {/* <div>
+          <Layout1x1
+            img={galeria_38}
+            alt='image description'
+            objectPosition='center'
+          />
+        </div> */}
       </section>
       {/* <Paragraph text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna ultricies justo fermentum tincidunt.  Cras in sagittis enim. Quisque porta' /> */}
       {/* <ArticleSquare
