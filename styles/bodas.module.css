@@ -19,6 +19,12 @@
   width: 100%;
   align-items: center;
 }
+.socios figure {
+  margin: 10px 0;
+}
+.socios figure:last-child {
+  margin-top: 50px;
+}
 .couples {
   /* padding: 0 20px; */
   display: flex;

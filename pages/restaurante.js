@@ -49,6 +49,7 @@ import pizzaGarden01 from '../public/images/restaurante/pizzaGarden_01.jpg'
 import pizzaGarden02 from '../public/images/restaurante/pizzaGarden_02.jpg'
 import pizzaGarden03 from '../public/images/restaurante/pizzaGarden_03.jpg'
 import pizzaGarden04 from '../public/images/restaurante/pizzaGarden_04.jpg'
+import pizzaGarden05 from '../public/images/restaurante/pizzaGarden_05.jpg'
 import vipRoom01 from '../public/images/restaurante/vipRoom_01.jpg'
 import brinda01 from '../public/images/restaurante/brinda_01.jpg'
 import vino01 from '../public/images/restaurante/vino_01.jpg'
@@ -155,7 +156,7 @@ export default function Restaurante() {
       <section className={styles.pizza}>
         <ArticleFourImg
           img1={pizzaGarden01}
-          img2={pizzaGarden02}
+          img2={pizzaGarden05}
           img3={pizzaGarden03}
           img4={pizzaGarden04}
           alt1={'image description'}
@@ -206,7 +207,7 @@ export default function Restaurante() {
         />
       </section>
 
-      <ArticleSquareWhite
+      {/* <ArticleSquareWhite
         image={vino02}
         title='vinos'
         paragraph='Si tienes duda sobre el mejor maridaje el sommelier de casa Rafael Pelissier te puede guiar por nuestra cava y recomendarte vinos con sabores únicos, complejos y de aromas seductivos, te invitamos a acompañarnos en nuestra pasión por el vino.'
@@ -215,6 +216,17 @@ export default function Restaurante() {
         alt='image description'
         objectFit='cover'
         objectPosition='center'
+      /> */}
+      <ArticleSquare
+        image={vino02}
+        alt='image description'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        title='vinos'
+        paragraph='Si tienes duda sobre el mejor maridaje el sommelier de casa Rafael Pelissier te puede guiar por nuestra cava y recomendarte vinos con sabores únicos, complejos y de aromas seductivos, te invitamos a acompañarnos en nuestra pasión por el vino.'
+        linkText='saber más'
+        linkHref='/bebidas'
       />
     </Layout>
   )

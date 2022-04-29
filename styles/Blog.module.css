@@ -1,0 +1,10 @@
+.post1 article {
+  flex-direction: row-reverse;
+}
+
+.post3 article {
+  flex-direction: row-reverse;
+}
+.post3 article div div {
+  text-align: start;
+}

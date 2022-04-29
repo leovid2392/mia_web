@@ -62,6 +62,7 @@ import InternalLink from '../components/InternalLink'
 import DisplayTwoImg from '../components/DisplayTwoImg'
 import ArticleSquareWhite from '../components/ArticleSquareWhite'
 import ArticleThreeImg from '../components/ArticleThreeImg'
+import BtnLinkExterno from '../components/BtnLinkExterno'
 
 import popupImg from '../public/images/pop1_small500x889.jpg'
 
@@ -265,9 +266,14 @@ export default function Home() {
         alt='image description'
         title='blog'
         paragraph='Cantautor y productor de música electrónica. Para muchos, eso puede sonar como dos aspectos muy diferentes de la cultura sonora moderna, lo que a su vez hace de Monolink un personaje fascinante, porque.....'
-        linkText='saber más'
+        linkText='ir al blog'
         linkHref='/blog'
-      />
+      >
+        {/* <BtnLinkExterno
+          text='ir al blog'
+          link=''
+        /> */}
+      </ArticlePortrait>
       {/* <button onClick={() => setButtonPopup(true)}>openPopup</button> */}
       {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <h3>my popup</h3>
