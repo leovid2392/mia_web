@@ -26,7 +26,12 @@ export default function Popup(props) {
             objectPosition='center'
           />
         </figure>
-        <a className={styles.link} href={props.link} target='_blank'>
+        <a
+          className={styles.link}
+          href={props.link}
+          target='_blank'
+          rel='noreferrer'
+        >
           Compra tus boletos
         </a>
 
