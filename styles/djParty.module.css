@@ -6,6 +6,10 @@
   display: flex;
 }
 
+.djVideo {
+  margin-top: 8rem;
+}
+
 @media only screen and (min-width: 700px) {
   /* .description p {
     max-width: 800px;

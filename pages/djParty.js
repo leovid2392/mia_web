@@ -48,7 +48,7 @@ export default function DjParty() {
       title={t('djParty:metaTitle')}
       description={t('djParty:metaDescription')}
     >
-      <Hero
+      {/* <Hero
         sliderData={[
           {
             id: 1,
@@ -63,7 +63,13 @@ export default function DjParty() {
             image: hero3,
           },
         ]}
-      />
+      /> */}
+      <section className={styles.djVideo}>
+        <video width='100%' height={300} autoPlay muted loop>
+          <source src='/video/djVideo.mp4' type='video/mp4' />
+        </video>
+      </section>
+
       <div className={styles.description}>
         <TitlePage text='dj party' />
         <Paragraph text='Con los pies en la arena, te invitamos a vivir una experiencia sonora multi sensorial, ritmos tribales, electrónicos y acústicos se unen para crear un ambiente inigualable. Elementos especiales de mapping, performance y body painting te harán vivir las mejores fiestas al estilo Tulum. The club, es el espacio que reúne a los fanáticos de la música electrónica, cada fiesta tiene un ambiente único, desde talentos emergentes y experimentales hasta reconocidos dj`s internacionales vienen a The Club para vibrar y vivir la mejor experiencia de fiesta en la playa de Mía Tulum.' />
