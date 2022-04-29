@@ -13,19 +13,6 @@ export default function OpenTableLink() {
       >
         {`document.getElementById('openTableWigget').classList.add('hidden')`}
       </Script> */}
-      <a
-        href='http://www.opentable.com.mx/restaurant/profile/1001083/reserve?rid=1001083&restref=1001083'
-        target='_blank'
-        rel='noopener'
-      >
-        {' '}
-        BOTON OPENTABLE
-        {/* <Image
-        height='250px'
-        width='250px'
-        src='https://restaurant.opentable.com.mx/badge/ot/DC-2022.png'
-        /> */}
-      </a>
     </div>
   )
 }
