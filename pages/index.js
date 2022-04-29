@@ -164,45 +164,43 @@ export default function Home() {
         </div>
         <div className={styles.beachClub_imgContainer}>
           <div className={styles.beachClub_imgContainer1}>
-            <DisplayTwoImg
+            {/* <DisplayTwoImg
               img1={beachClub03}
               img2={beachClub04}
               alt1='some description'
               alt2='some description'
-            />
-            {/* <Layout1x1
+            /> */}
+            <Layout1x1
               img={beachClub03}
               alt='descripcion de imagen'
               objectPosition='center'
-            /> */}
-          </div>
-          <div className={styles.beachClub_imgContainer2}>
-            <DisplayTwoImg
-              img1={beachClub01}
-              img2={beachClub02}
-              alt1='some description'
-              alt2='some description'
             />
-            {/* <Layout1x1
-              img={beachClub01}
-              alt='descripcion de imagen'
-              objectPosition='center'
-            /> */}
-            {/* <Layout1x1
-              img={beachClub02}
-              alt='descripcion de imagen'
-              objectPosition='center'
-            /> */}
-            {/* <Layout1x1
+          </div>
+          <div className={styles.beachClub_imgContainer3}>
+            <Layout1x1
               img={beachClub04}
               alt='descripcion de imagen'
               objectPosition='center'
-            /> */}
+            />
+          </div>
+          <div className={styles.beachClub_imgContainer2}>
+            <Layout1x1
+              img={beachClub01}
+              alt='descripcion de imagen'
+              objectPosition='center'
+            />
+          </div>
+          <div className={styles.beachClub_imgContainer4}>
+            <Layout1x1
+              img={beachClub02}
+              alt='descripcion de imagen'
+              objectPosition='center'
+            />
           </div>
         </div>
       </section>
       <section className={styles.bebidas}>
-        <ArticleSquareWhite
+        {/* <ArticleSquareWhite
           image={bebidas01}
           title='bebidas'
           paragraph='Somos alquimistas, creamos cócteles enigmáticos con armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
@@ -211,6 +209,17 @@ export default function Home() {
           alt='image description'
           objectFit='cover'
           objectPosition='center'
+        /> */}
+        <ArticleSquare
+          image={bebidas01}
+          alt='image description'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          title='bebidas'
+          paragraph='Somos alquimistas, creamos cócteles enigmáticos con armonía, enfatizando los productos de la tierra local y salvaguardando la misma.'
+          linkText='saber más'
+          linkHref='/bebidas'
         />
       </section>
       <ArticlePortrait

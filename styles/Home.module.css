@@ -21,13 +21,30 @@
 }
 .beachClub_imgContainer {
   display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.beachClub_imgContainer figure {
+  max-width: 300px;
+  height: 350px;
 }
 .beachClub_imgContainer1 {
   width: 100%;
+  min-width: 300px;
 }
 .beachClub_imgContainer2 {
   width: 100%;
-  margin-left: 10px;
+  min-width: 300px;
+  display: none;
+}
+.beachClub_imgContainer3 {
+  width: 100%;
+  min-width: 300px;
+  display: none;
+}
+.beachClub_imgContainer4 {
+  width: 100%;
+  min-width: 300px;
   display: none;
 }
 
@@ -65,8 +82,8 @@
 } */
 
 @media only screen and (min-width: 700px) {
-  .bebidas article {
-    flex-direction: row;
+  .bebidas section {
+    flex-direction: row-reverse;
     justify-content: center;
   }
   /* >>vino section>>>>> */
@@ -103,7 +120,10 @@
     max-width: 1200px;
     margin: 8% auto;
   }
-  .beachClub_imgContainer2 {
+  /* .beachClub_imgContainer2 {
+    display: initial;
+  } */
+  .beachClub_imgContainer3 {
     display: initial;
   }
   .beachClub_textContainer {
@@ -123,7 +143,16 @@
   /* >>djParty seccion>>>>> */
 }
 
+@media only screen and (min-width: 1000px) {
+  .beachClub_imgContainer2 {
+    display: initial;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
+  .beachClub_imgContainer4 {
+    display: initial;
+  }
   /* .vino figure {
     max-width: 1000px;
     height: 900px;
