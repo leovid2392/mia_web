@@ -41,6 +41,8 @@ import lifeStyle_01 from '../public/images/beachClub/lifeStyle_01.jpg'
 import lifeStyle_02 from '../public/images/beachClub/lifeStyle_02.jpg'
 import lifeStyle_03 from '../public/images/beachClub/lifeStyle_03.jpg'
 import lifeStyle_04 from '../public/images/beachClub/lifeStyle_04.jpg'
+import lifeStyle_05 from '../public/images/beachClub/lifeStyle_05.jpg'
+import lifeStyle_06 from '../public/images/beachClub/lifeStyle_06.jpg'
 
 import banner_01 from '../public/images/beachClub/banner_01.jpg'
 
@@ -88,8 +90,8 @@ export default function BeachClub() {
         />
         <Layout2x2
           img1={lifeStyle_04}
-          img2={lifeStyle_03}
-          img3={lifeStyle_02}
+          img2={lifeStyle_05}
+          img3={lifeStyle_06}
           alt1='image description'
           alt2='image description'
           alt3='image description'

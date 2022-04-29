@@ -73,10 +73,23 @@ export default function Vino() {
       <Paragraph text='¿En verdad eres amante de la buena comida y apasionado de los vinos? ¡Nosotros también! ' />
       <Paragraph text='La vida, el sacrificio y la inmortalidad son algunos de los simbolismos del vino, en Mía la cultura vinícola está establecida como un estilo de vida, desde vinos jóvenes y frescos para tomar durante el dia en la playa hasta vinos complejos para satisfacer a los paladares más exigentes. ' />
       <section className={styles.cava}>
-        <ArticleSquareWhite
+        <ArticleSquare
+          image={cavaMasCompleta_01}
+          alt='image description'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          title='la mejor cava de vinos en tulum'
+          paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 300 etiquetas de 12 diferentes países como Argentina, Chile, Estados Unidos, Australia, Italia, España, Francia, Alemanía, Nueva Zelanda, Portugal y por supuesto México.'
+          linkText=''
+          linkHref=''
+        >
+          <LinkBorder text='ver menu' link='./menu/restaurante/vinos' />
+        </ArticleSquare>
+        {/* <ArticleSquareWhite
           image={cavaMasCompleta_01}
           title='la mejor cava de vinos en tulum'
-          paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 350 etiquetas de 12 diferentes países como Argentina, Chile, Estados Unidos, Australia, Italia, España, Francia, Alemanía, Nueva Zelanda, Portugal y por supuesto México.'
+          paragraph='La cava de vinos se ha convertido en uno de los atractivos principales, siendo  la más completa de todo el destino y albergando más de 300 etiquetas de 12 diferentes países como Argentina, Chile, Estados Unidos, Australia, Italia, España, Francia, Alemanía, Nueva Zelanda, Portugal y por supuesto México.'
           linkText=''
           linkHref=''
           alt='image description'
@@ -84,8 +97,7 @@ export default function Vino() {
           objectPosition='center'
         >
           <LinkBorder text='ver menu' link='./menu/restaurante/vinos' />
-          {/* <Paragraph text='En nuestra Cava encontrarás desde vinos jóvenes y frescos para tomar durante el día en la playa hasta vinos complejos para satisfacer a los paladares más exigentes.' /> */}
-        </ArticleSquareWhite>
+        </ArticleSquareWhite> */}
       </section>
       {/* <ArticlePortrait
         image={wine18Img}

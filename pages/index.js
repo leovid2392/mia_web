@@ -65,6 +65,7 @@ import ArticleThreeImg from '../components/ArticleThreeImg'
 import BtnLinkExterno from '../components/BtnLinkExterno'
 
 import popupImg from '../public/images/pop1_small500x889.jpg'
+import event_april29 from '../public/images/home/event_april29.jpg'
 
 import Script from 'next/script'
 import Popup from '../components/Popup'
@@ -323,7 +324,12 @@ export default function Home() {
         />
       </section>
 
-      <Popup trigger={timePopup} setTrigger={setTimePopup} img={popupImg}>
+      <Popup
+        trigger={timePopup}
+        setTrigger={setTimePopup}
+        img={event_april29}
+        link='https://www.ticketfairy.com/event/chris-lake-29apr2022/?r=1060460&utm_source=&utm_campaign='
+      >
         {/* <h3>my popup</h3>
         <p>This is my time triggered popup</p> */}
       </Popup>

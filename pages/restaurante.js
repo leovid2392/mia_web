@@ -130,7 +130,7 @@ export default function Restaurante() {
         objectFit='cover'
         objectPosition='center'
         title='por la noche'
-        paragraph='Por las noches el ambiente del restaurante se transforma para ser iluminado por la luz de las velas, en un ambiente cálido y acogedor, libre y bohemio para que disfrutes sólo o en compañía de los platillos que han distinguido la personalidad de nuestra alta cocina internacional, deléitate con nuestras creaciones como el callo de hacha con risotto al champagne, mejillones meuniere, mero miso morita y el predilecto de nuestros clientes, el  short rib. Cenar en el restaurante es definitivamente una experiencias gastronómica de gran nivel.'
+        paragraph='Por las noches el ambiente del restaurante se transforma para ser iluminado por la luz de las velas, en un ambiente cálido y acogedor, libre y bohemio para que disfrutes sólo o en compañía de los platillos que han distinguido la personalidad de nuestra alta cocina internacional, deléitate con nuestras creaciones como el callo de hacha con risotto al champagne, mejillones meuniere, mero miso morita y el predilecto de nuestros clientes, el  short rib. Cenar en el restaurante es definitivamente una experiencia gastronómica de gran nivel.'
         linkText=''
         linkHref=''
       >
@@ -189,7 +189,7 @@ export default function Restaurante() {
         image={vipRoom01}
         alt='image description'
         title='vip room'
-        paragraph='El salón privado es un nuevo espacio ubicado en el primer piso de Mía, equipado con aire acondicionado y una decoración acogedora inspirada al estilo marroquíe. Es el espacio ideal para cenas íntimas, celebraciones especiales y catas de vino. Este nuevo espacio tiene capacidad limitada para 20 personas.'
+        paragraph='El salón privado es un nuevo espacio ubicado en el primer piso de Mía, equipado con aire acondicionado y una decoración acogedora inspirada al estilo Marroquí. Es el espacio ideal para cenas íntimas, celebraciones especiales y catas de vino. Este nuevo espacio tiene capacidad limitada para 20 personas.'
         linkText=''
         linkHref=''
       />

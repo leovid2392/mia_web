@@ -55,7 +55,7 @@ export default function Celebraciones() {
       />
       <div className={styles.description}>
         <TitlePage text='celebraciones' />
-        <Paragraph text='Mía Tulum se carateriza por ser un espacio de fiesta, alegria y celebración constante al ser y estar en el momento presente, es el espacio relajado, casual e ideal para celebrar cumpleaños, despedidas de soltera, cocteles y grupos de incentivos y cenas de ensayo. ' />
+        <Paragraph text='Mía Tulum se carateriza por ser un espacio de fiesta, alegria y celebración constante al ser y estar en el momento presente, es el espacio relajado, casual e ideal para celebrar cumpleaños, despedidas de soltera, cócteles, grupos de incentivo y cenas de ensayo. ' />
         <Paragraph text='Nuestro equipo de coordinadores en casa te ayudarán a explorar las diferentes opciones y  áreas con atmósferas diferentes para tu celebración especial.  ' />
         <BtnLinkExterno
           text='Aparta tu fecha'

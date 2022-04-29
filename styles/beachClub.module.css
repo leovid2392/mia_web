@@ -26,4 +26,7 @@
   .pool article {
     flex-direction: row-reverse;
   }
+  .pool article div div h2 {
+    text-align: start;
+  }
 }

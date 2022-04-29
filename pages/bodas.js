@@ -75,23 +75,25 @@ export default function Bodas() {
       />
       <div className={bodaStyle.description}>
         <TitlePage text='bodas' />
-        <Paragraph text='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda. Con una extensión de 400 metros cuadrados, Mía Tulum es sin duda el lugar ideal para la celebración más especial con una capacidad de hasta 200 personas. Imagina tu ceremonia a la orilla del mar; nuestros wedding planners van contigo de la mano, apoyandote paso a paso en la creación de un estilo único y apoyarte con los preparativos de ceremonias civil, étnica, simbólica y/o boda maya; mientras tus invitados disfrutarán de un coctel en la playa tu podrás tener tu sesión de fotos soñada al atardecer. Tu fiesta iniciará con un delicioso banquete a la luz de la luna y celebrarás tu union en un escenario que todos recordarán.' />
+        <Paragraph text='Con escenarios mágicos por naturaleza, la selva con su abundante vegetación y el mar caribe con atardeceres siderales, convierten a Tulum en el mejor destino para celebrar tu Boda. Con una extensión de 400 metros cuadrados, Mía Tulum es sin duda el lugar ideal para la celebración más especial con una capacidad de hasta 200 personas. Imagina tu ceremonia a la orilla del mar; nuestros wedding planners van contigo de la mano, apoyandote paso a paso en la creación de un estilo único y apoyarte con los preparativos de ceremonias civil, étnica, simbólica y/o boda maya; mientras tus invitados disfrutarán de un coctel en la playa tu podrás tener tu sesión de fotos soñada al atardecer. Tu fiesta iniciará con un delicioso banquete a la luz de la luna y celebrarás tu unión en un escenario que todos recordarán.' />
 
         <Paragraph text='Somos el único lugar que no cobra renta de locación y nuestro equipo de coordinación está incluido en la contratación de tu boda.' />
       </div>
-      <ArticlePortrait
-        image={anillo_01}
-        alt='image description'
-        title=''
-        paragraph='Celebraciones acogedoras como bodas, cenas románticas, cenas de ensayo, propuestas de matrimonio, renovación de votos o aniversarios son algunos de los momentos en los que todo el equipo de Mía une esfuerzos para que tu celebración sea memorable.'
-        linkText=''
-        linkHref='/'
-      >
-        <BtnLinkExterno
-          text='Aparta tu fecha'
-          link='https://wa.me/5219841339662'
-        />
-      </ArticlePortrait>
+      <div className={styles.bodasArticle}>
+        <ArticlePortrait
+          image={anillo_01}
+          alt='image description'
+          title=''
+          paragraph='Celebraciones acogedoras como bodas, cenas románticas, cenas de ensayo, propuestas de matrimonio, renovación de votos o aniversarios son algunos de los momentos en los que todo el equipo de Mía une esfuerzos para que tu celebración sea memorable.'
+          linkText=''
+          linkHref='/'
+        >
+          <BtnLinkExterno
+            text='Aparta tu fecha'
+            link='https://wa.me/5219841339662'
+          />
+        </ArticlePortrait>
+      </div>
       {/* <Banner
         text='Contáctanos'
         link='/contacto'

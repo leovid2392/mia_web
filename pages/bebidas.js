@@ -68,8 +68,8 @@ export default function Bebidas() {
           },
         ]}
       />
-      <TitlePage text='bebidas' />
-      <Paragraph text='Nuestro equipo de bartenders logrará que cada visita que tengas en Mïa Tulum sea con la mejor experiencia en bebidas, consulta nuestro cóctel especial de temporada creado por las mejores manos y utilizando los productos de la más alta calidad.' />
+      {/* <TitlePage text='bebidas' /> */}
+      {/* <Paragraph text='Nuestro equipo de bartenders logrará que cada visita que tengas en Mïa Tulum sea con la mejor experiencia en bebidas, consulta nuestro cóctel especial de temporada creado por las mejores manos y utilizando los productos de la más alta calidad.' /> */}
       <ArticlePortrait
         image={mixologia01}
         alt='image description'
@@ -110,7 +110,7 @@ export default function Bebidas() {
         objectFit='cover'
         objectPosition='center'
         title='Destilados'
-        paragraph='En Mia encontrarás una amplia selección de destilados incluyendo las más reconocidas marcas premium como Bushmills.'
+        paragraph='En Mia encontrarás una amplia selección de destilados incluyendo las más reconocidas marcas premium como Mezcal Sabios de lua gran reserva, Tequila Clase azul ultra añejo Ron Matusalem 23 años y Whisky Bushmills 21 años entre otros.'
         linkText=''
         linkHref=''
       >
