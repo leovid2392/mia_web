@@ -13,3 +13,13 @@
   z-index: 10;
   font-size: 1rem;
 }
+
+.button a {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .button a {
+    font-size: 1rem;
+  }
+}

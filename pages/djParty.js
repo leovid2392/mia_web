@@ -142,8 +142,8 @@ export default function DjParty() {
         objectPosition='center'
       >
         <BtnLinkExterno
-          text='ir al blog'
-          link='https://miatulumevents.com/monolink'
+          text='ir al post'
+          link='https://miatulumevents.com/colyn'
         />
       </ArticleSquareWhite>
     </Layout>
